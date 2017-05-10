@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>开通快捷支付</title>
+<link href="css/jquery.mobile-1.3.2.min.css" rel="stylesheet" type="text/css" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/account.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.3.2.min.js"></script>
+<script src="js/jq.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+<div data-role="page" class="bind-bank">
+ <div data-role="header" class="header bind-bank-header">
+      <h1>开通快捷支付</h1>
+  </div>
+  <div class="main bind-bank-main">
+   <form id="bindbankForm" novalidate action="javascript:void(0)">
+    <div class="bind-bank-list list-common">
+      <ol class="list-margin">
+        <li class="clearfix">
+         <a href="#" data-role="content">
+          <p class="list-left fl">客户姓名</p>
+          <p class="list-right fr"><span style=" color:#f4950a;">李光洙</span></p>
+          </a>
+        </li>
+      </ol>
+      <ol class="list-margin personal-input-common">
+         <li class="clearfix bind-bank-name" data-role="content">
+           <fieldset data-role="fieldcontain">
+            <select name="bank" id="bank">
+             <option value="ICBC">中国工商银行</option>
+             <option value="ABC">中国农业银行</option>
+             <option value="CMB">招商银行</option>
+             <option value="CCB">中国建设银行</option>
+             <option value="BCM">交通银行</option>
+             <option value="CIB">兴业银行</option>
+             <option value="CMBC">中国民生银行</option>
+             <option value="HXB">华夏银行</option>
+             <option value="CEB">中国光大银行</option>
+             <option value="GDB">广发银行</option>
+             <option value="CITIC">中信银行</option>
+             <option value="BOC">中国银行</option>
+             <option value="SPDB">浦发银行</option>
+             <option value="PSBC">中国邮政储蓄银行</option>
+            </select>
+          </fieldset>
+         </li>
+         <li class="clearfix" data-role="content">
+          <input type="text" data-role="none" placeholder="请输入银行卡号" id="banidbanknumber" />
+         </li>
+      </ol>
+    </div>
+    <p data-role="content" class="rename-user-profit">*为方便投资，绑卡后自动开启免密投资！</p>
+    <p data-role="content" class="submit-btn"><input type="submit" data-role="none" value="确定" /></p>
+   </form>
+  </div>
+  <div data-role="footer" class="footer">
+      <ul>
+        <li class="fl footer-index"><a href="index.html" rel="external"><b></b><br />首页</a></li>
+        <li class="fl footer-invest"><a href="invest_scattered.html" rel="external"><b></b><br />理财</a></li>
+        <li class="fl footer-account hover"><a href="account.html" rel="external"><b></b><br />账户</a></li>
+        <li class="fl footer-more"><a href="about_us.html" rel="external"><b></b><br />更多</a></li>
+      </ul>
+  </div>
+</div>
+</body>
+</html>

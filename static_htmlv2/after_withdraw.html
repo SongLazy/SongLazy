@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+ <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+ <meta name="renderer" content="webkit|ie-comp|ie-stand">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>提现</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" /> 
+<link href="css/common.css" rel="stylesheet" type="text/css" /> 
+<link href="css/after_login.css" rel="stylesheet" type="text/css" /> 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>   
+<script src="js/jq.js"></script>
+<script src="js/after_jq.js"></script>
+ <!-- 
+
+		如果是IE9以下版本，添加Response.js 支持 HTML5元素和media查询
+
+	 -->
+    <!--[if lt IE 9]>
+
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+  
+</head>
+
+<body>
+<div class="header">
+  <div class="header-main1 clearfix">
+    <div class="main clearfix">
+      <ol class="header-main1-left list-unstyled pull-left">
+        <li><a href="#"><span class="icon-app icon"></span>盼贷APP</a></li>
+        <li><a href="#"><span class="icon-follow icon"></span>关注盼贷</a></li>
+       <li><a href="#"><span class="icon-telephone icon"></span>服务热线：400-016-1131</a></li>
+      </ol>
+      <ol class="header-main1-right list-unstyled pull-right">
+        <li><a href="#">新手入门</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">现金券</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#"><span class="icon-account icon hover"></span>我的账户<b class="icon icon-arrow"></b></a></li>
+        <li><span class="line"></span></li>
+        <li class="return-old"><a href="#">返回旧版网站</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="header-main2">
+    <div class="main clearfix">
+      <p class="header-main2-logo pull-left"><img src="images/common/logo.png" /></p>
+      <ol class="header-main2-nav list-unstyled pull-right">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="invest_fixed.html">理财</a></li>
+        <li><a href="safe.html">安全保障</a></li>
+        <li><a href="#">活动专区</a></li>
+        <li><a href="about_introduction.html">关于我们</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div class="after-login after-pay clearfix">
+    <div class="after-login-left pull-left">
+      <div class="aflo-left-main1">
+          <p class="left-mian1-face"><img src="images/after-login/after-left1.png" /></p>
+          <p class="left-mian1-phone">1300****299，下午好!</p>
+          <p class="left-mian1-icon">
+            <a href="#" title="实名认证：未认证" class="left-mian1-icon1 active"><b></b>已认证</a>
+            <a href="#" title="绑定手机：未绑定" class="left-mian1-icon2"><b></b>未绑定</a>
+            <a href="#" title="绑定邮箱：未绑定" class="left-mian1-icon3"><b></b>未绑定</a>
+            <a href="#" title="银行卡：未绑定" class="left-mian1-icon4"><b></b>未绑定</a>
+          </p>
+      </div>
+      <div class="aflo-left-main2">
+        <dl>
+          <dt>我的账户</dt>
+          <dd><a href="after_account.html"><b class="account-one"></b>账户总览</a></dd>
+          <dd><a href="after_info.html"><b class="account-two"></b>基本信息</a></dd>
+          <dt>我的交易</dt>
+          <dd><a href="after_automatic.html"><b class="trade-one"></b>自动再投资</a></dd>
+          <dd><a href="after_transfer.html"><b class="trade-two"></b>债权转让</a></dd>
+          <dd><a href="after_treasure.html"><b class="trade-three"></b>盼贷宝</a></dd>
+          <dd><a href="after_invest.html"><b class="trade-four"></b>投资状况</a></dd>
+          <dd><a href="after_trade.html"><b class="trade-five"></b>交易记录</a></dd>
+          <dt>资金管理</dt>
+          <dd><a href="after_bank.html"><b class="money-one"></b>银行卡管理</a></dd>
+          <dd><a href="after_pay.html"><b class="money-two"></b>充值</a></dd>
+          <dd class="hover"><a href="after_withdraw.html"><b class="money-three"></b>提现</a></dd>
+          <dt>活动中心</dt>
+          <dd><a href="invite_friends.html"><b class="active-one"></b>邀请返利</a></dd>
+          <dd><a href="after_award.html"><b class="active-two"></b>抽奖中心</a></dd>
+          <dd><a href="cash_coupon.html"><b class="active-three"></b>我的现金券</a></dd>
+        </dl> 
+      </div>
+   </div>
+   <div class="after-login-rightbk pull-right">
+     <div class="after-login-right after-login-right2 after-withdraw-right">
+       <div class="aflo-right2-cen">
+         <h1>提现<a href="after_bank.html" class="btn-color btn-color2 border-radius">管理银行卡</a><a href="#" class=" afwi-btn-detail btn-color btn-color2 border-radius">提现明细</a></h1>
+         <div class="after-withdraw-main">
+             <p class="after-withdraw-main1"><span>- - -</span> 账户余额：<b>￥4323.32</b></p>
+             <div class="afpa-right-main1 after-withdraw-main2" style="display:block">
+                  <div class="afpari-main1-cen1" style=" width:840px">
+                   <h3 style=" width:788px;">已绑定的银行卡</h3>
+                   <div class="afpari-cen1-bank clearfix" style=" width:788px;">
+                      <ul class="list-unstyled pull-left" style=" margin-right:64px; ">
+                        <li>姓名<br /><span>张三</span></li>
+                        <li style=" margin-top:28px;">身份证号<br /><span>230145******1423</span></li>
+                      </ul>
+                      <div class="after-bank-main pull-left">
+                       <ol class="list-unstyled">
+                         <li class="after-bank-img bg-bank-small bank-small-BOC">
+                            <div class="afba-img-cen1">
+                              <h2>中国银行</h2>
+                              <p>6217 5801 xxxx 4447 264</p>
+                            </div>
+                            <p class="afpa-img-cen2" style="display:none"><a href="#">解<br />绑<br />银<br />行<br />卡</a></p>
+                         </li>
+                         <li class="after-bank-add" ><a href="#">添加银行卡<b></b></a></li>
+                       </ol>
+                     </div>
+                   </div>
+                 </div>
+                  <div class="afpari-main1-cen2">
+                   <form>
+                     <p><span>可提现金额</span><b>32342.00元</b></p>
+                     <p><span>提现金额</span><input type="text" class="form-control" style=" width:198px" id="" name="" /> 元</p>
+                     <p><span>手续费</span><b>0元<strong>(现阶段充值手续费由盼贷网承担)</strong></b></p>
+                     <p><span>提现后余额</span><b>32342.00元</b></p>
+                     <p><input type="submit" class="form-control btn-color btn-color2 border-radius submit" id="" name="" value="确认提现" style=" width:160px; border-radius:4px; padding:0; margin-left:25px;" /></p>
+                   </form>
+                 </div>
+                  <p class="afwi-main2-cen3">提现说明<span>1.提交提款申请之后，我们会在2-3天把款项打到您的账户；<br />2.提款手续费统一为2元；<br />3.请认真填写账号信息，由信息错误导致的转账失败，不退还手续费。</span></p>
+             </div>
+         </div>
+       </div>
+     </div>
+   </div>   
+   </div>
+<div class="footer">
+  <div class="footer-main1">
+    <div class="main clearfix">
+      <div class="footer-main1-left pull-left">
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作伙伴</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ol>
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">招贤纳士</a></li>
+        </ol>
+      </div>
+      <div class="pull-left"><span class="line"></span></div>
+        <div class="footer-main1-middle pull-left">
+          <dl class=" list-unstyled">
+            <dt class=" pull-left" style=" font-size:18px;">服务热线：</dt>
+            <dd class=" pull-left">
+              <p style=" font-size:38px; font-weight:600; margin-top:-10px;">400-016-1131</p>
+              <p>工作时间：周一至周五9:00-18:00</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="pull-left"><span class="line"></span></div>
+          <div class="footer-main1-right pull-right">
+            <p class=" text-center pull-left">
+              盼贷微信服务号<br /><img src="images/common/footer1.jpg" />
+            </p>
+            <p class=" text-center pull-left" style=" margin-right:0;">
+              盼贷APP下载<br /><img src="images/common/footer2.jpg" />
+            </p>
+          </div>
+        </div>
+  </div>
+  <div class="footer-main2">
+    <div class="main text-center">
+      <p><img src="images/common/footer3.jpg" /><img src="images/common/footer4.jpg" /><img src="images/common/footer5.jpg" /><img src="images/common/footer6.jpg" /><img src="images/common/footer7.jpg" /></p>
+      <p>© 2012-2017 北京盼大世纪信息技术有限公司 All rights reserved | 京ICP备15042613号 | 免责条款</p>
+    </div>
+  </div>
+</div>
+<div class="transparent-back"></div>
+<div class="withdrawals-popup">
+  <div class="withdrawals-popup-main">
+    <p class="withdrawals-popup-close bg-icon"></p>
+    <h1>请在联动优势页面进行提现操作</h1>
+    <ol class="list-unstyled withdrawals-popup-main1">
+      <li class=" clearfix" style=" margin-bottom:55px;">
+        <p class="fl wipo-main1-left"><b class="bg-icon success-icon"></b>提现成功</p>
+        <p class="fl wipo-main1-right">返回<a href="#">我的账户</a></p>
+      </li>
+      <li class=" clearfix">
+        <p class="fl wipo-main1-left"><b class="bg-icon fail-icon"></b>提现失败</p>
+        <p class="fl wipo-main1-right">重新<a href="#">提现</a>或联系客服:400-016-1131</p>
+      </li>
+    </ol>
+    <p class="withdrawals-popup-main2">提现后，系统将在对您申请的提现金额进行冻结，如果提现失败，30~60分钟自动解冻被冻结的资金，您可以再次提现。如果有疑问请联系客服</p>
+  </div>
+</div>
+<div class="withdrawals-detail-popup popups">
+    <p class="wide-popup-close clearfix"><b class="bg-icon pull-right"></b></p>
+    <div class="record-list">
+        <div class="record-list-main clearfix">
+         <ol class="list-unstyled clearfix">
+           <li style=" width:146px;">时间</li>
+           <li style=" width:160px;">金额</li>
+           <li style=" width:161px;">手续费</li>
+           <li style=" width:158px;">交易结果</li>
+           <li style=" width:170px;">交易卡号</li>
+         </ol>
+         <ul class="list-unstyled record-list-main1">
+           <li style=" width:146px;">2016-08-10</li>
+           <li style=" width:160px;">5555.55</li>
+           <li style=" width:161px;">5555.55</li>
+           <li style=" width:158px;">处理中</li>
+           <li style=" width:170px;">6213232****3233</li>
+         </ul>
+         <ul class="list-unstyled record-list-main1">
+           <li style=" width:146px;">2016-08-10</li>
+           <li style=" width:160px;">5555.55</li>
+           <li style=" width:161px;">5555.55</li>
+           <li style=" width:158px;">失败退回账户</li>
+           <li style=" width:170px;">6213232****3233</li>
+         </ul>
+         <ul class="list-unstyled record-list-main1">
+           <li style=" width:146px;">2016-08-10</li>
+           <li style=" width:160px;">5555.55</li>
+           <li style=" width:161px;">5555.55</li>
+           <li style=" width:158px;">已完成</li>
+           <li style=" width:170px;">6213232****3233</li>
+         </ul>
+         <ul class="list-unstyled record-list-main1">
+           <li style=" width:146px;">2016-08-10</li>
+           <li style=" width:160px;">5555.55</li>
+           <li style=" width:161px;">5555.55</li>
+           <li style=" width:158px;">已完成</li>
+           <li style=" width:170px;">6213232****3233</li>
+         </ul>
+         <ul class="list-unstyled record-list-main1">
+           <li style=" width:146px;">2016-08-10</li>
+           <li style=" width:160px;">5555.55</li>
+           <li style=" width:161px;">5555.55</li>
+           <li style=" width:158px;">已完成</li>
+           <li style=" width:170px;">6213232****3233</li>
+         </ul>
+         <ul class="list-unstyled record-list-main1">
+           <li style=" width:146px;">2016-08-10</li>
+           <li style=" width:160px;">5555.55</li>
+           <li style=" width:161px;">5555.55</li>
+           <li style=" width:158px;">已完成</li>
+           <li style=" width:170px;">6213232****3233</li>
+         </ul>
+         <ul class="list-unstyled record-list-main1">
+           <li style=" width:146px;">2016-08-10</li>
+           <li style=" width:160px;">5555.55</li>
+           <li style=" width:161px;">5555.55</li>
+           <li style=" width:158px;">已完成</li>
+           <li style=" width:170px;">6213232****3233</li>
+         </ul>
+         <ul class="list-unstyled record-list-main1">
+           <li style=" width:146px;">2016-08-10</li>
+           <li style=" width:160px;">5555.55</li>
+           <li style=" width:161px;">5555.55</li>
+           <li style=" width:158px;">已完成</li>
+           <li style=" width:170px;">6213232****3233</li>
+         </ul>
+        </div>
+        <div class="pagination-center">
+           <ul class="pagination">
+             <li><a href="#">上一页</a></li>
+             <li><a href="#">1</a></li>
+             <li><a href="#">2</a></li>
+             <li><a href="#">3</a></li>
+            <li><a href="#">下一页</a></li>
+           </ul>
+         </div>
+    </div>
+    <div class="wide-popup-explain">
+      <p>明细说明:</p>
+      <p>
+        处理中:第三方资金托管平台(联动优势)正在处理提现申请！每日17点前提现，当天处理完成，17点后次日处理完成，节假日顺延；<br />
+        失败退回账户:申请提现过程中出现失败，或者在联动提现页面未正确操作，导致提现失败的，账户退回余额，可重新提现；<br />
+        已完成:第三方资金托管平台(联动优势)已经成功处理提现申请并打款到客户银行卡。
+      </p>
+    </div>
+</div>
+</body>
+</html>

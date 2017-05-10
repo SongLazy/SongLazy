@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>标的详情</title>
+<link href="css/jquery.mobile-1.3.2.min.css" rel="stylesheet" type="text/css" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/invest.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.3.2.min.js"></script>
+<script src="js/jq.js"></script>
+</head>
+<body>
+<div data-role="page" class="trade-details">
+  <div class="bid-details-main main">
+    <div data-role="content" class="bid-details-main1 clearfix">
+      <div data-role="header" class="header bid-details-header">
+        <h1>散标</h1>
+        <a href="#" data-rel="back" class="return-icon" data-role='none'><img src="images/return.png" /></a>
+      </div>
+      <p class="bid-details-wave"></p>
+      <p class="bid-details-name">交易所标20160103001</p>
+      <p class="bid-details-number">12334556</p>
+      <div class="bid-details-rate">
+        <p class="rate"><span>12</span><b>%</b></p>
+        <p class="word">预期年化收益率</p>
+      </div>
+      <ol class="bid-details-time clearfix">
+        <li class="fl">
+          <p class="rate"><span>247,700</span><b>元</b></p>
+          <p class="word">剩余可投</p>
+        </li>
+        <li class="fl" style=" border-right:none;">
+          <p class="rate"><span>2</span><b>个月</b></p>
+          <p class="word">投资期限</p>
+        </li>
+      </ol>
+    </div>
+    <div class="bid-details-main2 clearfix">
+        <p data-role="content" class=" clearfix"><span>项目规模:</span><b>500,000元</b></p>
+        <p data-role="content" class=" clearfix"><span>起投金额:</span><b>10000元</b></p>
+        <p data-role="content" class=" clearfix"><span>还款方式:</span><b>一次性还本付息</b></p>
+        <p data-role="content" class=" clearfix"><span>剩余时间:</span><b>2016-12-12</b></p>
+        <p data-role="content" class=" clearfix"><span>可转让期限:</span><b>投资该标的3个月后可以申请债权转让</b></p>
+    </div>
+    <div class="bid-details-main3 clearfix">
+      <p data-role="content" class="bid-details-invest">
+        <span>投资金额:</span><b><input type="text" placeholder="请输入投资金额" data-role="none" id="investmoney" name="investmoney"></b><a href="#"><strong>余额全投</strong></a>
+      </p>
+      <p data-role="content" class="bid-details-balance">
+        <span>可用余额:</span><b>2000元</b><a href="recharge.html" rel="external"><strong>立即充值</strong></a>
+      </p>
+      <p data-role="content" class="bid-details-profit">
+        <span>预期收益:</span><b>800元</b>
+      </p>
+      <p data-role="content" class="bid-details-coupon">
+        <span>现金券:</span><b>9张可用</b><a href="#"><strong>去使用</strong><em class="icon"></em></a>
+      </p>
+    </div>
+    <div class="bid-details-main4 clearfix">
+      <div class="bide-main4-list">
+        <p data-role="content" class="bid-details-product">
+         <span>产品详情</span><a href="#"><em class="icon"></em></a>
+        </p>
+        <div data-role="content" class="details-product-main bide-main4-hidden">
+          <ol class="clearfix">
+            <li>
+              <img src="images/product_details/details1.png" /><br />五重<br />风险控制
+            </li>
+            <li>
+              <img src="images/product_details/details2.png" /><br />期限短<br />30天~90天
+            </li>
+            <li>
+              <img src="images/product_details/details3.png" /><br />最高年化<br />收益8%
+            </li>
+          </ol>
+          <ol class="clearfix">
+            <li>
+              <img src="images/product_details/details7.png" /><br />优质资产端<br />普惠交易所
+            </li>
+            <li>
+              <img src="images/product_details/details9.png" /><br />主体信用<br />等级3A
+            </li>
+            <li>
+              <img src="images/product_details/details6.png" /><br />适合人群: 小白<br />小家庭
+            </li>
+          </ol>
+          <p>交易所是中国供销集团有限公司控股的国有金融资产交易平台——普惠金融交易中心发行的油卡标，由中国供销集团·大连再生资源交易所授权云南中安金诚金融服务有限公司监管的消费金融产品。</p>
+        </div>
+      </div>
+      <div class="bide-main4-list">
+        <p data-role="content" class="bid-details-issuer">
+         <span>发行方简介</span><a href="#"><em class="icon"></em></a>
+        </p>
+        <div data-role="content" class="details-issuer-main bide-main4-hidden">
+          <p style="text-align:center;"><img src="images/product_details/img3.jpg" style=" width:70%; max-height:110px; max-width:380px;" /></p>
+          <p>该产品依托中石化油卡系统，是对有稳定的经营收入的货车司机及限制车辆的油卡用款。如若借款人未偿还债务，则由物流公司第一时间全额偿还借款方，并按月还息，到期还本。</p>
+          <p style="text-align:center;"><img src="images/product_details/issuer4.jpg" style=" width:80%; max-height:554px; max-width:554px;" /></p>
+        </div>
+      </div>
+      <div class="bide-main4-list">
+        <p data-role="content" class="bid-details-flow">
+         <span>资金流动</span><a href="#"><em class="icon"></em></a>
+        </p>
+        <div data-role="content" class="bide-main4-hidden">
+          <p style="text-align:center;"><img src="images/product_details/trade2.jpg" style=" width:100%; max-width:684px; max-height:566px;" /></p>
+        </div>
+      </div>
+      <div class="bide-main4-list">
+        <p data-role="content" class="bid-details-repayment">
+          <span>还款列表</span><a href="#"><em class="icon"></em></a>
+        </p>
+        <div class="details-repayment-list record-list bide-main4-hidden">
+        <ol class="record-list-title clearfix">
+          <li>到期时间</li>
+          <li style=" width:15%">期数</li>
+          <li style=" width:35%">共需还款</li>
+          <li>还款状态</li>
+        </ol>
+        <ul class="record-list-main clearfix">
+          <li>2016-09-20 </li>
+          <li style=" width:15%">1</li>
+          <li style=" width:35%">725.00元</li>
+          <li>未还款</li>
+        </ul>
+        <ul class="record-list-main clearfix">
+          <li>2016-09-20 </li>
+          <li style=" width:15%">1</li>
+          <li style=" width:35%">725.00元</li>
+          <li>未还款</li>
+        </ul>
+        <ul class="record-list-main clearfix">
+          <li>2016-09-20 </li>
+          <li style=" width:15%">1</li>
+          <li style=" width:35%">725.00元</li>
+          <li>未还款</li>
+        </ul>
+        <ul class="record-list-main clearfix">
+          <li>2016-09-20 </li>
+          <li style=" width:15%">1</li>
+          <li style=" width:35%">725.00元</li>
+          <li>未还款</li>
+        </ul>
+        <ul class="record-list-main clearfix">
+          <li>2016-09-20 </li>
+          <li style=" width:15%">1</li>
+          <li style=" width:35%">725.00元</li>
+          <li>未还款</li>
+        </ul>
+      </div>
+      </div>
+      <div class="bide-main4-list">
+        <p data-role="content" class="bid-details-bidrecord">
+         <span>投标记录</span><a href="#"><em class="icon"></em></a>
+        </p>
+        <div class="details-bidrecord-list record-list bide-main4-hidden">
+            <ol class="record-list-title clearfix">
+              <li>投资人</li>
+              <li>购买笔数</li>
+              <li>投标时间</li>
+            </ol>
+            <ul class="record-list-main clearfix">
+              <li>138****2223 </li>
+              <li>12</li>
+              <li>2016-09-20</li>
+            </ul>
+            <ul class="record-list-main clearfix">
+              <li>138****2223 </li>
+              <li>12</li>
+              <li>2016-09-20</li>
+            </ul>
+            <ul class="record-list-main clearfix">
+              <li>138****2223 </li>
+              <li>12</li>
+              <li>2016-09-20</li>
+            </ul>
+            <ul class="record-list-main clearfix">
+              <li>138****2223 </li>
+              <li>12</li>
+              <li>2016-09-20</li>
+            </ul>
+            <ul class="record-list-main clearfix">
+              <li>138****2223 </li>
+              <li>12</li>
+              <li>2016-09-20</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="bid-details-btn">
+      <a href="#" class="btn-a">立即认购</a>
+   </div>
+  </div>
+  <div data-role="footer" class="footer">
+      <ul>
+        <li class="fl footer-index"><a href="index.html" rel="external"><b></b><br />首页</a></li>
+        <li class="fl footer-invest hover"><a href="invest_scattered.html" rel="external"><b></b><br />理财</a></li>
+        <li class="fl footer-account"><a href="account.html" rel="external"><b></b><br />账户</a></li>
+        <li class="fl footer-more"><a href="about_us.html" rel="external"><b></b><br />更多</a></li>
+      </ul>
+  </div>
+</div>
+
+</body>
+</html>

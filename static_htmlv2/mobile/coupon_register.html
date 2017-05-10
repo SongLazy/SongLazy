@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>注册送现金券</title>
+<link href="css/jquery.mobile-1.3.2.min.css" rel="stylesheet" type="text/css" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/advertised_page.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.3.2.min.js"></script>
+<script src="js/jquery.metadata.js"></script>
+<script src="js/jquery.validate.js"></script>
+</head>
+<body>
+<div data-role="page" class="coupon-register">
+  <div class="coupon-register-banner">
+    <img src="images/coupon_register/banner.jpg" />
+  </div>
+  <div data-role="content" class="coupon-register-bg">
+    <div class="coupon-register-main1">
+      <form id="couponregisterForm" novalidate action="javascript:void(0)" name="forms">
+        <div class="advertised-page-form coupon-register-form">
+          <p class="clearfix advertised-form-common">
+            <label for="advertisedformnumber"><img src="images/advertised_page/form1.png" /></label>
+            <input type="text" placeholder="请输入您的手机号码" data-role='none' id="advertisedformnumber" name="advertisedformnumber"  />
+          </p>
+          <p class="clearfix advertised-form-common advertised-form-imgcode">
+            <label for="advertisedformimgcode"><img src="images/coupon_register/form1.png" /></label>
+            <input type="text" placeholder="请输入图形验证码" data-role='none' id="advertisedformimgcode" name="advertisedformimgcode"  />
+           <img src="images/coupon_register/imgcode.jpg" />
+          </p>
+          <p class="clearfix advertised-form-common advertised-form-code">
+            <label for="advertisedformcode"><img src="images/advertised_page/form2.png" /></label>
+            <input type="text" placeholder="请输入验证码" data-role='none' id="advertisedformcode" name="advertisedformcode"  />
+            <a href="#">发送验证码</a>
+          </p>
+          <p class="clearfix advertised-form-common advertised-form-password">
+            <label for="password"><img src="images/advertised_page/form3.png" /></label>
+            <span id="box"><input type="password" placeholder="请输入密码" data-role='none' id="password" name="password" /></span>
+            <span id="click"><a href="javascript:showps()"><img src="images/login/login4.png" /></a></span>
+          </p>
+          <p class="clearfix advertised-form-checkbox">
+            <label for="advertisedformcheckbox"><input type="checkbox" data-role="none" id="advertisedformcheckbox" name="advertisedformcheckbox" checked="">我已同意并接受<a href="#">《盼贷网络服务使用协议》</a></label>
+          </p>
+          <p class="clearfix advertised-form-submit">
+            <input type="submit" value="注册领取现金券" data-role="none" id="advertisedformsubmit" name="advertisedformsubmit">
+          </p>
+       </div>
+      </form>
+    </div>
+    <div class="coupon-register-main2">
+      <div class="coupon-register-new">
+        <h1>新人领取1288现金券</h1>
+        <div class="coupon-register-rule">
+          <p class="coupon-register-rule1">现金券的使用规则：</p>
+          <p class="coupon-register-rule2">现金券无需领取，满足获取条件后自动发放到账户。在您获得现金券之后，投资过程中直抵本金，享受收益，并且在还款到期后可以直接提现。</p>
+          <p class="coupon-register-rule3">(举例说明：您有5元现金券，投资200元可以使用。在您投资时系统会自动匹配您可使用的额现金券您勾选后，您实际只需支付195元。但是您投资的额度依旧为200元。在到期还款后，您获得的利息、5元现金券、195元本金均可以提现。)</p>
+        </div>
+        <ol class="coupon-register-coupon">
+          <li class="clearfix">
+            <p class="fl"><img src="images/coupon_register/coupon1.png" /></p>
+            <p class="fr"><img src="images/coupon_register/coupon2.png" /></p>
+          </li>
+          <li class="clearfix">
+            <p class="fl"><img src="images/coupon_register/coupon3.png" /></p>
+            <p class="fr"><img src="images/coupon_register/coupon4.png" /></p>
+          </li>
+          <li class="clearfix">
+            <p class="fl"><img src="images/coupon_register/coupon5.png" /></p>
+            <p class="fr"><img src="images/coupon_register/coupon6.png" /></p>
+          </li>
+          <li class="clearfix">
+            <p class="fl"><img src="images/coupon_register/coupon7.png" /></p>
+            <p class="fr"><img src="images/coupon_register/coupon8.png" /></p>
+          </li>
+          <li class="clearfix">
+            <p style=" width:100%;"><img src="images/coupon_register/coupon9.png" /></p>
+          </li>
+        </ol>
+        <p class="coupon-register-explain">说明：新手专享1288现金劵仅限投资盼信标、交易所标使用，现金券有效期限90天。</p>
+      </div>
+      <div class="coupon-register-again">
+        <h1>复投领取3789现金券</h1>
+        <div class="coupon-register-rule">
+          <p class="coupon-register-rule1">二次投资后会获得哪些现金券：</p>
+          <p class="coupon-register-rule2">盼信标、交易所标投资后均可获得现金券总价值3789。</p>
+          <p class="coupon-register-rule3">（举例说明：假如您首投了盼信标100元，都会得到盼信标5元现金劵3张到您的账户，可用来再次投资盼信标使用。）</p>
+        </div>
+        <div class="coupon-register-table">
+          <p>下为投资盼信标所得现金券：</p>
+          <table border="0" width="100%" class="table-beacon">
+             <tr>
+               <th width="30%">现金券面值</th>
+               <th width="35%">获取条件</th>
+               <th width="35%">使用条件</th>
+             </tr>
+             <tr>
+               <td width="30%">5×3</th>
+               <td width="35%">100≤实际投资额</th>
+               <td width="35%">200≤投资额</th>
+             </tr>
+             <tr>
+               <td width="30%">8×3</th>
+               <td width="35%">200≤实际投资额</th>
+               <td width="35%">300≤投资额</th>
+             </tr>
+             <tr>
+               <td width="30%">20×3</th>
+               <td width="35%">300≤实际投资额</th>
+               <td width="35%">500≤投资额</th>
+             </tr>
+             <tr>
+               <td width="30%">50×3</th>
+               <td width="35%">500≤实际投资额</th>
+               <td width="35%">1000≤投资额</th>
+             </tr>
+             <tr>
+               <td width="30%">80×3</th>
+               <td width="35%">1000≤实际投资额</th>
+               <td width="35%">3000≤投资额</th>
+             </tr>
+             <tr>
+               <td width="30%">100×3</th>
+               <td width="35%">3000≤实际投资额</th>
+               <td width="35%">5000≤投资额</th>
+             </tr>
+             <tr>
+               <td width="30%">200×3</th>
+               <td width="35%">5000≤实际投资额</th>
+               <td width="35%">10000≤投资额</th>
+             </tr>
+             <tr>
+               <td width="30%">300×3</th>
+               <td width="35%">10000≤实际投资额</th>
+               <td width="35%">20000≤投资额</th>
+             </tr>
+             <tr>
+               <td width="30%">500×3</th>
+               <td width="35%">20000≤实际投资额</th>
+               <td width="35%">30000≤投资额</th>
+             </tr>
+          </table>
+        </div>
+        <div class="coupon-register-table">
+          <p>下为投资盼信标所得现金券：</p>
+          <table border="0" width="100%" class="table-trade">
+             <tr>
+               <th width="30%">现金券面值</th>
+               <th width="35%">获取条件</th>
+               <th width="35%">使用条件</th>
+             </tr>
+             <tr>
+               <td width="30%">5×3</th>
+               <td width="35%">100≤实际投资额</th>
+               <td width="35%">200≤投资额</th>
+             </tr>
+             <tr>
+               <td width="30%">8×3</th>
+               <td width="35%">200≤实际投资额</th>
+               <td width="35%">300≤投资额</th>
+             </tr>
+             <tr>
+               <td width="30%">20×3</th>
+               <td width="35%">300≤实际投资额</th>
+               <td width="35%">500≤投资额</th>
+             </tr>
+             <tr>
+               <td width="30%">50×3</th>
+               <td width="35%">500≤实际投资额</th>
+               <td width="35%">1000≤投资额</th>
+             </tr>
+             <tr>
+               <td width="30%">80×3</th>
+               <td width="35%">1000≤实际投资额</th>
+               <td width="35%">3000≤投资额</th>
+             </tr>
+             <tr>
+               <td width="30%">100×3</th>
+               <td width="35%">3000≤实际投资额</th>
+               <td width="35%">5000≤投资额</th>
+             </tr>
+             <tr>
+               <td width="30%">200×3</th>
+               <td width="35%">5000≤实际投资额</th>
+               <td width="35%">10000≤投资额</th>
+             </tr>
+             <tr>
+               <td width="30%">300×3</th>
+               <td width="35%">10000≤实际投资额</th>
+               <td width="35%">20000≤投资额</th>
+             </tr>
+             <tr>
+               <td width="30%">500×3</th>
+               <td width="35%">20000≤实际投资额</th>
+               <td width="35%">30000≤投资额</th>
+             </tr>
+          </table>
+        </div>
+        <p class="coupon-register-explain">说明：投资盼信标所得现金券只能投资盼信标使用，投资交易所标所得现金券只能投资交易所标使用。</p>
+      </div>
+    </div>
+    <div class="coupon-register-main3">
+      <p class="coupon-register-introduce1"><img src="images/coupon_register/introduce1.jpg" /></p>
+      <h2>盼贷网简介</h2>
+      <p class="coupon-register-introduce2">盼贷网隶属于北京盼大世纪信息技术有限公司，成立于2011年7月，是国内较早成立的互联网金融平台，于2016年7月获得世界知名风投美国中经合集团A轮融资。拥有丰富的借贷和投资产品，第三方联动优势资金托管，LFS兰德斯金融服务集团公司提供风控技术，普惠金融交易中心发行，为投资者提供预期年均15%的回报率。</p>
+    </div>
+    <div class="advertised-page-btn">
+      <a href="#" class="ui-link"><img src="images/advertised_page/btn1.png">iPhone下载</a>
+      <a href="#" class="ui-link"><img src="images/advertised_page/btn2.png">Android下载</a>
+    </div>
+    <div class="advertised-page-prompt clearfix coupon-register-prompt">
+      <span class="fl"></span>
+      <b class="fr">市场有风险，投资需谨慎，以实际收益为准</b>
+     </div>
+  </div>
+</div>
+<script type="text/javascript">
+ $(document).ready(function() {
+  $("#couponregisterForm").validate({
+        rules: {
+            advertisedformnumber:{
+				required: true,
+				digits:true
+			} ,
+			advertisedformimgcode:{
+			  required: true,
+			},
+			advertisedformcode:{
+			  required: true,
+			},
+			password:{
+			  required: true,
+			},
+			advertisedformcheckbox:{
+			  required: true,
+			}
+        },
+        messages: {
+            advertisedformnumber:{
+				 required: "请输入您的手机号码", 
+				 digits:"必须是数字"
+			},
+			advertisedformimgcode:{
+			  required: "请填写验证码"
+			},
+			advertisedformcode:{
+			  required: "请填写验证码"
+			},
+			password:{
+			  required: "请输入密码"
+			},
+			advertisedformcheckbox:{
+			  required: "请阅读并同意协议"
+			}
+        },
+		errorPlacement: function(error, element) {
+			// Append error within linked label
+			var p=$( element ).closest( "form" ).find( "label[for='" + element.attr( "id" ) + "']" ).parents("p");
+			error.insertAfter(p);
+		}
+
+		
+    });
+ })
+</script>
+<script language="JavaScript">   
+	function showps(){   
+		if (this.forms.password.type="password") {  
+			document.getElementById("box").innerHTML="<input type=\"text\" name=\"password\" size=\"80\" style='width:\"150\";' value="+this.forms.password.value+">";   
+			document.getElementById("click").innerHTML="<a href=\"javascript:hideps()\"><img src=\"images/login/login5.png\" /></a>"  
+		}  
+	}   
+	function hideps(){   
+		if (this.forms.password.type="text") {  
+			document.getElementById("box").innerHTML="<input type=\"password\" name=\"password\" size=\"80\" style='width:\"150\";' value="+this.forms.password.value+">";   
+			document.getElementById("click").innerHTML="<a href=\"javascript:showps()\"><img src=\"images/login/login4.png\" /></a>"  
+		}   
+	}   
+</script>
+</body>
+</html>

@@ -1,0 +1,809 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>首页</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/invest.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/mySystem.js" type="text/javascript"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jq.js" type="text/javascript"></script>
+
+<script src="http://mockjs.com/dist/mock.js"></script>
+
+<script src="../build/react.js"></script>
+<script src="../build/react-dom.js"></script>
+<script src="../build/browser.min.js"></script>
+
+</head>
+<script type="text/javascript">
+ $(function(){
+		//回调函数计数
+		var callbackIndex = 0;
+		$('.silder-box').mySilder({
+			width:149, //容器的宽度 必选参数!!!!!!
+			height:54, //容器的高度 必选参数!!!!!!
+			auto:true,//是否自动滚动
+			autoTime:5, //自动滚动时，时间间隙，即多长滚动一次,单位(秒)
+			direction:'x',//滚动方向,默认X方向
+			autoType:'left', //滚动方向，auto为true时生效
+			few:1,//一次滚动几个，默认滚动1张
+			showFew:5, //显示几个,就不用调css了,默认显示一个
+			clearance:33, //容器之间的间隙，默认为 0
+			silderMode:'linear' ,//滚动方式
+			timeGap:300,//动画间隙，完成一次动画需要多长时间，默认700ms
+			buttonPre:'.silder-button.btl',//上一个，按钮
+			buttonNext:'.silder-button.btr',//下一个，按钮
+			jz:true, //点击时，是否等待动画完成
+			runEnd:function(){//回调函数
+				callbackIndex ++ ;
+				$('.cj em').text(callbackIndex);
+			}
+		});
+ })
+</script>
+<script>
+     Mock.mock('Event/wap/test', {/*地址任意*/
+    'result|1': [{
+        'id|+1': 1,
+        'bid_name': '这个标的名字9034109',
+        'rate_of_return': '189',
+        'investment_deadline': '1000',
+        'borrow_amount': '10',
+        'progress_d': 40
+    }]
+});
+</script>
+<script type="text/babel">
+
+    var Panxin = React.createClass({
+      getInitialState: function() {
+        return {
+          bid_name: '',
+          rate_of_return: '',
+          investment_deadline: '',
+          borrow_amount: '',
+          progress_d: ''
+        };
+      },
+
+  componentDidMount: function() {
+
+    const self = this;
+    console.log('--componentDidMount');
+    $.ajax({
+    url: 'Event/wap/test',
+    dataType: 'json',
+    success: function(data, status, jqXHR) {
+    console.log('ajax success');
+    console.log('data',data);
+        const data1 = data;
+        if(data !=null){
+        console.log('data.result',data.result);
+
+
+                self.setState({
+                  bid_name: data.result.bid_name,
+                  rate_of_return: data.result.rate_of_return,
+                  investment_deadline: data.result.investment_deadline,
+                  borrow_amount: data.result.borrow_amount,
+                  progress_d: data.result.progress_d
+                });
+
+
+        }
+    }
+    });
+  },
+        render: function () {
+          console.log('---render');
+          return (
+      <div id="Panxindeid" className="product-bidding invest-beacon-product clearfix">
+        <div className="product-bidding-left gradient-orange pull-left text-center">
+          <p className="product-bidding-icon"><span className="icon"></span><br />盼信标</p>
+          <p className="product-bidding-white"></p>
+        </div>
+        <div className="product-bidding-right pull-left">
+          <a href="#" className="product-bidding-href"></a>
+          <div className="">
+            <p className="product-bidding-name"><a href="#">{this.state.bid_name}</a></p>
+            <div className="product-bidding-details clearfix">
+              <div className=" product-bidding-profit pull-left">
+                <ol className="list-unstyled">
+                  <li className="pull-left product-bidding-rate">
+                    <p className="product-bidding-rate1"><span><b>{this.state.rate_of_return}</b>%</span></p>
+                    <p className="font-color product-bidding-explain">预期年化收益率</p>
+                  </li>
+                  <li className="pull-left product-bidding-term">
+                    <p className="product-bidding-term1"><span><b>{this.state.investment_deadline}</b>个月</span></p>
+                    <p className="font-color product-bidding-explain">投资期限</p>
+                  </li>
+                  <li className="pull-left product-bidding-money">
+                    <p className="product-bidding-money1"><span><b>{this.state.borrow_amount}</b>元</span></p>
+                    <p className="font-color product-bidding-explain">借款金额</p>
+                  </li>
+                </ol>
+              </div>
+              <div className="product-bidding-progress text-center pull-left">
+                <div className="progress">
+                  <div className="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={{width:this.state.progress_d}}></div>
+                </div>
+                <p className="font-color progress-bar-number">进度 {this.state.progress_d}%</p>
+              </div>
+              <div className="product-bidding-btn text-center pull-left">
+                <p><a href="#" className="btn-color btn-color1 border-radius">立即认购</a></p>
+                <p className="font-color product-bidding-explain">限投：10,000元</p>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+          );
+        }
+      });
+
+      ReactDOM.render(<Panxin/>, 
+      document.getElementById('Panxindeid'));
+    </script>
+<body>
+
+    
+<div class="header">
+  <div class="header-main1 clearfix">
+    <div class="main clearfix">
+      <ol class="header-main1-left list-unstyled pull-left">
+        <li><a href="#"><span class="icon-app icon"></span>盼贷APP</a></li>
+        <li><a href="#"><span class="icon-follow icon"></span>关注盼贷</a></li>
+       <li><a href="#"><span class="icon-telephone icon"></span>服务热线：400-016-1131</a></li>
+      </ol>
+      <ol class="header-main1-right list-unstyled pull-right">
+        <li><a href="#">新手入门</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">现金券</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="after_account.html"><span class="icon-account icon"></span>我的账户<b class="icon icon-arrow"></b></a></li>
+        <li><span class="line"></span></li>
+        <li class="return-old"><a href="#">返回旧版网站</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="header-main2">
+    <div class="main clearfix">
+      <p class="header-main2-logo pull-left"><img src="images/common/logo.png" /></p>
+      <ol class="header-main2-nav list-unstyled pull-right">
+        <li class="hover"><a href="index.html">首页</a></li>
+        <li><a href="invest_fixed.html">理财</a></li>
+        <li><a href="safe.html">安全保障</a></li>
+        <li><a href="#">活动专区</a></li>
+        <li><a href="about_introduction.html">关于我们</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div class="index-main">
+  <div class="index-banner">
+    <div class="flexslider">
+	   <ul class="slides">
+        <li style="background:url(images/index/banner7.jpg) no-repeat center;"><a href="transfer_introduction.html"></a></li>
+        <li style="background:url(images/index/banner1.jpg) no-repeat center;" class="banner-video"><a href="#" style=""></a></li>
+        <li style="background:url(images/index/banner2.jpg) no-repeat center;"><a href="fiveyear_activity.html"></a></li>
+        <li style="background:url(images/index/banner3.jpg) no-repeat center;"><a href="new_product.html"></a></li>
+		<li style="background:url(images/index/banner4.jpg) no-repeat center;"><a href="invest_treasure.html"></a></li>
+		<li style="background:url(images/index/banner5.jpg) no-repeat center;"><a href="escrow.html"></a></li>
+        <li style="background:url(images/index/banner6.jpg) no-repeat center;"><a href="invite_coupon.html"></a></li>
+	 </ul>
+    </div>
+    <div class="main clearfix">
+      <div class="banner-login">
+        <div class="not-login text-center">
+          <h1>8-15%<p>预期年化收益率</p></h1>
+          <p class="banner-login-btn"><a href="#" class="border-radius">注册领280元红包</a></p>
+          <p class="not-login-main">已有账号？<a href="#" style=" color:#fff;text-decoration:underline; ">立即登录</a></p>
+        </div>
+        <div class="already-login text-center" style=" display:none;">
+          <h1 class="already-login-head text-center"><img src="images/index/head.png" /></h1>
+          <p class="already-login-name">欢迎您，mobile_11671512</p>
+          <p class="already-login-balance text-left">账户余额<b style=" font-size:20px;">100,000</b>元，<a href="#" style="text-decoration:underline; color:#fff;">隐藏</a></p>
+          <p class="banner-login-btn clearfix"><a href="#" class=" pull-left border-radius">去充值</a><a href="#" class=" pull-right border-radius">我的账户</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="index-notice">
+    <div class="main">
+      <p class="pull-left index-notice-main"><span class="icon"></span><a href="#">平台公告：前25名老用户投资10万以上,送iPad</a></p>
+      <p class="pull-right index-notice-time"><b>2016-06-29</b><a href="#">查看更多 &gt;&gt;</a></p>
+    </div>
+  </div>
+  <div class="index-resource clearfix">
+    <div class="main">
+      <dl class="pull-left list-unstyled">
+        <dt class=" pull-left text-center"><img src="images/index/resource1.png" /><p>优资产</p></dt>
+        <dd class=" pull-left">
+          <p>国际金融机构资产端<br />较早的18家互金平台<br />年均13.57%的回报率</p>
+        </dd>   
+      </dl>
+      <dl class="pull-left list-unstyled">
+        <dt class=" pull-left text-center"><img src="images/index/resource2.png" /><p>硬实力</p></dt>
+        <dd class=" pull-left">
+          <p>国际知名企业战略合作<br />兰德斯金融服务集团公司<br />国际知名风投美国中金合集团</p>
+        </dd>   
+      </dl>
+      <dl class="pull-left list-unstyled">
+        <dt class=" pull-left text-center"><img src="images/index/resource3.png" /><p>超安全</p></dt>
+        <dd class=" pull-left">
+          <p>双重保险机制<br />和德保险&中国人寿<br />联手保障您的资金安全</p>
+        </dd>   
+      </dl>
+      <dl class="pull-left list-unstyled">
+        <dt class=" pull-left text-center"><img src="images/index/resource4.png" /><p>真存管</p></dt>
+        <dd class=" pull-left">
+          <p>联动优势科技有限公司<br />第三方资金托管<br />更权威 更专业 更安全</p>
+        </dd>   
+      </dl>
+    </div>
+  </div>
+  <div class="main index-product">
+    <div class=" clearfix">
+     <div class="new-product-bidding border-radius pull-left">
+      <a href="file:///D:/xampp/htdocs/p2plending_client/static_htmlv2/invest_fixed.html" class="product-bidding-href"></a>
+      <p class="newpro-bidding-img"></p>
+      <div class="pull-left newpro-bidding-profit">
+        <p class="pull-left font-color">预期年化收益率<span style=" color:#f4950a;"><b>15.00</b>%</span></p>
+        <p class="pull-left font-color">投资期限<span style=" color:#727171;"><b>15</b>天</span></p>
+      </div>
+      <div class="pull-left newpro-bidding-btn text-center" style=" border-right:none;">
+        <p><a href="#" class="btn-color btn-color1 border-radius">立即认购</a></p>
+        <p class="font-color product-bidding-explain">限投：10,000元</p>
+      </div>
+     </div>
+     <div class="index-video border-radius pull-right text-center">
+       <a href="#"><img src="images/index/video.jpg" /></a>
+     </div>
+    </div>
+    <div class="index-fixed">
+      <h2 class="title">
+        <p><b class="pull-left">计划宝—分散投资工具</b><span class="line"></span><strong>自动分配标的 灵活投资 理财更省心 </strong></p>
+      </h2>
+      <!--<div class="invest-fixed-bidding">
+        <div class="invest-plan-product clearfix">
+          <div class="inpl-product-a border-radius pull-left" style=" margin-left:0;">
+            <h1 class="gradient-orange">A计划<p><b>旧版专享</b></p></h1>
+            <div class="inpl-produc-bidding">
+              <div class="inpl-produc-bidding1">
+                 <ol class=" list-unstyled clearfix">
+                   <li class="pull-left text-center" style=" border-left:none;">
+                     <p style=" color:#f69503;"><span>9.00</span>%</p>
+                     <p class=" font-color">预期年化收益率</p>
+                   </li>
+                   <li class="pull-left text-center">
+                     <p style=" color:#727171;"><span>3</span>个月</p>
+                     <p class=" font-color">投资期限</p>
+                   </li>
+                 </ol>
+              </div>
+              <div class="inpl-produc-bidding2 text-center">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:70%;"></div>
+                </div>
+                <p class="font-color">进度 70%</p>
+              </div>
+              <div class="inpl-produc-bidding3 text-center">
+                <p><a href="#" class="btn-color btn-color1 border-radius">立即认购</a></p>
+                <p class="font-color">到期一次性还本付息</p>
+              </div>
+            </div>
+          </div>
+          <div class="inpl-product-b border-radius pull-left">
+            <h1 class="gradient-pink">B计划<p><b>旧版专享</b></p></h1>
+            <div class="inpl-produc-bidding">
+              <div class="inpl-produc-bidding1">
+                 <ol class=" list-unstyled clearfix">
+                   <li class="pull-left text-center" style=" border-left:none;">
+                     <p style=" color:#f69503;"><span>9</span>%</p>
+                     <p class=" font-color">预期年化收益率</p>
+                   </li>
+                   <li class="pull-left text-center">
+                     <p style=" color:#727171;"><span>3</span>个月</p>
+                     <p class=" font-color">投资期限</p>
+                   </li>
+                 </ol>
+              </div>
+              <div class="inpl-produc-bidding2 text-center">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:70%;"></div>
+                </div>
+                <p class="font-color">进度 70%</p>
+              </div>
+              <div class="inpl-produc-bidding3 text-center">
+                <p><a href="#" class="btn-color btn-color1 border-radius">立即认购</a></p>
+                <p class="font-color">到期一次性还本付息</p>
+              </div>
+            </div>
+          </div>
+          <div class="inpl-product-c border-radius pull-left">
+            <h1 class="gradient-green">C计划<p><b>旧版专享</b></p></h1>
+            <div class="inpl-produc-bidding">
+              <div class="inpl-produc-bidding1">
+                 <ol class=" list-unstyled clearfix">
+                   <li class="pull-left text-center" style=" border-left:none;">
+                     <p style=" color:#f69503;"><span>9</span>%</p>
+                     <p class=" font-color">预期年化收益率</p>
+                   </li>
+                   <li class="pull-left text-center">
+                     <p style=" color:#727171;"><span>3</span>个月</p>
+                     <p class=" font-color">投资期限</p>
+                   </li>
+                 </ol>
+              </div>
+              <div class="inpl-produc-bidding2 text-center">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:70%;"></div>
+                </div>
+                <p class="font-color">进度 70%</p>
+              </div>
+              <div class="inpl-produc-bidding3 text-center">
+                <p><a href="#" class="btn-color btn-color1 border-radius">立即认购</a></p>
+                <p class="font-color">到期一次性还本付息</p>
+              </div>
+            </div>
+          </div>
+          <div class="inpl-product-d border-radius pull-left">
+            <h1 class="gradient-blue">D计划<p><b>旧版专享</b></p></h1>
+            <div class="inpl-produc-bidding">
+              <div class="inpl-produc-bidding1">
+                 <ol class=" list-unstyled clearfix">
+                   <li class="pull-left text-center" style=" border-left:none;">
+                     <p style=" color:#f69503;"><span>9</span>%</p>
+                     <p class=" font-color">预期年化收益率</p>
+                   </li>
+                   <li class="pull-left text-center">
+                     <p style=" color:#727171;"><span>3</span>个月</p>
+                     <p class=" font-color">投资期限</p>
+                   </li>
+                 </ol>
+              </div>
+              <div class="inpl-produc-bidding2 text-center">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:70%;"></div>
+                </div>
+                <p class="font-color">进度 70%</p>
+              </div>
+              <div class="inpl-produc-bidding3 text-center">
+                <p><a href="#" class="btn-color btn-color3 border-radius">还款中</a></p>
+                <p class="font-color">到期一次性还本付息</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <div class="index-plan-tool border-radius clearfix">
+        <div class="index-plto-left text-center pull-left">
+          <p class="icon"></p>
+          <p style=" font-size:18px;">计划宝</p>
+          <p style=" font-size:14px; margin-top:5px;">分散投资工具</p>
+          <p class="product-bidding-white"></p>
+        </div>  
+        <div class="index-plto-center pull-left">
+          <p class="pull-left index-plto-rate text-right">预期年化收益率<span>7<b>%</b>～12<b>%</b></span></p>
+          <p class="pull-left index-plto-term text-center">投资期限<span>6~12<b>月</b></span></p>
+        </div> 
+        <div class="index-plto-right pull-left">
+          <a href="#" class="btn-color btn-color1 border-radius">立即加入</a>
+        </div>  
+        <div class="index-plto-bottom text-center">
+          <b class="icon"></b>计划宝为您的资金更安全让您定制分散投资所有的盼贷网标的
+        </div>  
+      </div>
+    </div>
+    <div class="index-scattered">
+      <h2 class="clearfix title">
+        <p class=" pull-left"><b class="pull-left">散标</b><span class="line"></span><strong>100元起投，随时理财随时赚，预期年化收益13.5%</strong></p>
+        <p class="pull-right"><a href="#" class="">查看更多 &gt;&gt;</a></p>
+      </h2>
+      <div id="Panxindeid" class="product-bidding invest-beacon-product clearfix">
+        <div class="product-bidding-left gradient-orange pull-left text-center">
+          <p class="product-bidding-icon"><span class="icon"></span><br />盼信标</p>
+          <p class="product-bidding-white"></p>
+        </div>
+        <div class="product-bidding-right pull-left">
+          <a href="#" class="product-bidding-href"></a>
+          <div class="">
+            <p class="product-bidding-name"><a href="#">扩大种植20160103001</a></p>
+            <div class="product-bidding-details clearfix">
+              <div class=" product-bidding-profit pull-left">
+                <ol class="list-unstyled">
+                  <li class="pull-left product-bidding-rate">
+                    <p class="product-bidding-rate1"><span><b>13.5</b>%</span></p>
+                    <p class="font-color product-bidding-explain">预期年化收益率</p>
+                  </li>
+                  <li class="pull-left product-bidding-term">
+                    <p class="product-bidding-term1"><span><b>6</b>个月</span></p>
+                    <p class="font-color product-bidding-explain">投资期限</p>
+                  </li>
+                  <li class="pull-left product-bidding-money">
+                    <p class="product-bidding-money1"><span><b>150,000</b>元</span></p>
+                    <p class="font-color product-bidding-explain">借款金额</p>
+                  </li>
+                </ol>
+              </div>
+              <div class="product-bidding-progress text-center pull-left">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:70%;"></div>
+                </div>
+                <p class="font-color progress-bar-number">进度 70%</p>
+              </div>
+              <div class="product-bidding-btn text-center pull-left">
+                <p><a href="#" class="btn-color btn-color1 border-radius">立即认购</a></p>
+                <p class="font-color product-bidding-explain">限投：10,000元</p>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <div class="product-bidding invest-move-product clearfix">
+        <div class="product-bidding-left gradient-red pull-left text-center">
+          <p class="product-bidding-icon"><span class="icon"></span><br />转让标</p>
+          <p class="product-bidding-white"></p>
+         </div>
+        <div class="product-bidding-right pull-left">
+          <a href="#" class="product-bidding-href"></a>
+          <div class="">
+            <p class="product-bidding-name"><a href="#">扩大种植20160103001</a></p>
+            <div class="product-bidding-details clearfix">
+              <div class=" product-bidding-profit pull-left">
+                <ol class="list-unstyled">
+                  <li class="pull-left product-bidding-rate">
+                    <p class="product-bidding-rate1"><span><b>13.5</b>%</span></p>
+                    <p class="font-color product-bidding-explain">预期年化收益率</p>
+                  </li>
+                  <li class="pull-left product-bidding-term">
+                    <p class="product-bidding-term1"><span><b>6</b>个月</span></p>
+                    <p class="font-color product-bidding-explain">投资期限</p>
+                  </li>
+                  <li class="pull-left product-bidding-money">
+                    <p class="product-bidding-money1"><span><b>15,000.00</b>元</span></p>
+                    <p class="font-color product-bidding-explain">借款金额</p>
+                  </li>
+                  <li class="pull-left text-center product-bidding-price">
+                    <p class="product-bidding-term1"><span><b>50.05</b>元/份</span></p>
+                    <p class="font-color product-bidding-explain">转出价格</p>
+                  </li>
+                  <li class="pull-left text-center product-bidding-number">
+                    <p class="product-bidding-money1"><span><b>100</b>份</span></p>
+                    <p class="font-color product-bidding-explain">剩余份数</p>
+                  </li>
+                </ol>
+              </div>
+              <div class="product-bidding-btn text-center pull-left">
+                <p><a href="#" class="btn-color btn-color1 border-radius">立即认购</a></p>
+                <p class="font-color product-bidding-explain">限投：10,000元</p>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <p class="invest-move-prompt"><b>旧版专享</b></p>
+      </div>
+      <div class="product-bidding invest-trade-product clearfix">
+        <div class="product-bidding-left gradient-blue pull-left text-center">
+          <p class="product-bidding-icon"><span class="icon"></span><br />交易所标</p>
+          <p class="product-bidding-white"></p>
+         </div>
+        <div class="product-bidding-right pull-left">
+          <a href="#" class="product-bidding-href"></a>
+          <div class="">
+            <p class="product-bidding-name"><a href="#">扩大种植20160103001</a></p>
+            <div class="product-bidding-details clearfix">
+              <div class=" product-bidding-profit pull-left">
+                <ol class="list-unstyled">
+                  <li class="pull-left product-bidding-rate">
+                    <p class="product-bidding-rate1"><span><b>13.5</b>%</span></p>
+                    <p class="font-color product-bidding-explain">预期年化收益率</p>
+                  </li>
+                  <li class="pull-left product-bidding-term">
+                    <p class="product-bidding-term1"><span><b>6</b>个月</span></p>
+                    <p class="font-color product-bidding-explain">投资期限</p>
+                  </li>
+                  <li class="pull-left product-bidding-money">
+                    <p class="product-bidding-money1"><span><b>150,000</b>元</span></p>
+                    <p class="font-color product-bidding-explain">借款金额</p>
+                  </li>
+                </ol>
+              </div>
+              <div class="product-bidding-progress text-center pull-left">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:70%;"></div>
+                </div>
+                <p class="font-color progress-bar-number">进度 70%</p>
+              </div>
+              <div class="product-bidding-btn text-center pull-left">
+                <p><a href="#" class="btn-color btn-color1 border-radius">立即认购</a></p>
+                <p class="font-color product-bidding-explain">限投：10,000元</p>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <div class="index-news clearfix">
+      <div class="index-news-left border-radius pull-left">
+        <p class="index-news-head"><a href="###" class="hover">最新活动·公告</a><a href="###">媒体报道</a></p>
+        <div class="index-news-main">
+         <div class="index-news-notice" style=" display:block">
+          <dl class="list-unstyled clearfix">
+            <dt class=" pull-left"><img src="images/index/news.jpg" /></dt>
+            <dd class=" pull-right">
+              <p class="index-news-title">一大波超值奖励正在靠近，是时候任性一把啦~~</p>
+              <p class="index-news-details"><a href="#">夏日炎炎，七月流火，蝉鸣声声，奈何骄阳，炙热了皮肤，红通了脸，骄躁了心情！...</a></p>
+            </dd>
+          </dl>
+          <ol class="list-unstyled clearfix">
+            <li class="clearfix"><a href="#"><span class="pull-left"><b></b>5年砺剑厚积薄发，盼贷网迎A轮融资...</span><span class="pull-right">2016-03-02</span></a></li>
+            <li class="clearfix"><a href="#"><span class="pull-left"><b></b>前25名老用户投资10万以上,送iPad...</span><span class="pull-right">2016-03-02</span></a></li>
+            <li class="clearfix"><a href="#"><span class="pull-left"><b></b>盼贷网霍中皓：P2P引入保险机制势...</span><span class="pull-right">2016-03-02</span></a></li>
+          </ol>
+          <p class="index-news-more text-right"><a href="#">更多>></a></p>
+         </div>
+         <div class="index-media-coverage">
+          <dl class="list-unstyled clearfix">
+            <dt class=" pull-left"><img src="images/index/news2.jpg" /></dt>
+            <dd class=" pull-right">
+              <p class="index-news-title">盼贷网霍中皓：P2P引入保险机制势在必行</p>
+              <p class="index-news-details"><a href="#">火爆的P2P行业在今年丝毫没有热情褪减的数据显示，截至2014年6月，我国P2P平台总数已经接近1200家...</a></p>
+            </dd>
+          </dl>
+          <ol class="list-unstyled clearfix">
+            <li class="clearfix"><a href="#"><span class="pull-left"><b></b>分析：人人贷，人人爱...</span><span class="pull-right">2016-03-02</span></a></li>
+            <li class="clearfix"><a href="#"><span class="pull-left"><b></b>P2P引入保险的三类探索...</span><span class="pull-right">2016-03-02</span></a></li>
+            <li class="clearfix"><a href="#"><span class="pull-left"><b></b>盼贷网霍中皓：P2P引入保险机制势...</span><span class="pull-right">2016-03-02</span></a></li>
+          </ol>
+          <p class="index-news-more text-right"><a href="#">更多>></a></p>
+         </div>
+        </div>
+      </div>
+      <div class="index-news-right border-radius pull-right">
+        <p class="index-news-head"><a href="###">行业动态</a></p>
+        <div class="index-news-main">
+          <ol class="list-unstyled clearfix">
+            <li class="clearfix"><a href="#"><span class="pull-left"><b></b>分析：人人贷，人人爱...</span><span class="pull-right">2016-03-02</span></a></li>
+            <li class="clearfix"><a href="#"><span class="pull-left"><b></b>P2P引入保险的三类探索...</span><span class="pull-right">2016-03-02</span></a></li>
+            <li class="clearfix"><a href="#"><span class="pull-left"><b></b>盼贷网霍中皓：P2P引入保险机制势...</span><span class="pull-right">2016-03-02</span></a></li>
+            <li class="clearfix"><a href="#"><span class="pull-left"><b></b>分析：人人贷，人人爱...</span><span class="pull-right">2016-03-02</span></a></li>
+            <li class="clearfix"><a href="#"><span class="pull-left"><b></b>P2P引入保险的三类探索...</span><span class="pull-right">2016-03-02</span></a></li>
+            <li class="clearfix"><a href="#"><span class="pull-left"><b></b>盼贷网霍中皓：P2P引入保险机制势...</span><span class="pull-right">2016-03-02</span></a></li>
+          </ol>
+          <p class="index-news-more text-right"><a href="#">更多>></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="index-partner">
+      <h3 class="title">合作伙伴</h3>
+      <div class="index-partner-bg border-radius">
+        <div class="index-partner-center">
+          <div class="index-partner-profile clearfix">
+            <div class="pull-left" style=" margin-left:0;">
+              <p class="text-center inpar-profile-main1"><img src="images/index/partner.jpg" /></p>
+              <p class="inpar-profile-main2">1997年成立，总部设立在英国，净资产收益率ROE超过 20%。LFS是一家从事金融服务行业且合法获得多个国家经营许可资质的跨国企业集团。</p>
+            </div>
+            <div class="pull-left">
+              <p class="text-center inpar-profile-main1"><img src="images/index/partner2.jpg" /></p>
+              <p class="inpar-profile-main2">普惠金融交易中心发起人股东中国供销集团是中华全国供销合作总社的全资企业，长期主体信用等级为3A级,我国“三农”领域中流砥柱的现代流通产业集团。</p>
+            </div>
+            <div class="pull-left">
+              <p class="text-center inpar-profile-main1"><img src="images/index/partner3.jpg" /></p>
+              <p class="inpar-profile-main2">美国中经合集团是跨区域风险投资界的先锋，近二十年来，中经合已经投资了超过300家富有远见的早期创业公司，并且已有80多家企业通过上市或者并购成功退出。</p>
+            </div>
+            <div class="pull-left">
+              <p class="text-center inpar-profile-main1"><img src="images/index/partner4.jpg" /></p>
+              <p class="inpar-profile-main2">2009年在北京成立的全国性、综合性保险经纪公司。在全国有超过300家合作维修服务网点，累计服务客户超过百万。</p>
+            </div>
+          </div>
+          <div class="index-partner-img">
+            <div class='silder-box silder-box-1'>
+		      <div class='silder'>
+			    <ul class="list-unstyled">
+			  	  <li>
+					<a href="#"><img src="images/index/partner4.jpg" /></a>
+				  </li>
+				  <li>
+					<a href="#"><img src="images/index/partner5.jpg" /></a>
+				  </li>
+				  <li>
+					<a href="#"><img src="images/index/partner6.jpg" /></a>
+				  </li>
+				  <li>
+					<a href="#"><img src="images/index/partner7.jpg" /></a>
+				  </li>
+				  <li>
+					<a href="#"><img src="images/index/partner8.jpg" /></a>
+				  </li>
+			    </ul>
+		      </div>
+		      <div class='silder-button btl'></div>
+		      <div class='silder-button btr'></div>
+	        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer-main1">
+    <div class="main clearfix">
+      <div class="footer-main1-left pull-left">
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作伙伴</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ol>
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">招贤纳士</a></li>
+        </ol>
+      </div>
+      <div class="pull-left"><span class="line"></span></div>
+      <div class="footer-main1-middle pull-left">
+          <dl class=" list-unstyled">
+            <dt class=" pull-left" style=" font-size:18px;">服务热线：</dt>
+            <dd class=" pull-left">
+              <p style=" font-size:38px; font-weight:600; margin-top:-10px;">400-016-1131</p>
+              <p>工作时间：周一至周五9:00-18:00</p>
+            </dd>
+          </dl>
+        </div>
+      <div class="pull-left"><span class="line"></span></div>
+      <div class="footer-main1-right pull-right">
+        <p class=" text-center pull-left">
+          盼贷微信服务号<br /><img src="images/common/footer1.jpg" />
+        </p>
+        <p class=" text-center pull-left" style=" margin-right:0;">
+          盼贷APP下载<br /><img src="images/common/footer2.jpg" />
+        </p>
+      </div>
+    </div>
+    <div class="main footer-main1-href clearfix">
+       <p class="pull-left">友情链接：</p>
+       <p class="pull-left" style=" width:990px;"><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a><a href="#">人人贷</a></p>
+    </div>
+  </div>
+  <div class="footer-main2">
+    <div class="main text-center">
+      <p><img src="images/common/footer3.jpg" /><img src="images/common/footer4.jpg" /><img src="images/common/footer5.jpg" /><img src="images/common/footer6.jpg" /><img src="images/common/footer7.jpg" /></p>
+      <p>© 2012-2017 北京盼大世纪信息技术有限公司 All rights reserved | 京ICP备15042613号 | 免责条款</p>
+    </div>
+  </div>
+</div>
+<div class="position-window">
+  <ol class="list-unstyled">
+    <li href="#" class="weixin-icon icon">
+      <div class="">
+        <p class="text-center position-window-popup border-radius"><img src="images/common/footer1.jpg" /></p>
+        <p class="position-window-arrow">
+          <b class="icon"></b>
+        </p>
+      </div>
+    </li>
+    <li href="#" class="app-icon icon">
+      <div class="">
+        <p class="text-center position-window-popup border-radius"><img src="images/common/footer2.jpg" /></p>
+        <p class="position-window-arrow">
+          <b class="icon"></b>
+        </p>
+      </div>
+    </li>
+    <li href="#" class="qq-icon icon">
+      <div class="">
+        <p class="position-window-popup border-radius">
+          <a href="#" class="text-center border-radius">客服QQ1：1524735938</a>
+          <a href="#" class="text-center border-radius">客服QQ2：1962765921</a>
+        </p>
+        <p class="position-window-arrow">
+           <b class="icon"></b>
+        </p>
+      </div>
+    </li>
+    <li href="#" class="return-icon icon" style=" display:none;"></li>
+  </ol>
+</div>
+<div class="transparent-back"></div>
+<div class="new-explain-popup" style=" display:none;">
+  <div class="neex-popup-main">
+   <p class="neex-popup-img"><img src="images/index/popup2.png" /></p>
+   <p class="neex-popup-close"><img src="images/index/popup3.png" /></p>
+   <div class="neex-popup-explain text-center">
+     <h1>尊敬的盼贷网客户您好！</h1>
+     <p class="neex-popup-explain1">为广大投资者提供更优质、高效的服务，<br />盼贷网新网站将于<b>2016年8月</b>份正式上线。</p>
+     <h2><b>【新版更新说明】</b></h2>
+     <ol class="list-unstyled">
+       <li>
+         <p class="neex-popup-number">1</p>
+         <p>盼贷品牌升级，网站<b>全新改版。</b><br /><b>第三方资金托管</b>联动优势正式上线。</p>
+       </li>
+       <li>
+         <p class="neex-popup-number">2</p>
+         <p>新老版网站届时 <b>并存一段时间</b>，老用户已购买的产<br />品和账户信息只能在老版网站<b>显示</b>及<b>提现</b>。</p>
+       </li>
+       <li style=" height:70px;">
+         <p class="neex-popup-number" style=" top:20px;">3</p>
+         <p>新老用户需通过盼贷<b>新版官网（PC端）活动专属链接</b>，<br />重新注册、认证、绑卡、投资盼贷<b>【交易所标】</b>和<br /><b>【盼信标】</b>，即可参与“肆意狂欢 盼贷生日趴”活动。</p>
+       </li>
+     </ol>
+     <p class="neex-popup-explain2">盼贷在此感谢您的支持与信任！</p>
+     <p class="neex-popup-explain3">盼贷网团队<br />2016年8月</p>
+   </div>
+  </div>
+</div>
+<div class="invest-exclusive">
+   <div class="transparent-back"></div>
+   <div class="invest-exclusive-popup invest-plan-popup">
+    <div class="exclusive-popup-main">
+      <p class="exclusive-popup-img"></p>
+      <p class="exclusive-popup-close"></p>
+      <div class="exclusive-popup-product">
+        <p class="exclusive-popup-icon"></p>
+        <p class="exclusive-popup-title text-center" ><b class="icon"></b> 计划宝 <b class="icon"></b></p>
+        <div class="exclusive-popup-profit">
+          <div class="">
+            <ol class="list-unstyled pull-left">
+              <li>最高</li>
+              <li>年化</li>
+              <li>收益</li>
+            </ol>
+            <p class="pull-left text-center">12%</p>
+          </div>
+        </div>
+        <p class="exclusive-popup-time text-center">1000元起投 | 定期理财30天起</p>
+        <p class="exclusive-popup-btn"><a href="#">登录旧版网站认购</a></p>
+      </div>
+     </div>
+   </div>
+   <div class="invest-exclusive-popup invest-move-popup">
+	 <div class="exclusive-popup-main">
+      <p class="exclusive-popup-img"></p>
+      <p class="exclusive-popup-close"></p>
+      <div class="exclusive-popup-product">
+        <p class="exclusive-popup-icon"></p>
+        <p class="exclusive-popup-title text-center" ><b class="icon"></b> 转让标 <b class="icon"></b></p>
+        <div class="exclusive-popup-profit">
+          <div class="">
+            <ol class="list-unstyled pull-left">
+              <li>最高</li>
+              <li>年化</li>
+              <li>收益</li>
+            </ol>
+            <p class="pull-left text-center">13.5%</p>
+          </div>
+        </div>
+        <p class="exclusive-popup-time text-center">100元起投 | 灵活理财 | 期限自由</p>
+        <p class="exclusive-popup-btn"><a href="#">登录旧版网站认购</a></p>
+      </div>
+     </div>
+   </div>
+</div>
+<div class="index-video-popup" style=" display:none;">
+ <div class="video-popup-main">
+  <p class="video-popup-close bg-icon"></p>
+  <video width="900" height="506" controls>
+     <source src="video/video.mp4" type="video/mp4" />
+  </video>
+ </div>
+</div>
+<script>
+$(function(){
+	$('.flexslider').flexslider({
+		directionNav: true,
+		pauseOnAction: false
+	});
+});
+</script>
+</body>
+</html>

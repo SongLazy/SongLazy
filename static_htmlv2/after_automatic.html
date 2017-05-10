@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+ <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+ <meta name="renderer" content="webkit|ie-comp|ie-stand">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>自动再投资</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" /> 
+<link href="css/common.css" rel="stylesheet" type="text/css" /> 
+<link href="css/after_login.css" rel="stylesheet" type="text/css" /> 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>   
+<script src="js/jq.js"></script>
+<script src="js/after_jq.js"></script>
+<script src="js/jquery.validate.js"></script>
+ <!-- 
+
+		如果是IE9以下版本，添加Response.js 支持 HTML5元素和media查询
+
+	 -->
+    <!--[if lt IE 9]>
+
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+
+<body>
+<div class="header">
+  <div class="header-main1 clearfix">
+    <div class="main clearfix">
+      <ol class="header-main1-left list-unstyled pull-left">
+        <li><a href="#"><span class="icon-app icon"></span>盼贷APP</a></li>
+        <li><a href="#"><span class="icon-follow icon"></span>关注盼贷</a></li>
+       <li><a href="#"><span class="icon-telephone icon"></span>服务热线：400-016-1131</a></li>
+      </ol>
+      <ol class="header-main1-right list-unstyled pull-right">
+        <li><a href="#">新手入门</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">现金券</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#"><span class="icon-account icon hover"></span>我的账户<b class="icon icon-arrow"></b></a></li>
+        <li><span class="line"></span></li>
+        <li class="return-old"><a href="#">返回旧版网站</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="header-main2">
+    <div class="main clearfix">
+      <p class="header-main2-logo pull-left"><img src="images/common/logo.png" /></p>
+      <ol class="header-main2-nav list-unstyled pull-right">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="invest_fixed.html">理财</a></li>
+        <li><a href="safe.html">安全保障</a></li>
+        <li><a href="#">活动专区</a></li>
+        <li><a href="about_introduction.html">关于我们</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div class="after-login after-automatic clearfix">
+   <div class="after-login-left pull-left">
+      <div class="aflo-left-main1">
+          <p class="left-mian1-face"><img src="images/after-login/after-left1.png" /></p>
+          <p class="left-mian1-phone">1300****299，下午好!</p>
+          <p class="left-mian1-icon">
+            <a href="#" title="实名认证：未认证" class="left-mian1-icon1 active"><b></b>已认证</a>
+            <a href="#" title="绑定手机：未绑定" class="left-mian1-icon2"><b></b>未绑定</a>
+            <a href="#" title="绑定邮箱：未绑定" class="left-mian1-icon3"><b></b>未绑定</a>
+            <a href="#" title="银行卡：未绑定" class="left-mian1-icon4"><b></b>未绑定</a>
+          </p>
+      </div>
+      <div class="aflo-left-main2">
+        <dl>
+          <dt>我的账户</dt>
+          <dd><a href="after_account.html"><b class="account-one"></b>账户总览</a></dd>
+          <dd><a href="after_info.html"><b class="account-two"></b>基本信息</a></dd>
+          <dt>我的交易</dt>
+          <dd class="hover"><a href="after_automatic.html"><b class="trade-one"></b>自动再投资</a></dd>
+          <dd><a href="after_transfer.html"><b class="trade-two"></b>债权转让</a></dd>
+          <dd><a href="after_treasure.html"><b class="trade-three"></b>盼贷宝</a></dd>
+          <dd><a href="after_invest.html"><b class="trade-four"></b>投资状况</a></dd>
+          <dd><a href="after_trade.html"><b class="trade-five"></b>交易记录</a></dd>
+          <dt>资金管理</dt>
+          <dd><a href="after_bank.html"><b class="money-one"></b>银行卡管理</a></dd>
+          <dd><a href="after_pay.html"><b class="money-two"></b>充值</a></dd>
+          <dd><a href="after_withdraw.html"><b class="money-three"></b>提现</a></dd>
+          <dt>活动中心</dt>
+          <dd><a href="invite_friends.html"><b class="active-one"></b>邀请返利</a></dd>
+          <dd><a href="after_award.html"><b class="active-two"></b>抽奖中心</a></dd>
+          <dd><a href="cash_coupon.html"><b class="active-three"></b>我的现金券</a></dd>
+        </dl> 
+      </div>
+   </div>
+   <div class="after-login-rightbk  pull-right">
+    <div class="after-login-right after-automatic-right">
+      <div class="after-automatic-cen">
+         <h1>自动再投资</h1>
+         <div class="after-automatic-cen1">
+          <div class="afau-cen1-main">
+            <div class="afau-cen1-radiosub clearfix">
+              <b class="pull-left">开 关</b>
+              <div class="radioSub radioSub_on pull-left">
+                <input type="checkbox" class="radio" checked>
+                <span class="spanView on_left">开</span>
+                <span class="spanView off_right">关</span>
+                <span class="cicle_btn"></span>
+              </div>
+            </div>
+            <form id="after-automatic-form">
+              <div class="after-automatic-form">
+                 <p><span>免密投标</span><span>未开通</span><a href="#" class="btn-color" style=" width:80px; display:inline-block">去开通</a></p>
+                 <p style=" display:none"><span>免密投标</span><span>已开通</span><a href="#" class="btn-color" style=" width:80px; display:inline-block">解除免密</a></p>
+                 <p><span class="pull-left" style=" line-height:30px;"><strong>*</strong>验证码</span><b><img src="images/after-login/after_automatic.jpg" class="verification-img" /><a href="#" style=" color:#eb5555;">看不清，换一张</a></b><input type="text" class="form-control" id="verification" name="verification" /></p>
+                 <p><strong>*</strong><input  type="radio" id="agreeradio" name="agreeradio" class="{required:true}" checked /> 我已看过并同意《自动再投协议》</p>
+                 <p><input type="submit" class="form-control submit automatic-btn btn-color2" value="确定" /></p>
+              </div>
+            </form>
+          </div>
+         </div>
+         <div class="after-automatic-cen2">
+            <h2>自动再投资规则:</h2>
+            <p>1.盼贷会自动委托出借得到本息到平台上的借款人或者排队；<br/>2.您可以随时关掉或者打开自动再投资；<br/>3.自动再投资会投资借款人的期限最长24个月；<br/>4.默认的再投资的期限是一年，然后自动停止，您可以随时打开；<br/>5.如果您充值或者卖债权，自动再投资会关掉。</p>
+         </div>
+      </div>
+   </div>
+   </div>
+</div>
+
+<div class="footer">
+  <div class="footer-main1">
+    <div class="main clearfix">
+      <div class="footer-main1-left pull-left">
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作伙伴</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ol>
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">招贤纳士</a></li>
+        </ol>
+      </div>
+      <div class="pull-left"><span class="line"></span></div>
+        <div class="footer-main1-middle pull-left">
+          <dl class=" list-unstyled">
+            <dt class=" pull-left" style=" font-size:18px;">服务热线：</dt>
+            <dd class=" pull-left">
+              <p style=" font-size:38px; font-weight:600; margin-top:-10px;">400-016-1131</p>
+              <p>工作时间：周一至周五9:00-18:00</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="pull-left"><span class="line"></span></div>
+          <div class="footer-main1-right pull-right">
+            <p class=" text-center pull-left">
+              盼贷微信服务号<br /><img src="images/common/footer1.jpg" />
+            </p>
+            <p class=" text-center pull-left" style=" margin-right:0;">
+              盼贷APP下载<br /><img src="images/common/footer2.jpg" />
+            </p>
+          </div>
+        </div>
+  </div>
+  <div class="footer-main2">
+    <div class="main text-center">
+      <p><img src="images/common/footer3.jpg" /><img src="images/common/footer4.jpg" /><img src="images/common/footer5.jpg" /><img src="images/common/footer6.jpg" /><img src="images/common/footer7.jpg" /></p>
+      <p>© 2012-2017 北京盼大世纪信息技术有限公司 All rights reserved | 京ICP备15042613号 | 免责条款</p>
+    </div>
+  </div>
+</div>
+
+<div class="transparent-back" style=" display:block"></div>
+<div class="after-automatic-popup">
+   <p class="afau-popup-cen1 small-icon"><b class="afau-popup-open"></b></p>
+   <p class="afau-popup-cen2">自动再投资已开启</p>
+   <p class="afau-popup-cen3"><a href="#" class="btn-color btn-color2 border-radius">确定</a></p>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    $("#after-automatic-form").validate({
+        rules: {
+           verification: "required",
+        },
+        messages: {
+		   verification: "请输入验证码"
+        }
+    });
+	 
+});
+
+</script>
+</body>
+</html>

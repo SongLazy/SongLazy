@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+*{ padding:0; margin:0;}
+.about-us-header .about-us-banner img{ width:100%; max-height:349px; } 
+.introduction-banner img, .story-banner img{ width:100%; max-height:420px;}
+.introduction-main2 p, .story-main2 p{ margin-top:20px; color:#727171; font-size:14px; line-height:1.8em;}
+.team-main .team-main-data{ padding-top:20px; padding-bottom:20px;}
+.team-main .team-main-data.odd{ background:#fff;}
+.team-main .team-main-data dl dt{ float:left; width:30%;}
+.team-main .team-main-data dl dt img{ max-width:192px; max-height:190px; width:87%;}
+.team-main .team-main-data dl dd{ float:right; width:68%;}
+.team-main .team-main-data dl dd .team-data-name{ font-size:15px;}
+.team-main .team-main-data dl dd .team-data-introduce, .team-main .team-main-data .team-data-introduce2{ font-size:14px;line-height: 1.8em; color:#9fa0a0;}
+.team-main .team-main-data .team-data-arrow{ margin-top:10px; background:url(../images/about/arrow2.png) no-repeat right; float:right; width:34px; height:19px; background-size:75%;}
+.team-main .team-main-data .team-data-introduce2{ display:none;}
+.team-main .team-main-data .team-data-arrow.hover{background:url(../images/about/arrow.png) no-repeat right; background-size:75%;}
+.notice-list-main .list-common .list-left{width:80%; }
+.notice-list-main .list-common .list-left .notice-list-word{ font-size:15px;color: #595757; margin-bottom:8px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.notice-list-main .list-common .list-left .notice-list-time{ font-size:13px;color: #898989;}
+.notice-list-main .list-common .list-left .notice-list-word .notice-list-icon{ display:inline-block; background:url(../images/index/notice.png) no-repeat;width: 24px;height: 20px; background-size:90%;vertical-align: middle;}
+.notice-list-main .list-common .list-right b.icon{ margin-top:13px;}
+.notice-list-main .list-common li{ border-bottom:none;}
+@media screen and (max-width:360px){
+  .team-main .team-main-data dl dd .team-data-name{ font-size:12px;}
+  .team-main .team-main-data dl dd .team-data-introduce, .team-main .team-main-data .team-data-introduce2{ font-size:12px;}
+}
+
+
+
+
+
+

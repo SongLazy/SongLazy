@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+ <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+ <meta name="renderer" content="webkit|ie-comp|ie-stand">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>账户总览</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" /> 
+<link href="css/common.css" rel="stylesheet" type="text/css" /> 
+<link href="css/invest.css" rel="stylesheet" type="text/css" />
+<link href="css/after_login.css" rel="stylesheet" type="text/css" /> 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>   
+<script src="js/jq.js"></script>
+<script src="js/after_jq.js"></script>
+
+ <!-- 
+
+		如果是IE9以下版本，添加Response.js 支持 HTML5元素和media查询
+
+	 -->
+    <!--[if lt IE 9]>
+
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+
+<body>
+<div class="header">
+  <div class="header-main1 clearfix">
+    <div class="main clearfix">
+      <ol class="header-main1-left list-unstyled pull-left">
+        <li><a href="#"><span class="icon-app icon"></span>盼贷APP</a></li>
+        <li><a href="#"><span class="icon-follow icon"></span>关注盼贷</a></li>
+       <li><a href="#"><span class="icon-telephone icon"></span>服务热线：400-016-1131</a></li>
+      </ol>
+      <ol class="header-main1-right list-unstyled pull-right">
+        <li><a href="#">新手入门</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">现金券</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="after_account.html"><span class="icon-account icon hover"></span>我的账户<b class="icon icon-arrow"></b></a></li>
+        <li><span class="line"></span></li>
+        <li class="return-old"><a href="#">返回旧版网站</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="header-main2">
+    <div class="main clearfix">
+      <p class="header-main2-logo pull-left"><img src="images/common/logo.png" /></p>
+      <ol class="header-main2-nav list-unstyled pull-right">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="invest_fixed.html">理财</a></li>
+        <li><a href="safe.html">安全保障</a></li>
+        <li><a href="#">活动专区</a></li>
+        <li><a href="about_introduction.html">关于我们</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div class="after-login after-account clearfix">
+   <div class="after-login-left pull-left">
+      <div class="aflo-left-main1">
+          <p class="left-mian1-face"><img src="images/after-login/after-left1.png" /></p>
+          <p class="left-mian1-phone">1300****299，下午好!</p>
+          <p class="left-mian1-icon">
+            <a href="#" title="实名认证：未认证" class="left-mian1-icon1 active"><b></b>已认证</a>
+            <a href="#" title="绑定手机：未绑定" class="left-mian1-icon2"><b></b>未绑定</a>
+            <a href="#" title="绑定邮箱：未绑定" class="left-mian1-icon3"><b></b>未绑定</a>
+            <a href="#" title="银行卡：未绑定" class="left-mian1-icon4"><b></b>未绑定</a>
+          </p>
+      </div>
+      <div class="aflo-left-main2">
+        <dl>
+          <dt>我的账户</dt>
+          <dd class="hover"><a href="after_account.html"><b class="account-one"></b>账户总览</a></dd>
+          <dd><a href="after_info.html"><b class="account-two"></b>基本信息</a></dd>
+          <dt>我的交易</dt>
+          <dd><a href="after_automatic.html"><b class="trade-one"></b>自动再投资</a></dd>
+          <dd><a href="after_transfer.html"><b class="trade-two"></b>债权转让</a></dd>
+          <dd><a href="after_treasure.html"><b class="trade-three"></b>盼贷宝</a></dd>
+          <dd><a href="after_invest.html"><b class="trade-four"></b>投资状况</a></dd>
+          <dd><a href="after_trade.html"><b class="trade-five"></b>交易记录</a></dd>
+          <dt>资金管理</dt>
+          <dd><a href="after_bank.html"><b class="money-one"></b>银行卡管理</a></dd>
+          <dd><a href="after_pay.html"><b class="money-two"></b>充值</a></dd>
+          <dd><a href="after_withdraw.html"><b class="money-three"></b>提现</a></dd>
+          <dt>活动中心</dt>
+          <dd><a href="invite_friends.html"><b class="active-one"></b>邀请返利</a></dd>
+          <dd><a href="after_award.html"><b class="active-two"></b>抽奖中心</a></dd>
+          <dd><a href="cash_coupon.html"><b class="active-three"></b>我的现金券</a></dd>
+        </dl> 
+      </div>
+   </div>
+   <div class="after-login-rightbk  pull-right">
+    <div class="after-login-right after-account-right">
+      <div class="after-account-main1">
+         <ol class="afac-main1-cen1 list-unstyled clearfix">
+           <li style=" line-height:30px;"><span>账户余额</span><br /><b style=" margin-left:0;">0.00<strong>元</strong></b></li>
+           <li><span>平均收益率</span><b>11.38%</b></li>
+           <li style=" line-height:0">
+             <div class=" clearfix" style=" margin-top:23px;">
+              <span>免密投资</span>
+              <div class="radioSub radioSub_on">
+                <input type="checkbox" class="radio" checked>
+                <span class="spanView on_left">开</span>
+                <span class="spanView off_right">关</span>
+                <span class="cicle_btn"></span>
+              </div>
+             </div>
+             <p class="radiosub-prompt clearfix"><b class="bg-icon"></b>开通免密，投资无需密码</p> 
+           </li>
+           <li><a href="after_pay.html" class="btn-color btn-color2 border-radius">充值</a><a href="after_withdraw.html" class="btn-color btn-color4 border-radius">提现</a></li>
+         </ol> 
+         <div class="afac-main1-cen2">
+            <p><span>总充值金额：<b>￥333232</b></span><span>已还本金：<b>￥333232</b></span><span>未还本金：<b>￥333232</b></span><span>未还款笔数：<b>6笔</b></span></p>
+            <p><span>总提现金额：<b>￥7776</b></span><span>已还利息：<b>￥7776</b></span><span>未还利息：<b>￥7776</b></span></p>
+         </div>
+         <div class="afac-main1-cen3">
+           <dl>
+             <dt>帐户总价值<p><span>0.00</span>元</p></dt>
+             <dd class="hover"></dd>
+             <dt>帐户余额<p><span>0.00</span>元</p></dt>
+             <dd></dd>
+             <dt>未还本息<p><span>0.00</span>元</p></dt>
+             <dd></dd>
+             <dt>排队资金<p><span>0.00</span>元</p></dt>
+             <dd></dd>
+             <dt>投标中金额<p><span>0.00</span>元</p></dt>
+           </dl>
+         </div>
+      </div>
+      <div class="after-account-main2 clearfix">
+        <h1>旧版账户</h1>
+        <div class="">
+          <p>帐户总价值<b>0.00 元</b></p>
+          <p>帐户余额<b>0.00 元</b></p>
+          <p>未还本息<b>0.00 元</b></p>
+          <p class="text-center" style=" width:190px; line-height:34px;">登录盼贷旧版网站查看详情</p>
+          <p style=" width:120px;"><a href="#" class="btn-color btn-color2 border-radius">立即登录</a></p>
+        </div>
+      </div>
+      <div class="after-account-main5">
+        <h1><span>近期现金券</span><a href="#">更多现金券>></a></h1>
+        <div class="afac-main5-cen cash-coupon-right">
+          <div class="caco-main1-content">
+           <div class="caco-main1-content1" style=" display:block;">
+             <div class="clearfix">
+               <div class="caco-main1-coupon">
+                 <div class="caco-main1-coupon1">
+                    <p class="caco-main1-img"></p>
+                    <div class="">
+                      <div class=" pull-left caco-main1-prompt">
+                        <p class="caco-main1-prompt1">
+                        使用提示：<br />1. 单笔投资金额大于等于20000元才可使用。<br />2. 仅限对投资期限大于等于90天的产品时使用。
+                        </p>
+                        <p class="caco-main1-prompt2">
+                          有效期：2016.08.15~2016.0821
+                        </p>
+                      </div>
+                      <div class=" pull-left caco-main1-money">
+                        <p class="caco-main1-money1">现金券</p>
+                        <p class="caco-main1-money2"><b>5</b>¥</p>
+                        <p class="caco-main1-money3">（即将过期）</p>
+                      </div>
+                    </div>
+                 </div>
+                 <p class="caco-main1-btn"><a href="#" class="text-center border-radius">立即使用</a></p>
+               </div>
+               <div class="caco-main1-coupon">
+                 <div class="caco-main1-coupon1">
+                    <p class="caco-main1-img"></p>
+                    <div class="">
+                      <div class=" pull-left caco-main1-prompt">
+                        <p class="caco-main1-prompt1">
+                        使用提示：<br />1. 单笔投资金额大于等于20000元才可使用。<br />2. 仅限对投资期限大于等于90天的产品时使用。
+                        </p>
+                        <p class="caco-main1-prompt2">
+                          有效期：2016.08.15~2016.0821
+                        </p>
+                      </div>
+                      <div class=" pull-left caco-main1-money">
+                        <p class="caco-main1-money1">现金券</p>
+                        <p class="caco-main1-money2"><b>8</b>¥</p>
+                        <p class="caco-main1-money3">（即将过期）</p>
+                      </div>
+                    </div>
+                 </div>
+                 <p class="caco-main1-btn"><a href="#" class="text-center border-radius">立即使用</a></p>
+               </div>
+               <div class="caco-main1-coupon">
+                 <div class="caco-main1-coupon1">
+                    <p class="caco-main1-img"></p>
+                    <div class="">
+                      <div class=" pull-left caco-main1-prompt">
+                        <p class="caco-main1-prompt1">
+                        使用提示：<br />1. 单笔投资金额大于等于20000元才可使用。<br />2. 仅限对投资期限大于等于90天的产品时使用。
+                        </p>
+                        <p class="caco-main1-prompt2">
+                          有效期：2016.08.15~2016.0821
+                        </p>
+                      </div>
+                      <div class=" pull-left caco-main1-money">
+                        <p class="caco-main1-money1">现金券</p>
+                        <p class="caco-main1-money2"><b>20</b>¥</p>
+                        <p class="caco-main1-money3">（即将过期）</p>
+                      </div>
+                    </div>
+                 </div>
+                 <p class="caco-main1-btn"><a href="#" class="text-center border-radius">立即使用</a></p>
+               </div>
+               <div class="caco-main1-coupon">
+                 <div class="caco-main1-coupon1">
+                    <p class="caco-main1-img"></p>
+                    <div class="">
+                      <div class=" pull-left caco-main1-prompt">
+                        <p class="caco-main1-prompt1">
+                        使用提示：<br />1. 单笔投资金额大于等于20000元才可使用。<br />2. 仅限对投资期限大于等于90天的产品时使用。
+                        </p>
+                        <p class="caco-main1-prompt2">
+                          有效期：2016.08.15~2016.0821
+                        </p>
+                      </div>
+                      <div class=" pull-left caco-main1-money">
+                        <p class="caco-main1-money1">现金券</p>
+                        <p class="caco-main1-money2"><b>50</b>¥</p>
+                        <p class="caco-main1-money3">（即将过期）</p>
+                      </div>
+                    </div>
+                 </div>
+                 <p class="caco-main1-btn"><a href="#" class="text-center border-radius">立即使用</a></p>
+               </div>
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <div class="after-account-main3">
+        <h1><span>理财推荐</span><a href="#">更多项目></a></h1>
+        <div class="afac-main3-cen">
+          <div class="invest-list-bidding">
+             <div class="product-bidding invest-trade-bidding border-radius clearfix">
+                <div class="product-bidding-left gradient-blue pull-left text-center">
+                  <p class="product-bidding-icon"><span class="icon"></span><br>交易所标</p>
+                  <p class="product-bidding-white"></p>
+                </div>
+                <div class="product-bidding-right pull-left">
+                  <a href="#" class="product-bidding-href"></a>
+                  <p class="product-bidding-name"><a href="#">扩大种植20160103001</a></p>
+                  <div class="product-bidding-details clearfix">
+                    <div class=" product-bidding-profit pull-left">
+                        <ol class="list-unstyled">
+                          <li class="pull-left product-bidding-rate">
+                            <p class="product-bidding-rate1"><span><b>13.5</b>%</span></p>
+                            <p class="font-color product-bidding-explain">预期年化收益率</p>
+                          </li>
+                          <li class="pull-left product-bidding-term text-center">
+                            <p class="product-bidding-term1"><span><b>6</b>个月</span></p>
+                            <p class="font-color product-bidding-explain">投资期限</p>
+                          </li>
+                          <li class="pull-left product-bidding-money text-center">
+                            <p class="product-bidding-money1"><span><b>150,000</b>元</span></p>
+                            <p class="font-color product-bidding-explain">借款金额</p>
+                          </li>
+                        </ol>
+                      </div>
+                    <div class="product-bidding-btn text-center pull-left">
+                      <p><a href="#" class="btn-color btn-color1 border-radius">立即认购</a></p>
+                      <p class="font-color product-bidding-explain">限投：10,000元</p>
+                    </div>
+                  </div>
+                </div>
+             </div>
+             <div class="product-bidding invest-beacon-bidding border-radius clearfix">
+                <div class="product-bidding-left gradient-orange pull-left text-center">
+                  <p class="product-bidding-icon"><span class="icon"></span><br>盼信标</p>
+                  <p class="product-bidding-white"></p>
+                </div>
+                <div class="product-bidding-right pull-left">
+                  <a href="#" class="product-bidding-href"></a>
+                  <p class="product-bidding-name"><a href="#">扩大种植20160103001</a></p>
+                  <div class="product-bidding-details clearfix">
+                    <div class=" product-bidding-profit pull-left">
+                        <ol class="list-unstyled">
+                          <li class="pull-left product-bidding-rate">
+                            <p class="product-bidding-rate1"><span><b>13.5</b>%</span></p>
+                            <p class="font-color product-bidding-explain">预期年化收益率</p>
+                          </li>
+                          <li class="pull-left product-bidding-term text-center">
+                            <p class="product-bidding-term1"><span><b>6</b>个月</span></p>
+                            <p class="font-color product-bidding-explain">投资期限</p>
+                          </li>
+                          <li class="pull-left product-bidding-money text-center">
+                            <p class="product-bidding-money1"><span><b>150,000</b>元</span></p>
+                            <p class="font-color product-bidding-explain">借款金额</p>
+                          </li>
+                        </ol>
+                      </div>
+                    
+                    <div class="product-bidding-btn text-center pull-left">
+                        <p><a href="#" class="btn-color btn-color1 border-radius">立即认购</a></p>
+                        <p class="font-color product-bidding-explain">限投：10,000元</p>
+                      </div>
+                  </div>
+                </div>
+             </div>
+             <div class="product-bidding invest-trade-bidding border-radius clearfix">
+                <div class="product-bidding-left gradient-blue pull-left text-center">
+                  <p class="product-bidding-icon"><span class="icon"></span><br>交易所标</p>
+                  <p class="product-bidding-white"></p>
+                </div>
+                <div class="product-bidding-right pull-left">
+                  <a href="#" class="product-bidding-href"></a>
+                  <p class="product-bidding-name"><a href="#">扩大种植20160103001</a></p>
+                  <div class="product-bidding-details clearfix">
+                    <div class=" product-bidding-profit pull-left">
+                        <ol class="list-unstyled">
+                          <li class="pull-left product-bidding-rate">
+                            <p class="product-bidding-rate1"><span><b>13.5</b>%</span></p>
+                            <p class="font-color product-bidding-explain">预期年化收益率</p>
+                          </li>
+                          <li class="pull-left product-bidding-term text-center">
+                            <p class="product-bidding-term1"><span><b>6</b>个月</span></p>
+                            <p class="font-color product-bidding-explain">投资期限</p>
+                          </li>
+                          <li class="pull-left product-bidding-money text-center">
+                            <p class="product-bidding-money1"><span><b>150,000</b>元</span></p>
+                            <p class="font-color product-bidding-explain">借款金额</p>
+                          </li>
+                        </ol>
+                      </div>
+                    <div class="product-bidding-btn text-center pull-left">
+                      <p><a href="#" class="btn-color btn-color1 border-radius">立即认购</a></p>
+                      <p class="font-color product-bidding-explain">限投：10,000元</p>
+                    </div>
+                  </div>
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="after-account-main4">
+        <h1><span>活动推荐</span><a href="#">更多活动></a></h1>
+        <div class="afac-main4-cen">
+          <div class="afac-main4-cen1">
+            <a href="#">
+              <img src="images/index/banner2.jpg" />
+              <p class="clearfix">
+                <span class="pull-left">现期活动：投资在盼贷 豪……</span>
+                <span class="pull-right">点击参与>></span>
+              </p>  
+            </a>
+          </div>
+          <div class="afac-main4-cen2 clearfix">
+            <a href="#" class="pull-left">
+              <img src="images/after-login/account4.jpg" />
+              <p class="clearfix">
+                <span class="pull-left">往期活动： 盼贷金十月 豪…… </span>
+                <span class="pull-right">点击详情>></span>
+              </p>  
+            </a>
+            <a href="#" class="pull-right">
+              <img src="images/after-login/account5.jpg" />
+              <p class="clearfix">
+                <span class="pull-left">往期活动：满标有奖</span>
+                <span class="pull-right">点击详情>></span>
+              </p>  
+            </a>
+          </div>
+        </div>
+      </div>
+   </div>
+   </div>
+</div>
+<div class="footer">
+  <div class="footer-main1">
+    <div class="main clearfix">
+      <div class="footer-main1-left pull-left">
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作伙伴</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ol>
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">招贤纳士</a></li>
+        </ol>
+      </div>
+      <div class="pull-left"><span class="line"></span></div>
+        <div class="footer-main1-middle pull-left">
+          <dl class=" list-unstyled">
+            <dt class=" pull-left" style=" font-size:18px;">服务热线：</dt>
+            <dd class=" pull-left">
+              <p style=" font-size:38px; font-weight:600; margin-top:-10px;">400-016-1131</p>
+              <p>工作时间：周一至周五9:00-18:00</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="pull-left"><span class="line"></span></div>
+          <div class="footer-main1-right pull-right">
+            <p class=" text-center pull-left">
+              盼贷微信服务号<br /><img src="images/common/footer1.jpg" />
+            </p>
+            <p class=" text-center pull-left" style=" margin-right:0;">
+              盼贷APP下载<br /><img src="images/common/footer2.jpg" />
+            </p>
+          </div>
+        </div>
+  </div>
+  <div class="footer-main2">
+    <div class="main text-center">
+      <p><img src="images/common/footer3.jpg" /><img src="images/common/footer4.jpg" /><img src="images/common/footer5.jpg" /><img src="images/common/footer6.jpg" /><img src="images/common/footer7.jpg" /></p>
+      <p>© 2012-2017 北京盼大世纪信息技术有限公司 All rights reserved | 京ICP备15042613号 | 免责条款</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

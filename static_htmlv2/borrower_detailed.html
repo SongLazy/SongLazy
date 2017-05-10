@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+ <meta name="renderer" content="webkit|ie-comp|ie-stand">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>账户明细</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" /> 
+<link href="css/common.css" rel="stylesheet" type="text/css" /> 
+<link href="css/after_login.css" rel="stylesheet" type="text/css" /> 
+<link href="css/borrower.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>   
+<script src="js/jq.js"></script>
+<script src="js/after_jq.js"></script>
+<script src="js/borrower_jq.js"></script>
+ 
+
+ <!-- 
+
+		如果是IE9以下版本，添加Response.js 支持 HTML5元素和media查询
+
+	 -->
+    <!--[if lt IE 9]>
+
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+
+<body>
+<div class="header">
+  <div class="header-main1 clearfix">
+    <div class="main clearfix">
+      <ol class="header-main1-left list-unstyled pull-left">
+        <li><a href="#"><span class="icon-app icon"></span>盼贷APP</a></li>
+        <li><a href="#"><span class="icon-follow icon"></span>关注盼贷</a></li>
+       <li><a href="#"><span class="icon-telephone icon"></span>服务热线：400-016-1131</a></li>
+      </ol>
+      <ol class="header-main1-right list-unstyled pull-right">
+        <li><a href="#">新手入门</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">现金券</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="borrower_tender.html"><span class="icon-account icon hover"></span>我的账户<b class="icon icon-arrow"></b></a></li>
+        <li><span class="line"></span></li>
+        <li class="return-old"><a href="#">返回旧版网站</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="header-main2">
+    <div class="main clearfix">
+      <p class="header-main2-logo pull-left"><img src="images/common/logo.png" /></p>
+      <ol class="header-main2-nav list-unstyled pull-right">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="invest_fixed.html">理财</a></li>
+        <li><a href="safe.html">安全保障</a></li>
+        <li><a href="#">活动专区</a></li>
+        <li><a href="about_introduction.html">关于我们</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div class="after-login borrower clearfix">
+   <div class="after-login-left borrower-left pull-left">
+      <div class="aflo-left-main1 borrower-left-main1">
+          <p class="left-mian1-face"><img src="images/after-login/after-left1.png" /></p>
+          <p class="left-mian1-phone">1300****299，下午好!</p>
+      </div>
+      <div class="aflo-left-main2 borrower-left-main2">
+        <dl>
+          <dt>我的借款</dt>
+          <dd><a href="borrower_tender.html"><b class="loan-one"></b>账户首页</a></dd>
+          <dd><a href="borrower_agreement.html"><b class="loan-two"></b>已签协议</a></dd>
+          <dd class="hover"><a href="borrower_detailed.html"><b class="loan-three"></b>账户明细</a></dd>
+          <dt>信用状况</dt>
+          <dd><a href="borrower_creditstatus.html"><b class="credit-one"></b>信用简介</a></dd>
+          <dd><a href="#"><b class="credit-two"></b>提高信用<strong style=" font-size:12px;">（即将上线）</strong></a></dd>
+          <dt>账户中心</dt>
+          <dd><a href="borrower_info.html"><b class="accounts-one"></b>基本信息</a></dd>
+          <dd><a href="borrower_information.html"><b class="accounts-two"></b>详细资料</a></dd>
+          <dd><a href="borrower_data.html"><b class="accounts-three"></b>信用资料</a></dd>
+          <dd><a href="borrower_revise.html"><b class="accounts-four"></b>账户修改</a></dd>
+          <dd><a href="borrower_withdraw.html"><b class="accounts-five"></b>提现</a></dd>
+        </dl> 
+      </div>
+   </div>
+   <div class="borrower-rightbk pull-right">
+      <div class="borrower-right borrower-detailed">
+         <div class="borrower-border borrower-detailed-main1">
+             <h2>当前还款信息</h2>
+             <div class="detailed-main1-info">
+                <p class="detailed-main1-info1">本期还款日期：<b>2015年10月01日</b></p>
+                <ol class="list-unstyled detailed-main1-info2 clearfix">
+                  <li><p class="detailed-main1-name">本期还款状态：</p><p class="detailed-main1-money">未还款</p></li>
+                  <li><p class="detailed-main1-name">本期应还金额：</p><p class="detailed-main1-money">375.01元</p></li>
+                  <li><p class="detailed-main1-name">往期逾期金额：</p><p class="detailed-main1-money">0.00元</p></li>
+                  <li><p class="detailed-main1-name">往期逾期费用：</p><p class="detailed-main1-money">0.00元</p></li>
+                </ol>
+                <p class="detailed-main1-info3">逾期费用每日递增，且影响你的信用，请尽快还款！</p>
+             </div>  
+         </div>
+         <div class="borrower-border borrower-detailed-main2">
+           <h2>网上支付方式</h2>
+           <div class="borrower-border-cen afpa-right-main2" style="display: block;">
+                 <form id="e-bank">
+                    <div class="afpari-main2-cen1">
+                       <div class="afpari-main2-bankimg clearfix">
+                          <p><input type="radio" id="bank-name1" name="bank-name" checked=""><label for="bank-name1"><b class="hover" style="background-position:-186px 0;"></b></label></p>
+                          <p><input type="radio" id="bank-name2" name="bank-name"><label for="bank-name2"><b style="background-position:-186px -32px;"></b></label></p>
+                          <p><input type="radio" id="bank-name3" name="bank-name"><label for="bank-name3"><b style="background-position:-186px -64px;"></b></label></p>
+                          <p><input type="radio" id="bank-name4" name="bank-name"><label for="bank-name4"><b style="background-position:-186px -96px;"></b></label></p>
+                          <p><input type="radio" id="bank-name5" name="bank-name"><label for="bank-name5"><b style="background-position:-186px -128px;"></b></label></p>
+                          <p><input type="radio" id="bank-name6" name="bank-name"><label for="bank-name6"><b style="background-position:-186px -160px;"></b></label></p>
+                          <p><input type="radio" id="bank-name7" name="bank-name"><label for="bank-name7"><b style="background-position:-186px -192px;"></b></label></p>
+                          <p><input type="radio" id="bank-name8" name="bank-name"><label for="bank-name8"><b style="background-position:-186px -224px;"></b></label></p>
+                          <p><input type="radio" id="bank-name9" name="bank-name"><label for="bank-name9"><b style="background-position:-186px -256px;"></b></label></p>
+                          <p><input type="radio" id="bank-name10" name="bank-name"><label for="bank-name10"><b style="background-position:-186px -288px;"></b></label></p>
+                          <p><input type="radio" id="bank-name11" name="bank-name"><label for="bank-name11"><b style="background-position:-186px -320px;"></b></label></p>
+                          <p><input type="radio" id="bank-name12" name="bank-name"><label for="bank-name12"><b style="background-position:-186px -352px;"></b></label></p>
+                          <p><input type="radio" id="bank-name13" name="bank-name"><label for="bank-name13"><b style="background-position:-186px -384px;"></b></label></p>
+                          <p><input type="radio" id="bank-name14" name="bank-name"><label for="bank-name14"><b style="background-position:-186px -416px;"></b></label></p>
+                          <p class="payments-main3-radio"><input type="radio" id="bank-name15" name="bank-name"><label for="bank-name15"><b><img src="images/borrower/payments2.jpg" /></b></label></p>
+                       </div>
+                       <p class="payments-main3-money clearfix"><span class="pull-left">本期应还：<b>4343.50</b>元</span><a href="#" class="btn-color btn-color2 border-radius">支付</a></p>
+                       <div class="afpari-main2-bankmain clearfix">
+                          <div class="afpari-main2-bankmain1" style=" display:block">
+                              <dl class="list-unstyled pull-left afpari-main2-banktype" style=" width:127px;">
+                               <dt>卡种</dt>
+                               <dd>储蓄卡</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-onlylimit" style=" width:160px;">
+                               <dt>单笔限额（元）</dt>
+                               <dd>1000万</dd>
+                               <dd>200</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-daylimit" style=" width:160px;">
+                               <dt>每日限额（元）</dt>
+                               <dd>无限额</dd>
+                               <dd>500</dd>
+                             </dl>
+                              <dl class="list-unstyled pull-left afpari-main2-condition" style=" width:285px;">
+                               <dt>必要条件</dt>
+                               <dd>工行网银U盾用户</dd>
+                               <dd>电子银行口令卡及手机短信认证</dd>
+                             </dl>
+                          </div>
+                          <div class="afpari-main2-bankmain2">
+                             <dl class="list-unstyled pull-left afpari-main2-banktype" style=" width:127px;">
+                               <dt>卡种</dt>
+                               <dd>储蓄卡</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-onlylimit" style=" width:160px;">
+                               <dt>单笔限额（元）</dt>
+                               <dd>1000万</dd>
+                               <dd>50万</dd>
+                               <dd>1000</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-daylimit" style=" width:160px;">
+                               <dt>每日限额（元）</dt>
+                               <dd>500万</dd>
+                               <dd>100万</dd>
+                               <dd>3000</dd>
+                             </dl>
+                              <dl class="list-unstyled pull-left afpari-main2-condition" style=" width:285px;">
+                               <dt>必要条件</dt>
+                               <dd>开通二代K宝证书</dd>
+                               <dd>开通二代K宝证书</dd>
+                               <dd>开通动态口令卡，IE浏览器证书</dd>
+                             </dl>
+                          </div>
+                          <div class="afpari-main2-bankmain3">
+                              <dl class="list-unstyled pull-left afpari-main2-banktype" style=" width:127px;">
+                               <dt>卡种</dt>
+                               <dd>储蓄卡</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-onlylimit" style=" width:160px;">
+                               <dt>单笔限额（元）</dt>
+                               <dd>1000万</dd>
+                               <dd>5000</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-daylimit" style=" width:160px;">
+                               <dt>每日限额（元）</dt>
+                               <dd>无限额</dd>
+                               <dd>500</dd>
+                             </dl>
+                              <dl class="list-unstyled pull-left afpari-main2-condition" style=" width:285px;">
+                               <dt>必要条件</dt>
+                               <dd>开通专业版UKey</dd>
+                               <dd>网上或柜台开通大众版</dd>
+                             </dl>
+                          </div>
+                          <div class="afpari-main2-bankmain4">
+                              <dl class="list-unstyled pull-left afpari-main2-banktype" style=" width:127px;">
+                               <dt>卡种</dt>
+                               <dd>储蓄卡</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-onlylimit" style=" width:160px;">
+                               <dt>单笔限额（元）</dt>
+                               <dd>50万</dd>
+                               <dd>1000</dd>
+                               <dd>5000</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-daylimit" style=" width:160px;">
+                               <dt>每日限额（元）</dt>
+                               <dd>50万</dd>
+                               <dd>1000</dd>
+                               <dd>5000</dd>
+                             </dl>
+                              <dl class="list-unstyled pull-left afpari-main2-condition" style=" width:285px;">
+                               <dt>必要条件</dt>
+                               <dd>网银盾</dd>
+                               <dd>动态口令卡，短信动态口令</dd>
+                               <dd>无需开通，使用账号支付</dd>
+                             </dl>
+                          </div>
+                          <div class="afpari-main2-bankmain5">
+                             <dl class="list-unstyled pull-left afpari-main2-banktype" style=" width:127px;">
+                               <dt>卡种</dt>
+                               <dd>储蓄卡</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-onlylimit" style=" width:160px;">
+                               <dt>单笔限额（元）</dt>
+                               <dd>1000万</dd>
+                               <dd>5000</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-daylimit" style=" width:160px;">
+                               <dt>每日限额（元）</dt>
+                               <dd>100万</dd>
+                               <dd>5000</dd>
+                             </dl>
+                              <dl class="list-unstyled pull-left afpari-main2-condition" style=" width:285px;">
+                               <dt>必要条件</dt>
+                               <dd>开通证书版</dd>
+                               <dd>开通短信密码</dd>
+                             </dl>
+                          </div>
+                          <div class="afpari-main2-bankmain6">
+                             <dl class="list-unstyled pull-left afpari-main2-banktype" style=" width:127px;">
+                               <dt>卡种</dt>
+                               <dd>储蓄卡</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-onlylimit" style=" width:160px;">
+                               <dt>单笔限额（元）</dt>
+                               <dd>5000</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-daylimit" style=" width:160px;">
+                               <dt>每日限额（元）</dt>
+                               <dd>5000</dd>
+                             </dl>
+                              <dl class="list-unstyled pull-left afpari-main2-condition" style=" width:285px;">
+                               <dt>必要条件</dt>
+                               <dd>开通网银</dd>
+                             </dl>
+                          </div>
+                          <div class="afpari-main2-bankmain7">
+                              <dl class="list-unstyled pull-left afpari-main2-banktype" style=" width:127px;">
+                               <dt>卡种</dt>
+                               <dd>储蓄卡</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-onlylimit" style=" width:160px;">
+                               <dt>单笔限额（元）</dt>
+                               <dd>50万</dd>
+                               <dd>5000</dd>
+                               <dd>300</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-daylimit" style=" width:160px;">
+                               <dt>每日限额（元）</dt>
+                               <dd>50万</dd>
+                               <dd>5000</dd>
+                               <dd>300</dd>
+                             </dl>
+                              <dl class="list-unstyled pull-left afpari-main2-condition" style=" width:285px;">
+                               <dt>必要条件</dt>
+                               <dd>开通网银U宝</dd>
+                               <dd>开通网银贵宾版</dd>
+                               <dd>开通网银大众版</dd>
+                             </dl>
+                          </div>
+                          <div class="afpari-main2-bankmain8">
+                              <dl class="list-unstyled pull-left afpari-main2-banktype" style=" width:127px;">
+                               <dt>卡种</dt>
+                               <dd>储蓄卡</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-onlylimit" style=" width:160px;">
+                               <dt>单笔限额（元）</dt>
+                               <dd>5万</dd>
+                               <dd>1000</dd>
+                               <dd>300</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-daylimit" style=" width:160px;">
+                               <dt>每日限额（元）</dt>
+                               <dd>10万</dd>
+                               <dd>5000</dd>
+                               <dd>1000</dd>
+                             </dl>
+                              <dl class="list-unstyled pull-left afpari-main2-condition" style=" width:285px;">
+                               <dt>必要条件</dt>
+                               <dd>开通数字证书</dd>
+                               <dd>开通手机动态密码</dd>
+                               <dd>开通网银大众版</dd>
+                             </dl>
+                          </div>
+                          <div class="afpari-main2-bankmain9">
+                              <dl class="list-unstyled pull-left afpari-main2-banktype" style=" width:127px;">
+                               <dt>卡种</dt>
+                               <dd>储蓄卡</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-onlylimit" style=" width:160px;">
+                               <dt>单笔限额（元）</dt>
+                               <dd>1000万</dd>
+                               <dd>5000</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-daylimit" style=" width:160px;">
+                               <dt>每日限额（元）</dt>
+                               <dd>无限额</dd>
+                               <dd>5000</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-condition" style=" width:285px;">
+                               <dt>必要条件</dt>
+                               <dd>开通专业版UKey</dd>
+                               <dd>网上或柜台开通大众版</dd>
+                             </dl>
+                          </div>
+                          <div class="afpari-main2-bankmain10">
+                             <dl class="list-unstyled pull-left afpari-main2-banktype" style=" width:127px;">
+                               <dt>卡种</dt>
+                               <dd>储蓄卡</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-onlylimit" style=" width:160px;">
+                               <dt>单笔限额（元）</dt>
+                               <dd>30万</dd>
+                               <dd>3000</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-daylimit" style=" width:160px;">
+                               <dt>每日限额（元）</dt>
+                               <dd>30万</dd>
+                               <dd>3000</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-condition" style=" width:285px;">
+                               <dt>必要条件</dt>
+                               <dd>开通数字证书及Key盾</dd>
+                               <dd>来通通用版（银行网站在线申请）</dd>
+                             </dl>
+                          </div>
+                          <div class="afpari-main2-bankmain11">
+                              <dl class="list-unstyled pull-left afpari-main2-banktype" style=" width:127px;">
+                               <dt>卡种</dt>
+                               <dd>储蓄卡</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-onlylimit" style=" width:160px;">
+                               <dt>单笔限额（元）</dt>
+                               <dd>100万</dd>
+                               <dd>1000</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-daylimit" style=" width:160px;">
+                               <dt>每日限额（元）</dt>
+                               <dd>100万</dd>
+                               <dd>5000</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-condition" style=" width:285px;">
+                               <dt>必要条件</dt>
+                               <dd>开通Key证书默认额度（可修改）</dd>
+                               <dd>开通文件证书</dd>
+                             </dl>
+                          </div>
+                          <div class="afpari-main2-bankmain12">
+                             <dl class="list-unstyled pull-left afpari-main2-banktype" style=" width:127px;">
+                               <dt>卡种</dt>
+                               <dd>储蓄卡</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-onlylimit" style=" width:160px;">
+                               <dt>单笔限额（元）</dt>
+                               <dd>5万</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-daylimit" style=" width:160px;">
+                               <dt>每日限额（元）</dt>
+                               <dd>10万</dd>
+                             </dl>
+                              <dl class="list-unstyled pull-left afpari-main2-condition" style=" width:285px;">
+                               <dt>必要条件</dt>
+                               <dd>开通网银</dd>
+                             </dl>
+                          </div>
+                          <div class="afpari-main2-bankmain13">
+                             <dl class="list-unstyled pull-left afpari-main2-banktype" style=" width:127px;">
+                               <dt>卡种</dt>
+                               <dd>储蓄卡</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-onlylimit" style=" width:160px;">
+                               <dt>单笔限额（元）</dt>
+                               <dd>5000</dd>
+                               <dd>5000</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-daylimit" style=" width:160px;">
+                               <dt>每日限额（元）</dt>
+                               <dd>无限额</dd>
+                               <dd>5000</dd>
+                             </dl>
+                              <dl class="list-unstyled pull-left afpari-main2-condition" style=" width:285px;">
+                               <dt>必要条件</dt>
+                               <dd>数字证书版</dd>
+                               <dd>动态密码版</dd>
+                             </dl>
+                          </div>
+                          <div class="afpari-main2-bankmain14">
+                              <dl class="list-unstyled pull-left afpari-main2-banktype" style=" width:127px;">
+                               <dt>卡种</dt>
+                               <dd>储蓄卡</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-onlylimit" style=" width:160px;">
+                               <dt>单笔限额（元）</dt>
+                               <dd>100万</dd>
+                               <dd>10万</dd>
+                               <dd>1万</dd>
+                             </dl>
+                             <dl class="list-unstyled pull-left afpari-main2-daylimit" style=" width:160px;">
+                               <dt>每日限额（元）</dt>
+                               <dd>100万</dd>
+                               <dd>10万</dd>
+                               <dd>1万</dd>
+                             </dl>
+                              <dl class="list-unstyled pull-left afpari-main2-condition" style=" width:285px;">
+                               <dt>必要条件</dt>
+                               <dd>办理UKey+开通银行短信业务</dd>
+                               <dd>电子令牌</dd>
+                               <dd>手机短信</dd>
+                             </dl>
+                          </div>
+                          <div class="afpari-main2-bankmain15">
+                          </div>
+                       </div>
+                       
+                    </div>
+                 </form>
+           </div>
+         </div>
+         <div class="borrower-border borrower-detailed-main3">
+           <h2>提前还款</h2>
+           <div class="detailed-main3-info">
+               <ol class="list-unstyled detailed-main3-info1 clearfix">
+                  <li><p class="detailed-main1-name">当前应还金额：</p><p class="detailed-main1-money">375.50元</p></li>
+                  <li><p class="detailed-main1-name">剩余本金：</p><p class="detailed-main1-money">30.00.00.00元</p></li>
+                  <li><p class="detailed-main1-name">提前还款费率：</p><p class="detailed-main1-money">2%（最低200元）</p></li>
+                  <li><p class="detailed-main1-name">提前还款费：</p><p class="detailed-main1-money">600.00元</p></li>
+                  <li><p class="detailed-main1-name">总还款费用：</p><p class="detailed-main1-money">30.937.50元</p></li>
+                  <li><p class="detailed-main1-name">现在还款可节省：</p><p class="detailed-main1-money">1.087.50元</p></li>
+                </ol>
+                <p class="detailed-main3-info2"><a href="#" class="btn-color btn-color2 border-radius">提前还款</a></p>
+           </div>
+         </div>
+         <div class="borrower-border borrower-detailed-main4">
+            <h2>还款明细表</h2>
+            <div class="borrower-border-cen payments-main4-cen">
+               <div class="payments-main2-moneylist">
+                <div class="borrower-home-comlist clearfix">
+                  <ol class="list-unstyled">
+                   <li style=" width:94px;">到期时间</li>
+                   <li style=" width:48px;">期数</li>
+                   <li style=" width:80px;">应还本金</li>
+                   <li style=" width:78px;">应还利息</li>
+                   <li style=" width:78px;">管理费</li>
+                   <li style=" width:78px;">逾期天数</li>
+                   <li style=" width:80px;">逾期费用</li>
+                   <li style=" width:80px;">共需还款</li>
+                   <li style=" width:80px;">剩余本金</li>
+                   <li style=" width:83px;">还款状态</li>
+                 </ol>
+                  <ul class="list-unstyled">
+                   <li style=" width:94px;">2015-11-01</li>
+                   <li style=" width:48px;">1</li>
+                   <li style=" width:80px;">0.00元</li>
+                   <li style=" width:78px;">337.5元</li>
+                   <li style=" width:78px;">0.00元</li>
+                   <li style=" width:78px;">0天</li>
+                   <li style=" width:80px;">&nbsp;</li>
+                   <li style=" width:80px;">375.01元</li>
+                   <li style=" width:80px;">30.000.00元</li>
+                   <li style=" width:83px;">已还款</li>
+                 </ul>
+                 <ul class="list-unstyled">
+                   <li style=" width:94px;">2015-11-01</li>
+                   <li style=" width:48px;">1</li>
+                   <li style=" width:80px;">0.00元</li>
+                   <li style=" width:78px;">337.5元</li>
+                   <li style=" width:78px;">0.00元</li>
+                   <li style=" width:78px;">0天</li>
+                   <li style=" width:80px;">&nbsp;</li>
+                   <li style=" width:80px;">375.01元</li>
+                   <li style=" width:80px;">30.000.00元</li>
+                   <li style=" width:83px;">已还款</li>
+                 </ul>
+                 <ul class="list-unstyled">
+                   <li style=" width:94px;">2015-11-01</li>
+                   <li style=" width:48px;">1</li>
+                   <li style=" width:80px;">0.00元</li>
+                   <li style=" width:78px;">337.5元</li>
+                   <li style=" width:78px;">0.00元</li>
+                   <li style=" width:78px;">0天</li>
+                   <li style=" width:80px;">&nbsp;</li>
+                   <li style=" width:80px;">375.01元</li>
+                   <li style=" width:80px;">30.000.00元</li>
+                   <li style=" width:83px;">已还款</li>
+                 </ul>
+                 <ul class="list-unstyled">
+                   <li style=" width:94px;">2015-11-01</li>
+                   <li style=" width:48px;">1</li>
+                   <li style=" width:80px;">0.00元</li>
+                   <li style=" width:78px;">337.5元</li>
+                   <li style=" width:78px;">0.00元</li>
+                   <li style=" width:78px;">0天</li>
+                   <li style=" width:80px;">&nbsp;</li>
+                   <li style=" width:80px;">375.01元</li>
+                   <li style=" width:80px;">30.000.00元</li>
+                   <li style=" width:83px;">未还款</li>
+                 </ul>
+                 <ul class="list-unstyled">
+                   <li style=" width:94px;">2015-11-01</li>
+                   <li style=" width:48px;">1</li>
+                   <li style=" width:80px;">0.00元</li>
+                   <li style=" width:78px;">337.5元</li>
+                   <li style=" width:78px;">0.00元</li>
+                   <li style=" width:78px;">0天</li>
+                   <li style=" width:80px;">&nbsp;</li>
+                   <li style=" width:80px;">375.01元</li>
+                   <li style=" width:80px;">30.000.00元</li>
+                   <li style=" width:83px;">未还款</li>
+                 </ul>
+                 <ul class="list-unstyled">
+                   <li style=" width:94px;">2015-11-01</li>
+                   <li style=" width:48px;">1</li>
+                   <li style=" width:80px;">0.00元</li>
+                   <li style=" width:78px;">337.5元</li>
+                   <li style=" width:78px;">0.00元</li>
+                   <li style=" width:78px;">0天</li>
+                   <li style=" width:80px;">&nbsp;</li>
+                   <li style=" width:80px;">375.01元</li>
+                   <li style=" width:80px;">30.000.00元</li>
+                   <li style=" width:83px;">未还款</li>
+                 </ul>
+                </div>
+                <div class="pagination-center">
+                 <ul class="pagination">
+                   <li><a href="#">上一页</a></li>
+                   <li><a href="#">1</a></li>
+                   <li><a href="#">2</a></li>
+                   <li><a href="#">3</a></li>
+                  <li><a href="#">下一页</a></li>
+                 </ul>
+               </div>
+               </div>
+            </div> 
+         </div>  
+      </div>
+   </div>
+</div>
+<div class="footer">
+  <div class="footer-main1">
+    <div class="main clearfix">
+      <div class="footer-main1-left pull-left">
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作伙伴</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ol>
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">招贤纳士</a></li>
+        </ol>
+      </div>
+      <div class="pull-left"><span class="line"></span></div>
+        <div class="footer-main1-middle pull-left">
+          <dl class=" list-unstyled">
+            <dt class=" pull-left" style=" font-size:18px;">服务热线：</dt>
+            <dd class=" pull-left">
+              <p style=" font-size:38px; font-weight:600; margin-top:-10px;">400-016-1131</p>
+              <p>工作时间：周一至周五9:00-18:00</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="pull-left"><span class="line"></span></div>
+          <div class="footer-main1-right pull-right">
+            <p class=" text-center pull-left">
+              盼贷微信服务号<br /><img src="images/common/footer1.jpg" />
+            </p>
+            <p class=" text-center pull-left" style=" margin-right:0;">
+              盼贷APP下载<br /><img src="images/common/footer2.jpg" />
+            </p>
+          </div>
+        </div>
+  </div>
+  <div class="footer-main2">
+    <div class="main text-center">
+      <p><img src="images/common/footer3.jpg" /><img src="images/common/footer4.jpg" /><img src="images/common/footer5.jpg" /><img src="images/common/footer6.jpg" /><img src="images/common/footer7.jpg" /></p>
+      <p>© 2012-2017 北京盼大世纪信息技术有限公司 All rights reserved | 京ICP备15042613号 | 免责条款</p>
+    </div>
+  </div>
+</div>
+
+<div class="transparent-back"></div>
+<div class="borrower-popup">
+ <h1>去第三方支付平台<b></b></h1>
+ <div class="borrower-popup-main1">
+  <p style=" text-align:center"><img src="images/borrower/logo.png" /></p>
+  <p style=" color:#ef5848;">付款完成前请不要关闭此窗口。完成付款后请根据你的情况点击下面的按钮：</p>
+  <p>请在第三方平台支付页面完成付款后再选择！</p>
+  <p><span>付款金额：<b>337.50元</b></span><span style=" margin-left:26px;">转账手续费：<b>0.85元</b></span></p>
+ </div>
+ <div class="borrower-popup-main2">
+   <a href="#" class="btn-color btn-color2 border-radius">去支付</a>
+   <a href="#" class=" pull-right" style=" margin-right:15px; color:#333;">付款出现问题怎么办？</a>
+ </div>
+</div>
+</body>
+</html>

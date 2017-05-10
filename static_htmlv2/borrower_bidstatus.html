@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+ <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+ <meta name="renderer" content="webkit|ie-comp|ie-stand">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>招标状态</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" /> 
+<link href="css/common.css" rel="stylesheet" type="text/css" /> 
+<link href="css/after_login.css" rel="stylesheet" type="text/css" /> 
+<link href="css/borrower.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>   
+<script src="js/jq.js"></script>
+<script src="js/borrower_jq.js"></script>
+ <!-- 
+
+		如果是IE9以下版本，添加Response.js 支持 HTML5元素和media查询
+
+	 -->
+    <!--[if lt IE 9]>
+
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+
+<body>
+<div class="header">
+  <div class="header-main1 clearfix">
+    <div class="main clearfix">
+      <ol class="header-main1-left list-unstyled pull-left">
+        <li><a href="#"><span class="icon-app icon"></span>盼贷APP</a></li>
+        <li><a href="#"><span class="icon-follow icon"></span>关注盼贷</a></li>
+       <li><a href="#"><span class="icon-telephone icon"></span>服务热线：400-016-1131</a></li>
+      </ol>
+      <ol class="header-main1-right list-unstyled pull-right">
+        <li><a href="#">新手入门</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">现金券</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="borrower_tender.html"><span class="icon-account icon hover"></span>我的账户<b class="icon icon-arrow"></b></a></li>
+        <li><span class="line"></span></li>
+        <li class="return-old"><a href="#">返回旧版网站</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="header-main2">
+    <div class="main clearfix">
+      <p class="header-main2-logo pull-left"><img src="images/common/logo.png" /></p>
+      <ol class="header-main2-nav list-unstyled pull-right">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="invest_fixed.html">理财</a></li>
+        <li><a href="safe.html">安全保障</a></li>
+        <li><a href="#">活动专区</a></li>
+        <li><a href="about_introduction.html">关于我们</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div class="after-login borrower clearfix">
+   <div class="after-login-left borrower-left pull-left">
+      <div class="aflo-left-main1 borrower-left-main1">
+          <p class="left-mian1-face"><img src="images/after-login/after-left1.png" /></p>
+          <p class="left-mian1-phone">1300****299，下午好!</p>
+      </div>
+      <div class="aflo-left-main2 borrower-left-main2">
+        <dl>
+          <dt>我的借款</dt>
+          <dd class="hover"><a href="borrower_tender.html"><b class="loan-one"></b>账户首页</a></dd>
+          <dd><a href="borrower_agreement.html"><b class="loan-two"></b>已签协议</a></dd>
+          <dd><a href="borrower_detailed.html"><b class="loan-three"></b>账户明细</a></dd>
+          <dt>信用状况</dt>
+          <dd><a href="borrower_creditstatus.html"><b class="credit-one"></b>信用简介</a></dd>
+          <dd><a href="#"><b class="credit-two"></b>提高信用<strong style=" font-size:12px;">（即将上线）</strong></a></dd>
+          <dt>账户中心</dt>
+          <dd><a href="borrower_info.html"><b class="accounts-one"></b>基本信息</a></dd>
+          <dd><a href="borrower_information.html"><b class="accounts-two"></b>详细资料</a></dd>
+          <dd><a href="borrower_data.html"><b class="accounts-three"></b>信用资料</a></dd>
+          <dd><a href="borrower_revise.html"><b class="accounts-four"></b>账户修改</a></dd>
+           <dd><a href="borrower_withdraw.html"><b class="accounts-five"></b>提现</a></dd>
+        </dl> 
+      </div>
+   </div>
+   <div class="borrower-rightbk pull-right">
+      <div class="borrower-right borrower-bidstatus">
+         <div class="borrower-border borrower-bidstatus-main">
+            <h2>招标状态</h2>
+            <div class="borrower-border-cen" style=" width:865px; margin:0 auto;">
+                <div class="borrower-home-comlist clearfix">
+                 <ol class="list-unstyled">
+                   <li style=" width:86px;">标的名称</li>
+                   <li style=" width:86px;">期限</li>
+                   <li style=" width:86px;">利率</li>
+                   <li style=" width:86px;">状态</li>
+                   <li style=" width:86px;">金额(元)</li>
+                   <li style=" width:86px;">还款状态</li>
+                   <li style=" width:216px;">还款明细</li>
+                   <li style=" width:124px;">提前还款</li>
+                 </ol>
+                 <ul class="list-unstyled">
+                   <li style=" width:86px;">一步两步</li>
+                   <li style=" width:86px;">3个月</li>
+                   <li style=" width:86px;">7.00%</li>
+                   <li style=" width:86px;">还款中</li>
+                   <li style=" width:86px;">22222.00</li>
+                   <li style=" width:86px;">还款中</li>
+                   <li class="bidstatus-repayment-schedule" style=" width:216px;">
+                     <span class="pull-left">2/3</span>
+                     <div href="#" class="bidstatus-view-details pull-left">
+                      <a href="#">查看详情</a>
+                      <div class="bidstatus-viewdetails-main">
+                        <p class="bidstatus-viewdetails-arrow"></p>
+                        <div class="">
+                       	  <ol class="list-unstyled">
+                           <li style=" width:100px;">期数</li>
+                           <li style=" width:100px;">还款日期</li>
+                           <li style=" width:165px;">应还金额</li>
+                           <li style=" width:165px;">剩余金额</li>
+                           <li style=" width:162px;">操作</li>
+                          </ol>
+                          <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color3 border-radius">已还款</a></li>
+                         </ul>
+                         <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color2 border-radius">去还款</a></li>
+                         </ul>
+                         <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color2 border-radius">去还款</a></li>
+                         </ul>
+                        </div>
+                      </div>
+                      </div>
+                   </li>
+                   <li style=" width:124px;"><a href="#" class="btn-color btn-color2 border-radius">充值还款</a></li>
+                 </ul>
+                 <ul class="list-unstyled">
+                   <li style=" width:86px;">一步两步</li>
+                   <li style=" width:86px;">3个月</li>
+                   <li style=" width:86px;">7.00%</li>
+                   <li style=" width:86px;">还款完成</li>
+                   <li style=" width:86px;">22222.00</li>
+                   <li style=" width:86px;">还款中</li>
+                   <li class="bidstatus-repayment-schedule" style=" width:216px;">
+                     <span class="pull-left">2/3</span>
+                     <div href="#" class="bidstatus-view-details pull-left">
+                      <a href="#">查看详情</a>
+                      <div class="bidstatus-viewdetails-main">
+                        <p class="bidstatus-viewdetails-arrow"></p>
+                        <div class="">
+                       	  <ol class="list-unstyled">
+                           <li style=" width:100px;">期数</li>
+                           <li style=" width:100px;">还款日期</li>
+                           <li style=" width:165px;">应还金额</li>
+                           <li style=" width:165px;">剩余金额</li>
+                           <li style=" width:162px;">操作</li>
+                          </ol>
+                          <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color3 border-radius">已还款</a></li>
+                         </ul>
+                         <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color2 border-radius">去还款</a></li>
+                         </ul>
+                         <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color2 border-radius">去还款</a></li>
+                         </ul>
+                        </div>
+                      </div>
+                      </div>
+                   </li>
+                   <li style=" width:124px;"><a href="#" class="btn-color btn-color3 border-radius">充值还款</a></li>
+                 </ul>
+                 <ul class="list-unstyled">
+                   <li style=" width:86px;">一步两步</li>
+                   <li style=" width:86px;">3个月</li>
+                   <li style=" width:86px;">7.00%</li>
+                   <li style=" width:86px;">还款中</li>
+                   <li style=" width:86px;">22222.00</li>
+                   <li style=" width:86px;">还款中</li>
+                   <li class="bidstatus-repayment-schedule" style=" width:216px;">
+                     <span class="pull-left">2/3</span>
+                     <div href="#" class="bidstatus-view-details pull-left">
+                      <a href="#">查看详情</a>
+                      <div class="bidstatus-viewdetails-main">
+                        <p class="bidstatus-viewdetails-arrow"></p>
+                        <div class="">
+                       	  <ol class="list-unstyled">
+                           <li style=" width:100px;">期数</li>
+                           <li style=" width:100px;">还款日期</li>
+                           <li style=" width:165px;">应还金额</li>
+                           <li style=" width:165px;">剩余金额</li>
+                           <li style=" width:162px;">操作</li>
+                          </ol>
+                          <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color3 border-radius">已还款</a></li>
+                         </ul>
+                         <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color2 border-radius">去还款</a></li>
+                         </ul>
+                         <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color2 border-radius">去还款</a></li>
+                         </ul>
+                        </div>
+                      </div>
+                      </div>
+                   </li>
+                   <li style=" width:124px;"><a href="#" class="btn-color btn-color2 border-radius">充值还款</a></li>
+                 </ul>
+                 <ul class="list-unstyled">
+                   <li style=" width:86px;">一步两步</li>
+                   <li style=" width:86px;">3个月</li>
+                   <li style=" width:86px;">7.00%</li>
+                   <li style=" width:86px;">还款中</li>
+                   <li style=" width:86px;">22222.00</li>
+                   <li style=" width:86px;">还款中</li>
+                   <li class="bidstatus-repayment-schedule" style=" width:216px;">
+                     <span class="pull-left">2/3</span>
+                     <div href="#" class="bidstatus-view-details pull-left">
+                      <a href="#">查看详情</a>
+                      <div class="bidstatus-viewdetails-main">
+                        <p class="bidstatus-viewdetails-arrow"></p>
+                        <div class="">
+                       	  <ol class="list-unstyled">
+                           <li style=" width:100px;">期数</li>
+                           <li style=" width:100px;">还款日期</li>
+                           <li style=" width:165px;">应还金额</li>
+                           <li style=" width:165px;">剩余金额</li>
+                           <li style=" width:162px;">操作</li>
+                          </ol>
+                          <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color3 border-radius">已还款</a></li>
+                         </ul>
+                         <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color2 border-radius">去还款</a></li>
+                         </ul>
+                         <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color2 border-radius">去还款</a></li>
+                         </ul>
+                        </div>
+                      </div>
+                      </div>
+                   </li>
+                   <li style=" width:124px;"><a href="#" class="btn-color btn-color2 border-radius">充值还款</a></li>
+                 </ul>
+                 <ul class="list-unstyled">
+                   <li style=" width:86px;">一步两步</li>
+                   <li style=" width:86px;">3个月</li>
+                   <li style=" width:86px;">7.00%</li>
+                   <li style=" width:86px;">还款中</li>
+                   <li style=" width:86px;">22222.00</li>
+                   <li style=" width:86px;">还款中</li>
+                   <li class="bidstatus-repayment-schedule" style=" width:216px;">
+                     <span class="pull-left">2/3</span>
+                     <div href="#" class="bidstatus-view-details pull-left">
+                      <a href="#">查看详情</a>
+                      <div class="bidstatus-viewdetails-main">
+                        <p class="bidstatus-viewdetails-arrow"></p>
+                        <div class="">
+                       	  <ol class="list-unstyled">
+                           <li style=" width:100px;">期数</li>
+                           <li style=" width:100px;">还款日期</li>
+                           <li style=" width:165px;">应还金额</li>
+                           <li style=" width:165px;">剩余金额</li>
+                           <li style=" width:162px;">操作</li>
+                          </ol>
+                          <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color3 border-radius">已还款</a></li>
+                         </ul>
+                         <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color2 border-radius">去还款</a></li>
+                         </ul>
+                         <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color2 border-radius">去还款</a></li>
+                         </ul>
+                        </div>
+                      </div>
+                      </div>
+                   </li>
+                   <li style=" width:124px;"><a href="#" class="btn-color btn-color2 border-radius">充值还款</a></li>
+                 </ul>
+                 <ul class="list-unstyled">
+                   <li style=" width:86px;">一步两步</li>
+                   <li style=" width:86px;">3个月</li>
+                   <li style=" width:86px;">7.00%</li>
+                   <li style=" width:86px;">还款中</li>
+                   <li style=" width:86px;">22222.00</li>
+                   <li style=" width:86px;">还款中</li>
+                   <li class="bidstatus-repayment-schedule" style=" width:216px;">
+                     <span class="pull-left">2/3</span>
+                     <div href="#" class="bidstatus-view-details pull-left">
+                      <a href="#">查看详情</a>
+                      <div class="bidstatus-viewdetails-main">
+                        <p class="bidstatus-viewdetails-arrow"></p>
+                        <div class="">
+                       	  <ol class="list-unstyled">
+                           <li style=" width:100px;">期数</li>
+                           <li style=" width:100px;">还款日期</li>
+                           <li style=" width:165px;">应还金额</li>
+                           <li style=" width:165px;">剩余金额</li>
+                           <li style=" width:162px;">操作</li>
+                          </ol>
+                          <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color3 border-radius">已还款</a></li>
+                         </ul>
+                         <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color2 border-radius">去还款</a></li>
+                         </ul>
+                         <ul class="list-unstyled">
+                           <li style=" width:100px;">1</li>
+                           <li style=" width:100px;">2016-12-31</li>
+                           <li style=" width:165px;">323232.00元</li>
+                           <li style=" width:165px;">1000000.00元</li>
+                           <li style=" width:162px;"><a href="#" class="btn-color btn-color2 border-radius">去还款</a></li>
+                         </ul>
+                        </div>
+                      </div>
+                      </div>
+                   </li>
+                   <li style=" width:124px;"><a href="#" class="btn-color btn-color2 border-radius">充值还款</a></li>
+                 </ul>
+                </div>
+            </div> 
+         </div>
+      </div>
+   </div>
+</div>
+<div class="footer">
+  <div class="footer-main1">
+    <div class="main clearfix">
+      <div class="footer-main1-left pull-left">
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作伙伴</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ol>
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">招贤纳士</a></li>
+        </ol>
+      </div>
+      <div class="pull-left"><span class="line"></span></div>
+        <div class="footer-main1-middle pull-left">
+          <dl class=" list-unstyled">
+            <dt class=" pull-left" style=" font-size:18px;">服务热线：</dt>
+            <dd class=" pull-left">
+              <p style=" font-size:38px; font-weight:600; margin-top:-10px;">400-016-1131</p>
+              <p>工作时间：周一至周五9:00-18:00</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="pull-left"><span class="line"></span></div>
+          <div class="footer-main1-right pull-right">
+            <p class=" text-center pull-left">
+              盼贷微信服务号<br /><img src="images/common/footer1.jpg" />
+            </p>
+            <p class=" text-center pull-left" style=" margin-right:0;">
+              盼贷APP下载<br /><img src="images/common/footer2.jpg" />
+            </p>
+          </div>
+        </div>
+  </div>
+  <div class="footer-main2">
+    <div class="main text-center">
+      <p><img src="images/common/footer3.jpg" /><img src="images/common/footer4.jpg" /><img src="images/common/footer5.jpg" /><img src="images/common/footer6.jpg" /><img src="images/common/footer7.jpg" /></p>
+      <p>© 2012-2017 北京盼大世纪信息技术有限公司 All rights reserved | 京ICP备15042613号 | 免责条款</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

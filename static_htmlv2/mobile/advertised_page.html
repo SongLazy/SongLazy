@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>广告注册页</title>
+<link href="css/jquery.mobile-1.3.2.min.css" rel="stylesheet" type="text/css" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/advertised_page.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.3.2.min.js"></script>
+<script src="js/jquery.metadata.js"></script>
+<script src="js/jquery.validate.js"></script>
+</head>
+<body>
+<div data-role="page" class="advertised-page">
+  <div class="advertised-page-banner">
+    <img src="images/advertised_page/banner.jpg" />
+  </div>
+  <div data-role="content">
+    <div class="advertised-page-main">
+      <form id="advertisedpageForm" novalidate action="javascript:void(0)" name="forms">
+        <div class="advertised-page-form">
+          <p class="clearfix advertised-form-common">
+            <label for="advertisedformnumber"><img src="images/advertised_page/form1.png" /></label>
+            <input type="text" placeholder="请输入您的手机号码" data-role='none' id="advertisedformnumber" name="advertisedformnumber"  />
+          </p>
+          <p class="clearfix advertised-form-common advertised-form-code">
+            <label for="advertisedformcode"><img src="images/advertised_page/form2.png" /></label>
+            <input type="text" placeholder="请输入验证码" data-role='none' id="advertisedformcode" name="advertisedformcode"  />
+            <a href="#">发送验证码</a>
+          </p>
+          <p class="clearfix advertised-form-common advertised-form-password">
+            <label for="password"><img src="images/advertised_page/form3.png" /></label>
+            <span id="box"><input type="password" placeholder="请输入密码" data-role='none' id="password" name="password" /></span>
+            <span id="click"><a href="javascript:showps()"><img src="images/login/login4.png" /></a></span>
+          </p>
+          <p class="clearfix advertised-form-checkbox">
+            <label><input type="checkbox" data-role="none" id="advertisedformcheckbox" name="advertisedformcheckbox" checked="">我已同意并接受<a href="#">《盼贷网络服务使用协议》</a></label>
+          </p>
+          <p class="clearfix advertised-form-submit">
+            <input type="submit" value="注册" data-role="none" id="advertisedformsubmit" name="advertisedformsubmit">
+          </p>
+       </div>
+      </form>
+      <ol class="index-introduce advertised-page-introduce clearfix">
+        <li>
+          <img src="images/index/introduce1.png">
+          <h1>优资产</h1>
+          <p>国际金融<br>机构资产端</p>
+        </li>
+        <li>
+          <img src="images/index/introduce2.png">
+          <h1>硬实力</h1>
+          <p>国际知名<br>企业战略合作</p>
+        </li>
+        <li>
+          <img src="images/index/introduce3.png">
+          <h1>超安全</h1>
+          <p>双重<br>保险机制</p>
+        </li>
+        <li>
+          <img src="images/index/introduce4.png">
+          <h1>真存管</h1>
+          <p>联动优势<br>第三方托管</p>
+        </li>
+      </ol>
+      <div class="advertised-page-news">
+        <img src="images/advertised_page/news.jpg" />
+      </div>
+      <div class="advertised-page-safe">
+        <h1 class="advertised-page-title">六重投资安全保障</h1>
+        <p><img src="images/advertised_page/safe.png" /></p>
+      </div>
+      <div class="advertised-page-history">
+        <h1 class="advertised-page-title">企业发展历程</h1>
+        <div class="">
+          <div class="adpa-history-img"><img src="images/advertised_page/history1.png" /></div>
+          <div class="adpa-history-line" style=" height:16px; border-top-left-radius:4px; border-top-right-radius:4px;"></div>
+          <div class="adpa-history-word adpa-history-word1">
+            <p>2016年07月 盼贷网获全球知名风投美国中经合集团（WI Harper Group）A轮融资</p>
+          </div>
+          <div class="adpa-history-line"></div>
+          <div class="adpa-history-word">
+            <p>2015年06月 盼贷网进入建久集团(1200亿管理资产)</p>
+          </div>
+          <div class="adpa-history-line"></div>
+          <div class="adpa-history-word adpa-history-word1">
+            <p>2014年10月 国有企业大连再生资源交易所正式成盼贷合作伙伴</p>
+          </div>
+          <div class="adpa-history-line"></div>
+          <div class="adpa-history-word adpa-history-word1">
+            <p>2013年02月 较早连接安融惠众（Allwincredit）的P2P小额融资平台</p>
+          </div>
+          <div class="adpa-history-line"></div>
+          <div class="adpa-history-word">
+            <p>2012年08月 中国金融中介机构协会的创始成员</p>
+          </div>
+          <div class="adpa-history-line"></div>
+          <div class="adpa-history-word">
+            <p>2011年07月 公司注册成立</p>
+          </div>
+        </div>
+      </div>
+      <div class="advertised-page-prompt clearfix">
+        <span class="fl"></span>
+        <b class="fr">市场有风险，投资需谨慎，一切以收益为准</b>
+      </div>
+      <div class="advertised-page-qrcode clearfix">
+        <p class="fl"><img src="images/login/register1.jpg" /><br />盼贷微信服务号</p>
+        <p class="fr"><img src="images/login/register2.jpg" /><br />盼贷APP下载</p>
+      </div>
+      <div class="advertised-page-btn">
+        <a href="#"><img src="images/advertised_page/btn1.png" />iPhone下载</a>
+        <a href="#"><img src="images/advertised_page/btn2.png" />Android下载</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+ $(document).ready(function() {
+  $("#advertisedpageForm").validate({
+        rules: {
+            advertisedformnumber:{
+				required: true,
+				digits:true
+			} ,
+			advertisedformcode:{
+			  required: true,
+			},
+			password:{
+			  required: true,
+			}
+        },
+        messages: {
+            advertisedformnumber:{
+				 required: "请输入您的手机号码", 
+				 digits:"必须是数字"
+			},
+			advertisedformcode:{
+			  required: "请填写验证码"
+			},
+			password:{
+			  required: "请输入密码"
+			}
+        },
+		errorPlacement: function(error, element) {
+			// Append error within linked label
+			var p=$( element ).closest( "form" ).find( "label[for='" + element.attr( "id" ) + "']" ).parents("p");
+			error.insertAfter(p);
+		}
+
+		
+    });
+ })
+</script>
+<script language="JavaScript">   
+	function showps(){   
+		if (this.forms.password.type="password") {  
+			document.getElementById("box").innerHTML="<input type=\"text\" name=\"password\" size=\"80\" style='width:\"150\";' value="+this.forms.password.value+">";   
+			document.getElementById("click").innerHTML="<a href=\"javascript:hideps()\"><img src=\"images/login/login5.png\" /></a>"  
+		}  
+	}   
+	function hideps(){   
+		if (this.forms.password.type="text") {  
+			document.getElementById("box").innerHTML="<input type=\"password\" name=\"password\" size=\"80\" style='width:\"150\";' value="+this.forms.password.value+">";   
+			document.getElementById("click").innerHTML="<a href=\"javascript:showps()\"><img src=\"images/login/login4.png\" /></a>"  
+		}   
+	}   
+</script>
+</body>
+</html>

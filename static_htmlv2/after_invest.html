@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+ <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+ <meta name="renderer" content="webkit|ie-comp|ie-stand">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>投资状况</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" /> 
+<link href="css/common.css" rel="stylesheet" type="text/css" /> 
+<link href="css/after_login.css" rel="stylesheet" type="text/css" /> 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jq.js"></script>
+<script src="js/after_jq.js"></script>
+
+ <!-- 
+
+		如果是IE9以下版本，添加Response.js 支持 HTML5元素和media查询
+
+	 -->
+    <!--[if lt IE 9]>
+
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+
+<body>
+<div class="header">
+  <div class="header-main1 clearfix">
+    <div class="main clearfix">
+      <ol class="header-main1-left list-unstyled pull-left">
+        <li><a href="#"><span class="icon-app icon"></span>盼贷APP</a></li>
+        <li><a href="#"><span class="icon-follow icon"></span>关注盼贷</a></li>
+       <li><a href="#"><span class="icon-telephone icon"></span>服务热线：400-016-1131</a></li>
+      </ol>
+      <ol class="header-main1-right list-unstyled pull-right">
+        <li><a href="#">新手入门</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">现金券</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#"><span class="icon-account icon hover"></span>我的账户<b class="icon icon-arrow"></b></a></li>
+        <li><span class="line"></span></li>
+        <li class="return-old"><a href="#">返回旧版网站</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="header-main2">
+    <div class="main clearfix">
+      <p class="header-main2-logo pull-left"><img src="images/common/logo.png" /></p>
+      <ol class="header-main2-nav list-unstyled pull-right">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="invest_fixed.html">理财</a></li>
+        <li><a href="safe.html">安全保障</a></li>
+        <li><a href="#">活动专区</a></li>
+        <li><a href="about_introduction.html">关于我们</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div class="after-login after-invest clearfix">
+    <div class="after-login-left pull-left">
+      <div class="aflo-left-main1">
+          <p class="left-mian1-face"><img src="images/after-login/after-left1.png" /></p>
+          <p class="left-mian1-phone">1300****299，下午好!</p>
+          <p class="left-mian1-icon">
+            <a href="#" title="实名认证：未认证" class="left-mian1-icon1 active"><b></b>已认证</a>
+            <a href="#" title="绑定手机：未绑定" class="left-mian1-icon2"><b></b>未绑定</a>
+            <a href="#" title="绑定邮箱：未绑定" class="left-mian1-icon3"><b></b>未绑定</a>
+            <a href="#" title="银行卡：未绑定" class="left-mian1-icon4"><b></b>未绑定</a>
+          </p>
+      </div>
+      <div class="aflo-left-main2">
+        <dl>
+          <dt>我的账户</dt>
+          <dd><a href="after_account.html"><b class="account-one"></b>账户总览</a></dd>
+          <dd><a href="after_info.html"><b class="account-two"></b>基本信息</a></dd>
+          <dt>我的交易</dt>
+          <dd><a href="after_automatic.html"><b class="trade-one"></b>自动再投资</a></dd>
+          <dd><a href="after_transfer.html"><b class="trade-two"></b>债权转让</a></dd>
+          <dd><a href="after_treasure.html"><b class="trade-three"></b>盼贷宝</a></dd>
+          <dd class="hover"><a href="after_invest.html"><b class="trade-four"></b>投资状况</a></dd>
+          <dd><a href="after_trade.html"><b class="trade-five"></b>交易记录</a></dd>
+          <dt>资金管理</dt>
+          <dd><a href="after_bank.html"><b class="money-one"></b>银行卡管理</a></dd>
+          <dd><a href="after_pay.html"><b class="money-two"></b>充值</a></dd>
+          <dd><a href="after_withdraw.html"><b class="money-three"></b>提现</a></dd>
+          <dt>活动中心</dt>
+          <dd><a href="invite_friends.html"><b class="active-one"></b>邀请返利</a></dd>
+          <dd><a href="after_award.html"><b class="active-two"></b>抽奖中心</a></dd>
+          <dd><a href="cash_coupon.html"><b class="active-three"></b>我的现金券</a></dd>
+        </dl> 
+      </div>
+   </div>
+   <div class="after-login-rightbk  pull-right">
+    <div class="after-login-right after-invest-right">
+      <div class="aflori-common-main1 after-invest-main1 clearfix">
+         <div class="afin-main1-cen">
+           <h1>投资状况</h1>
+           <ol class="list-unstyled">
+              <li><p>正在投标中总额：<b><strong>0.00</strong>元</b></p></li>
+              <li><p>正在投标中总额：<b><strong>0.00</strong>元</b></p><p>正在投标中总额：<b><strong>0.00</strong>元</b></p></li>
+              <li><p>正在投标中总额：<b><strong>0.00</strong>元</b></p><p>正在投标中总额：<b><strong>0.00</strong>元</b></p></li>
+           </ol>
+         </div>
+      </div>
+      <div class="after-invest-new">
+          <ol class="list-unstyled">
+            <li style=" width:;">名称</li>
+            <li>预期年收益</li>
+            <li style=" width:;">金额（元）</li>
+            <li>加入时间</li>
+            <li>退出时间</li>
+            <li style=" width:;">实际到账金额</li>
+            <li>合同</li>
+          </ol>
+          <ul class="list-unstyled">
+            <li style=" width:;">新手福利标</li>
+            <li>18%</li>
+            <li style=" width:;">5000.00</li>
+            <li>2015-01-31</li>
+            <li>2015-01-31</li>
+            <li style=" width:;">5100.00</li>
+            <li><a href="#" class="btn-color4 btn-color border-radius" style=" margin:10px auto;width:110px;">服务协议</a></li>
+          </ul>
+      </div>
+      <div class="after-invest-main2 aflo-right-common">
+         <div class="aflo-right-title clearfix">
+            <ul class="list-unstyled pull-left">
+              <li class="hover">投标中<b>0</b></li>
+              <li>还款中<b>0</b></li>
+              <li>完成还款<b>0</b></li>
+              <li>计划宝<b>0</b></li>
+            </ul>
+            <p class="pull-right"><select class="form-control"><option>全部</option><option>盼贷七星财富</option><option>国有交易所标</option><option>其他产品</option></select></p>
+         </div>
+         <div class="aflo-right-main">
+           <div class="aflo-right-main1" style="display:block;">
+             <!--<div class="aflori-main1-cen1">
+               <ol class="list-unstyled clearfix record-list">
+                 <li style=" width:212px;">借款人信息</li>
+                 <li style=" width:140px;">所需金额</li>
+                 <li style=" width:100px;">用途</li>
+                 <li style=" width:95px;">期限（月）</li>
+                 <li style=" width:64px;">年收益率</li>
+                 <li style=" width:110px;">还款方式</li>
+                 <li style=" width:145px;">协议内容</li>
+               </ol>
+               <ul class="aflori-main1-list list-unstyled clearfix">
+                 <li style=" width:212px;">lifengde8018 <span class="small-icon pull-right"><b class="dan-icon"></b><b class="trade-icon"></b><b class="xinda-icon"></b><b class="a-icon"></b></span></li>
+                 <li style=" width:140px;" class="need-money">
+                   2,989.00元
+                   <span class="small-icon"><b class="coupon-icon"></b></span>
+                   <div class="afin-coupon-popup">
+                      <div class="afinco-popup-main">
+                        <p class="afinco-popup-arrow"></p>
+                        <p>已使用现金券：<b>50.00</b>元</p>
+                        <p>实际支付金额：<b>4555.00</b>元</p>
+                        <p><a href="#" class="btn-color2">查看现金券</a></p>
+                      </div>
+                   </div>
+                  </li>
+                 <li style=" width:100px;">2,989.00元</li>
+                 <li style=" width:95px;">4个月</li>
+                 <li style=" width:64px;">10.00%</li>
+                 <li style=" width:110px;">10天到还款日</li>
+                 <li style=" width:145px;" class="handle"><a href="#" class="btn-color2 btn-color border-radius">查看协议 &gt;</a></li>
+               </ul>
+               <ul class="aflori-main1-list list-unstyled clearfix">
+                 <li style=" width:212px;">lifengde8018 <span class="small-icon pull-right"><b class="dan-icon"></b><b class="trade-icon"></b><b class="xinda-icon"></b><b class="a-icon"></b></span></li>
+                 <li style=" width:140px;" class="need-money">
+                   2,989.00元
+                   <span class="small-icon"><b class="coupon-icon"></b></span>
+                   <div class="afin-coupon-popup">
+                      <div class="afinco-popup-main">
+                        <p class="afinco-popup-arrow"></p>
+                        <p>已使用现金券：<b>50.00</b>元</p>
+                        <p>实际支付金额：<b>4555.00</b>元</p>
+                        <p><a href="#" class="btn-color2">查看现金券</a></p>
+                      </div>
+                   </div>
+                  </li>
+                 <li style=" width:100px;">2,989.00元</li>
+                 <li style=" width:95px;">4个月</li>
+                 <li style=" width:64px;">10.00%</li>
+                 <li style=" width:110px;">10天到还款日</li>
+                 <li style=" width:145px;" class="handle"><a href="#" class="btn-color2 btn-color border-radius">查看协议 &gt;</a></li>
+               </ul>
+             </div>
+             <div class="pagination-center">
+               <ul class="pagination">
+                 <li><a href="#">上一页</a></li>
+                 <li><a href="#">1</a></li>
+                 <li><a href="#">2</a></li>
+                 <li><a href="#">3</a></li>
+                <li><a href="#">下一页</a></li>
+               </ul>
+             </div>-->
+             <div class="after-invest-norecord no-login-record text-center">
+                <span class="bg-icon"></span>暂无投资标的
+             </div>
+           </div>
+           <div class="aflo-right-main2">
+             <div class="aflori-main2-cen1">
+               <ol class="list-unstyled clearfix record-list">
+                 <li style=" width:200px;">借款人信息</li>
+                 <li style=" width:100px;">未还本金</li>
+                 <li style=" width:90px;">已还/未还</li>
+                 <li style=" width:90px;">每月还款</li>
+                 <li style=" width:90px;">最后一期还款</li>
+                 <li style=" width:54px;">年化利率</li>
+                 <li style=" width:80px;">还款状态</li>
+                 <li style=" width:60px;">还款日</li>
+                 <li style=" width:100px;" class="handle">协议内容</li>
+               </ol>
+               <ul class="aflori-main1-list list-unstyled clearfix">
+                 <li style=" width:200px;">lifengde8018 <span class="small-icon pull-right"><b class="dan-icon"></b><b class="trade-icon"></b><b class="xinda-icon"></b><b class="a-icon"></b></span></li>
+                 <li style=" width:100px;" class="need-money">
+                   2,989.00元
+                   <span class="small-icon"><b class="coupon-icon"></b></span>
+                   <div class="afin-coupon-popup" style="left:-6px;">
+                      <div class="afinco-popup-main">
+                        <p class="afinco-popup-arrow"></p>
+                        <p>已使用现金券：<b>50.00</b>元</p>
+                        <p>实际支付金额：<b>4555.00</b>元</p>
+                        <p><a href="#" class="btn-color2">查看现金券</a></p>
+                      </div>
+                   </div>
+                  </li>
+                 <li style=" width:90px;">2,989.00元</li>
+                 <li style=" width:90px;">4个月</li>
+                 <li style=" width:90px;">2,989.00元</li>
+                 <li style=" width:54px;">10.00%</li>
+                 <li style=" width:80px;">10天到还款日</li>
+                 <li style=" width:60px;">3月1日</li>
+                 <li style=" width:98px;" class="handle"><a href="#" class="btn-color2 btn-color border-radius">查看协议 &gt;</a></li>
+               </ul>
+               <ul class="aflori-main1-list list-unstyled clearfix">
+                 <li style=" width:200px;">lifengde8018 <span class="small-icon pull-right"><b class="dan-icon"></b><b class="trade-icon"></b><b class="xinda-icon"></b><b class="a-icon"></b></span></li>
+                 <li style=" width:100px;" class="need-money">
+                   2,989.00元
+                   <span class="small-icon"><b class="coupon-icon"></b></span>
+                   <div class="afin-coupon-popup" style="left:-6px;">
+                      <div class="afinco-popup-main">
+                        <p class="afinco-popup-arrow"></p>
+                        <p>已使用现金券：<b>50.00</b>元</p>
+                        <p>实际支付金额：<b>4555.00</b>元</p>
+                        <p><a href="#" class="btn-color2">查看现金券</a></p>
+                      </div>
+                   </div>
+                  </li>
+                 <li style=" width:90px;">2,989.00元</li>
+                 <li style=" width:90px;">4个月</li>
+                 <li style=" width:90px;">2,989.00元</li>
+                 <li style=" width:54px;">10.00%</li>
+                 <li style=" width:80px;">10天到还款日</li>
+                 <li style=" width:60px;">3月1日</li>
+                 <li style=" width:98px;" class="handle"><a href="#" class="btn-color2 btn-color border-radius">查看协议 &gt;</a></li>
+               </ul>
+              </div>
+             <div class="pagination-center">
+               <ul class="pagination">
+                 <li><a href="#">上一页</a></li>
+                 <li><a href="#">1</a></li>
+                 <li><a href="#">2</a></li>
+                 <li><a href="#">3</a></li>
+                <li><a href="#">下一页</a></li>
+               </ul>
+             </div>
+           <!--   <div class="after-invest-norecord no-login-record text-center">
+                <span class="bg-icon"></span>暂无还款标的
+             </div>-->
+           </div>
+           <div class="aflo-right-main3">
+            <!-- <div class="aflori-main3-cen1">
+               <ol class="list-unstyled clearfix record-list">
+                 <li style=" width:212px;">借款人信息</li>
+                 <li style=" width:196px;">投资金额</li>
+                 <li style=" width:110px;">投资期限</li>
+                 <li style=" width:88px;">年化利率</li>
+                 <li style=" width:140px;">收回本息总额</li>
+                 <li style=" width:122px;">协议内容</li>
+               </ol>
+               <ul class="aflori-main1-list list-unstyled clearfix">
+                 <li style=" width:212px;">lifengde8018</li>
+                 <li style=" width:196px;" class="need-money">
+                   2,989.00元
+                   <span class="small-icon"><b class="coupon-icon"></b></span>
+                   <div class="afin-coupon-popup">
+                      <div class="afinco-popup-main">
+                        <p class="afinco-popup-arrow"></p>
+                        <p>已使用现金券：<b>50.00</b>元</p>
+                        <p>实际支付金额：<b>4555.00</b>元</p>
+                        <p><a href="#" class="btn-color2">查看现金券</a></p>
+                      </div>
+                   </div>
+                  </li>
+                 <li style=" width:110px;">12个月</li>
+                 <li style=" width:88px;">10.00%</li>
+                 <li style=" width:140px;">2,989.00元</li>
+                 <li style=" width:122px;">已签协议</li>
+               </ul>
+               <ul class="aflori-main1-list list-unstyled clearfix">
+                 <li style=" width:212px;">lifengde8018</li>
+                 <li style=" width:196px;" class="need-money">
+                   2,989.00元
+                   <span class="small-icon"><b class="coupon-icon"></b></span>
+                   <div class="afin-coupon-popup">
+                      <div class="afinco-popup-main">
+                        <p class="afinco-popup-arrow"></p>
+                        <p>已使用现金券：<b>50.00</b>元</p>
+                        <p>实际支付金额：<b>4555.00</b>元</p>
+                        <p><a href="#" class="btn-color2">查看现金券</a></p>
+                      </div>
+                   </div>
+                  </li>
+                 <li style=" width:110px;">12个月</li>
+                 <li style=" width:88px;">10.00%</li>
+                 <li style=" width:140px;">2,989.00元</li>
+                 <li style=" width:122px;">已签协议</li>
+               </ul>
+               <ul class="aflori-main1-list list-unstyled clearfix">
+                 <li style=" width:212px;">lifengde8018</li>
+                 <li style=" width:196px;" class="need-money">
+                   2,989.00元
+                   <span class="small-icon"><b class="coupon-icon"></b></span>
+                   <div class="afin-coupon-popup">
+                      <div class="afinco-popup-main">
+                        <p class="afinco-popup-arrow"></p>
+                        <p>已使用现金券：<b>50.00</b>元</p>
+                        <p>实际支付金额：<b>4555.00</b>元</p>
+                        <p><a href="#" class="btn-color2">查看现金券</a></p>
+                      </div>
+                   </div>
+                  </li>
+                 <li style=" width:110px;">12个月</li>
+                 <li style=" width:88px;">10.00%</li>
+                 <li style=" width:140px;">2,989.00元</li>
+                 <li style=" width:122px;">已签协议</li>
+               </ul>
+               <ul class="aflori-main1-list list-unstyled clearfix">
+                 <li style=" width:212px;">lifengde8018</li>
+                 <li style=" width:196px;" class="need-money">
+                   2,989.00元
+                   <span class="small-icon"><b class="coupon-icon"></b></span>
+                   <div class="afin-coupon-popup">
+                      <div class="afinco-popup-main">
+                        <p class="afinco-popup-arrow"></p>
+                        <p>已使用现金券：<b>50.00</b>元</p>
+                        <p>实际支付金额：<b>4555.00</b>元</p>
+                        <p><a href="#" class="btn-color2">查看现金券</a></p>
+                      </div>
+                   </div>
+                  </li>
+                 <li style=" width:110px;">12个月</li>
+                 <li style=" width:88px;">10.00%</li>
+                 <li style=" width:140px;">2,989.00元</li>
+                 <li style=" width:122px;">已签协议</li>
+               </ul>
+             </div>
+             <div class="pagination-center">
+               <ul class="pagination">
+                 <li><a href="#">上一页</a></li>
+                 <li><a href="#">1</a></li>
+                 <li><a href="#">2</a></li>
+                 <li><a href="#">3</a></li>
+                <li><a href="#">下一页</a></li>
+               </ul>
+             </div>-->
+             <div class="after-invest-norecord no-login-record text-center">
+                <span class="bg-icon"></span>暂无完成还款标的
+             </div>
+           </div>
+           <div class="aflo-right-main4">
+             <div class="aflori-main4-cen1">
+               <ol class="list-unstyled clearfix record-list">
+                 <li style=" width:140px;">投资金额</li>
+                 <li style=" width:90px;">期限</li>
+                 <li style=" width:100px;">开始时间</li>
+                 <li style=" width:100px;">结束时间</li>
+                 <li style=" width:100px;">总标的数</li>
+                 <li style=" width:110px;">已还清标的</li>
+                 <li style=" width:110px;">预期年利率</li>
+                 <li style=" width:116px;">详情</li>
+               </ol>
+               <ul class="aflori-main1-list list-unstyled clearfix">
+                 <li style=" width:140px;">10000.00元</li>
+                 <li style=" width:90px;">6个月</li>
+                 <li style=" width:100px;">2017-12-31</li>
+                 <li style=" width:100px;">2018-12-31</li>
+                 <li style=" width:100px;">10</li>
+                 <li style=" width:110px;">1/5</li>
+                 <li style=" width:110px;">9.5%</li>
+                 <li style=" width:114px;"><a href="#" class="afin-plan-btn">标的详情</a></li>
+               </ul>
+               <ul class="aflori-main1-list list-unstyled clearfix">
+                 <li style=" width:140px;">10000.00元</li>
+                 <li style=" width:90px;">6个月</li>
+                 <li style=" width:100px;">2017-12-31</li>
+                 <li style=" width:100px;">2018-12-31</li>
+                 <li style=" width:100px;">10</li>
+                 <li style=" width:110px;">1/5</li>
+                 <li style=" width:110px;">9.5%</li>
+                 <li style=" width:114px;"><a href="#" class="after-invest-plan">标的详情</a></li>
+               </ul>
+               <ul class="aflori-main1-list list-unstyled clearfix">
+                 <li style=" width:140px;">10000.00元</li>
+                 <li style=" width:90px;">6个月</li>
+                 <li style=" width:100px;">2017-12-31</li>
+                 <li style=" width:100px;">2018-12-31</li>
+                 <li style=" width:100px;">10</li>
+                 <li style=" width:110px;">1/5</li>
+                 <li style=" width:110px;">9.5%</li>
+                 <li style=" width:114px;"><a href="#" class="after-invest-plan">标的详情</a></li>
+               </ul>
+             </div>
+             <div class="pagination-center">
+               <ul class="pagination">
+                 <li><a href="#">上一页</a></li>
+                 <li><a href="#">1</a></li>
+                 <li><a href="#">2</a></li>
+                 <li><a href="#">3</a></li>
+                <li><a href="#">下一页</a></li>
+               </ul>
+             </div>
+           </div>
+         </div>
+      </div>
+   </div>
+   </div>
+</div>
+<div class="footer">
+  <div class="footer-main1">
+    <div class="main clearfix">
+      <div class="footer-main1-left pull-left">
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作伙伴</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ol>
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">招贤纳士</a></li>
+        </ol>
+      </div>
+      <div class="pull-left"><span class="line"></span></div>
+        <div class="footer-main1-middle pull-left">
+          <dl class=" list-unstyled">
+            <dt class=" pull-left" style=" font-size:18px;">服务热线：</dt>
+            <dd class=" pull-left">
+              <p style=" font-size:38px; font-weight:600; margin-top:-10px;">400-016-1131</p>
+              <p>工作时间：周一至周五9:00-18:00</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="pull-left"><span class="line"></span></div>
+          <div class="footer-main1-right pull-right">
+            <p class=" text-center pull-left">
+              盼贷微信服务号<br /><img src="images/common/footer1.jpg" />
+            </p>
+            <p class=" text-center pull-left" style=" margin-right:0;">
+              盼贷APP下载<br /><img src="images/common/footer2.jpg" />
+            </p>
+          </div>
+        </div>
+  </div>
+  <div class="footer-main2">
+    <div class="main text-center">
+      <p><img src="images/common/footer3.jpg" /><img src="images/common/footer4.jpg" /><img src="images/common/footer5.jpg" /><img src="images/common/footer6.jpg" /><img src="images/common/footer7.jpg" /></p>
+      <p>© 2012-2017 北京盼大世纪信息技术有限公司 All rights reserved | 京ICP备15042613号 | 免责条款</p>
+    </div>
+  </div>
+</div>
+<div class="transparent-back"></div>
+<div class="afin-plan-details popups border-radius">
+  <div class="record-list">
+    <div class="record-list-main">
+      <ol class=" list-unstyled clearfix">
+        <li style=" width:120px;">借款人信息</li>
+        <li style=" width:144px;">投资金额</li>
+        <li style=" width:90px;">期限</li>
+        <li style=" width:110px;">预期年利率</li>
+        <li style=" width:100px;">还款方式</li>
+        <li style=" width:104px;">每月还款</li>
+        <li style=" width:124px;">最后一期还款</li>
+        <li style=" width:90px;">还款日</li>
+        <li style=" width:130px;">当月还款状态</li>
+        <li style=" width:116px;">协议信息</li>
+      </ol>
+      <ul class=" list-unstyled record-list-main2 clearfix">
+        <li style=" width:120px;">tao****pao</li>
+        <li style=" width:144px;" class="plan-invest-money">10000.00元<b class="bg-icon"></b></li>
+        <li style=" width:90px;">6个月</li>
+        <li style=" width:110px;">9.5%</li>
+        <li style=" width:100px;">先付利息</li>
+        <li style=" width:104px;">11.00元</li>
+        <li style=" width:124px;">333.00元</li>
+        <li style=" width:90px;">每月25日</li>
+        <li style=" width:130px;">1天后还款</li>
+        <li style=" width:114px;"><a href="#" class="plan-agreement-see">点击查看</a></li>
+      </ul>
+      <ul class=" list-unstyled record-list-main2 clearfix">
+        <li style=" width:120px;">tao****pao</li>
+        <li style=" width:144px;" class="plan-invest-money">10000.00元<b class="bg-icon"></b></li>
+        <li style=" width:90px;">6个月</li>
+        <li style=" width:110px;">9.5%</li>
+        <li style=" width:100px;">先付利息</li>
+        <li style=" width:104px;">11.00元</li>
+        <li style=" width:124px;">333.00元</li>
+        <li style=" width:90px;">每月25日</li>
+        <li style=" width:130px;">1天后还款</li>
+        <li style=" width:114px;"><a href="#" class="plan-agreement-see">点击查看</a></li>
+      </ul>
+      <ul class=" list-unstyled record-list-main2 clearfix">
+        <li style=" width:120px;">tao****pao</li>
+        <li style=" width:144px;" class="plan-invest-money">10000.00元<b class="bg-icon"></b></li>
+        <li style=" width:90px;">6个月</li>
+        <li style=" width:110px;">9.5%</li>
+        <li style=" width:100px;">先付利息</li>
+        <li style=" width:104px;">11.00元</li>
+        <li style=" width:124px;">333.00元</li>
+        <li style=" width:90px;">每月25日</li>
+        <li style=" width:130px;">1天后还款</li>
+        <li style=" width:114px;"><a href="#" class="plan-agreement-see">点击查看</a></li>
+      </ul>
+      <ul class=" list-unstyled record-list-main2 clearfix">
+        <li style=" width:120px;">tao****pao</li>
+        <li style=" width:144px;" class="plan-invest-money">10000.00元<b class="bg-icon"></b></li>
+        <li style=" width:90px;">6个月</li>
+        <li style=" width:110px;">9.5%</li>
+        <li style=" width:100px;">先付利息</li>
+        <li style=" width:104px;">11.00元</li>
+        <li style=" width:124px;">333.00元</li>
+        <li style=" width:90px;">每月25日</li>
+        <li style=" width:130px;">1天后还款</li>
+        <li style=" width:114px;"><a href="#" class="plan-agreement-see">点击查看</a></li>
+      </ul>
+      <ul class=" list-unstyled record-list-main2 clearfix">
+        <li style=" width:120px;">tao****pao</li>
+        <li style=" width:144px;" class="plan-invest-money">10000.00元<b class="bg-icon"></b></li>
+        <li style=" width:90px;">6个月</li>
+        <li style=" width:110px;">9.5%</li>
+        <li style=" width:100px;">先付利息</li>
+        <li style=" width:104px;">11.00元</li>
+        <li style=" width:124px;">333.00元</li>
+        <li style=" width:90px;">每月25日</li>
+        <li style=" width:130px;">1天后还款</li>
+        <li style=" width:114px;"><a href="#" class="plan-agreement-see">点击查看</a></li>
+      </ul>
+      <ul class=" list-unstyled record-list-main2 clearfix">
+        <li style=" width:120px;">tao****pao</li>
+        <li style=" width:144px;" class="plan-invest-money">10000.00元<b class="bg-icon"></b></li>
+        <li style=" width:90px;">6个月</li>
+        <li style=" width:110px;">9.5%</li>
+        <li style=" width:100px;">先付利息</li>
+        <li style=" width:104px;">11.00元</li>
+        <li style=" width:124px;">333.00元</li>
+        <li style=" width:90px;">每月25日</li>
+        <li style=" width:130px;">1天后还款</li>
+        <li style=" width:114px;"><a href="#" class="plan-agreement-see">点击查看</a></li>
+      </ul>
+    </div>
+    <div class="pagination-center">
+       <ul class="pagination">
+         <li><a href="#">上一页</a></li>
+         <li><a href="#">1</a></li>
+         <li><a href="#">2</a></li>
+         <li><a href="#">3</a></li>
+        <li><a href="#">下一页</a></li>
+       </ul>
+    </div>
+    <p class="afin-plan-return"><a href="#" class="btn-color btn-color2 border-radius">返回</a></p>
+  </div>
+</div>
+</body>
+</html>

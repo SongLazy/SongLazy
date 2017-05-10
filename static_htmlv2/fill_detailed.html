@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+ <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+ <meta name="renderer" content="webkit|ie-comp|ie-stand">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>详细资料</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" /> 
+<link href="css/common.css" rel="stylesheet" type="text/css" /> 
+<link href="css/fill_info.css" rel="stylesheet" type="text/css" /> 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>   
+<script src="js/jq.js"></script>
+<script src="js/jquery.validate.js"></script>
+ <!-- 
+
+		如果是IE9以下版本，添加Response.js 支持 HTML5元素和media查询
+
+	 -->
+    <!--[if lt IE 9]>
+
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+
+<body>
+<div class="header">
+  <div class="header-main1 clearfix">
+    <div class="main clearfix">
+      <ol class="header-main1-left list-unstyled pull-left">
+        <li><a href="#"><span class="icon-app icon"></span>盼贷APP</a></li>
+        <li><a href="#"><span class="icon-follow icon"></span>关注盼贷</a></li>
+       <li><a href="#"><span class="icon-telephone icon"></span>服务热线：400-016-1131</a></li>
+      </ol>
+      <ol class="header-main1-right list-unstyled pull-right">
+        <li><a href="#">新手入门</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">现金券</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="borrower_tender.html"><span class="icon-account icon hover"></span>我的账户<b class="icon icon-arrow"></b></a></li>
+        <li><span class="line"></span></li>
+        <li class="return-old"><a href="#">返回旧版网站</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="header-main2">
+    <div class="main clearfix">
+      <p class="header-main2-logo pull-left"><img src="images/common/logo.png" /></p>
+      <ol class="header-main2-nav list-unstyled pull-right">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="invest_fixed.html">理财</a></li>
+        <li><a href="safe.html">安全保障</a></li>
+        <li><a href="#">活动专区</a></li>
+        <li><a href="about_introduction.html">关于我们</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="fill-info">
+  <div class="fill-info-title">
+    <ol class="list-unstyled clearfix">
+      <li><p class="fill-info-number">1</p><p class="fill-info-word">填写基本信息</p><p class="fill-info-arrow"></p></li>
+      <li class="hover"><p class="fill-info-number">2</p><p class="fill-info-word">填写详细信息</p><p class="fill-info-arrow"></p></li>
+      <li><p class="fill-info-number">3</p><p class="fill-info-word">确认贷款</p><p class="fill-info-arrow"></p></li>
+      <li><p class="fill-info-number">4</p><p class="fill-info-word">上传资料证明</p></li>
+    </ol>
+  </div>
+  <div class="fill-info-main">
+    <form id="fill-detailed-form">
+      <h1><span>详细资料</span></h1>
+      <div class="fill-info-form clearfix">
+         <div class="fill-info-formleft pull-left">
+            <p class="clearfix"><span><strong>*</strong>公司全称</span><input type="text" class="form-control" id="detailedcompanyname" name="detailedcompanyname" /></p>
+            <p class="clearfix"><span>&nbsp;</span>请填写单位的全称</p>
+            <p class="clearfix"><span><strong>*</strong>税务登记号</span><input type="text" class="form-control" id="detailedtax" name="detailedtax" /></p>
+            <p class="clearfix"><span><strong>*</strong>公司所在地区</span><select class="form-control" id="detailedcompanyadress" name="detailedcompanyadress"><option></option></select><select class="form-control"><option></option></select><select class="form-control"><option></option></select></p>
+            <p class="clearfix"><span><strong>*</strong>公司办公地址</span><input type="text" class="form-control" id="detailedworkadress" name="detailedworkadress" /></p>
+            <p class="clearfix"><span><strong>*</strong>单位性质</span><select class="form-control" id="detailedcompanynature" name="detailedcompanynature"><option></option></select></p>
+            <p class="clearfix"><span><strong>*</strong>公司年利润（元）</span><input type="text" class="form-control" id="detailedprofits" name="detailedprofits" /></p>
+            <p class="clearfix"><span><strong>&nbsp;</strong>业务范围</span><textarea class="form-control" id="detailedbusiness" name="detailedbusiness" style="width:350px;"></textarea></p>
+         </div>
+         <div class="fill-info-formright pull-right">
+           <p class="clearfix"><span><strong>*</strong>工商登记号</span><input type="text" class="form-control" id="detailedregister" name="detailedregister" /></p>
+           <p class="clearfix"><span><strong>*</strong>注册资金</span><input type="text" class="form-control" id="detailedregistermoney" name="detailedregistermoney" /></p>
+           <p class="clearfix"><span><strong>*</strong>创办时间</span><select class="form-control" id="detailedstarttime" name="detailedstarttime"><option></option></select><select class="form-control"><option></option></select></p>
+           <p class="clearfix"><span><strong>*</strong>公司电话</span><input type="text" class="form-control" id="detailedphone" name="detailedphone"  /></p>
+           <p class="clearfix"><span><strong>*</strong>公司房产状况</span><select class="form-control" style=" width:350px;" id="detailedcompanyhouse" name="detailedcompanyhouse"><option></option><option></option></select></p>
+           <p class="clearfix"><span>&nbsp;</span><input type="text" class="form-control" id="detailedcompanyproperty" name="detailedcompanyproperty" /></p>
+           <p class="clearfix"><span>&nbsp;</span>请在后面的框填写具体的购置房产的价值，房贷，或租金信息</p>
+           <p class="clearfix"><span><strong>&nbsp;</strong>网址</span><input type="text" class="form-control" id="detailedurl" name="detailedurl" /></p>
+         </div>
+      </div>
+      <p class="fill-form-btn clearfix"><a href="fill_finance.html" class="btn-color btn-color4 border-radius">上一步</a><a href="fill_contact.html"><input type="button" class="form-control btn-color btn-color2 border-radius" id="detailedsubmit" name="detailedsubmit" value="保存并下一步" /></a></p>
+    </form>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-main1">
+    <div class="main clearfix">
+      <div class="footer-main1-left pull-left">
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作伙伴</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ol>
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">招贤纳士</a></li>
+        </ol>
+      </div>
+      <div class="pull-left"><span class="line"></span></div>
+        <div class="footer-main1-middle pull-left">
+          <dl class=" list-unstyled">
+            <dt class=" pull-left" style=" font-size:18px;">服务热线：</dt>
+            <dd class=" pull-left">
+              <p style=" font-size:38px; font-weight:600; margin-top:-10px;">400-016-1131</p>
+              <p>工作时间：周一至周五9:00-18:00</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="pull-left"><span class="line"></span></div>
+          <div class="footer-main1-right pull-right">
+            <p class=" text-center pull-left">
+              盼贷微信服务号<br /><img src="images/common/footer1.jpg" />
+            </p>
+            <p class=" text-center pull-left" style=" margin-right:0;">
+              盼贷APP下载<br /><img src="images/common/footer2.jpg" />
+            </p>
+          </div>
+        </div>
+  </div>
+  <div class="footer-main2">
+    <div class="main text-center">
+      <p><img src="images/common/footer3.jpg" /><img src="images/common/footer4.jpg" /><img src="images/common/footer5.jpg" /><img src="images/common/footer6.jpg" /><img src="images/common/footer7.jpg" /></p>
+      <p>© 2012-2017 北京盼大世纪信息技术有限公司 All rights reserved | 京ICP备15042613号 | 免责条款</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function() {
+  $("#fill-detailed-form").validate({
+        rules: {
+            detailedcompanyname: "required",
+			detailedtax:{
+			  required: true,
+			  digits:true
+			},
+			detailedworkadress:{
+			  required: true,
+			},
+			detailedprofits:{
+			  required: true,
+			  number:true
+			},
+			detailedregister:{
+			  required: true,
+			},
+			detailedregistermoney:{
+			  required: true,
+			},
+			detailedphone:{
+			  required: true,
+			},
+			detailedcompanyhouse:{
+			  required: true,
+			}
+        },
+        messages: {
+            detailedcompanyname: "请输入您的公司名称", 
+			detailedtax:{
+			  required: "请输入您的税务登记号",
+			  digits:"必须为整数"
+			},
+			detailedworkadress:{
+			  required: "请输入公司办公地址",
+			},
+			detailedprofits:{
+			  required: "请输入公司年利润",
+			  number: "请输入合法的数字"
+			},
+			detailedregister:{
+			  required: "请输入工商登记号",
+			},
+			detailedregistermoney:{
+			  required: "请输入公司注册资金",
+			},
+			detailedphone:{
+			  required: "请输入公司电话",
+			},
+			detailedcompanyhouse:{
+			  required: "请输入公司房产状况",
+			}
+        }
+    });
+	 
+	
+})
+</script>
+</body>
+</html>

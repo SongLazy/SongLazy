@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>标的详情</title>
+<link href="css/jquery.mobile-1.3.2.min.css" rel="stylesheet" type="text/css" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/invest.css" rel="stylesheet" type="text/css" />
+<!--<link href="css/account.css" rel="stylesheet" type="text/css" />-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.3.2.min.js"></script>
+<script src="js/jq.js"></script>
+</head>
+<body>
+<div data-role="page" class="beacon-details">
+  <!--<div data-role="header" class="header bid-details-header">
+      <h1>散标</h1>
+      <a href="#" data-rel="back" class="return-icon" data-role='none'><img src="images/invest/return.png" /></a>
+  </div>-->
+  <div class="bid-details-main main">
+    <div data-role="content" class="bid-details-main1 clearfix">
+      <div data-role="header" class="header bid-details-header">
+        <h1>散标</h1>
+        <a href="#" data-rel="back" class="return-icon" data-role='none'><img src="images/return.png" /></a>
+      </div>
+      <p class="bid-details-wave"></p>
+      <p class="bid-details-name">盼信标-扩大种植000054</p>
+      <p class="bid-details-number">12334556</p>
+      <div class="bid-details-rate">
+        <p class="rate"><span>12</span><b>%</b></p>
+        <p class="word">预期年化收益率</p>
+      </div>
+      <ol class="bid-details-time clearfix">
+        <li class="fl">
+          <p class="rate"><span>247,700</span><b>元</b></p>
+          <p class="word">剩余可投</p>
+        </li>
+        <li class="fl" style=" border-right:none;">
+          <p class="rate"><span>2</span><b>个月</b></p>
+          <p class="word">投资期限</p>
+        </li>
+      </ol>
+    </div>
+    <div class="bid-details-main2 clearfix">
+       <p data-role="content" class=" clearfix"><span>项目规模:</span><b>500,000元</b></p>
+       <p data-role="content" class=" clearfix"><span>起投金额:</span><b>10000元</b></p>
+       <p data-role="content" class=" clearfix"><span>还款方式:</span><b>一次性还本付息</b></p>
+       <p data-role="content" class=" clearfix"><span>剩余时间:</span><b>2016-12-12</b></p>
+       <p data-role="content" class=" clearfix"><span>可转让期限:</span><b>投资该标的3个月后可以申请债权转让</b></p>
+    </div>
+    <div class="bid-details-main3 clearfix">
+      <p data-role="content" class="bid-details-invest" style=" line-height:2em;">
+        <span>投资金额:</span><b><input type="text" placeholder="请输入投资金额" data-role="none" id="investmoney" name="investmoney"></b><a href="#"><strong>余额全投</strong></a>
+      </p>
+      <p data-role="content" class="bid-details-balance">
+        <span>可用余额:</span><b>2000元</b><a href="recharge.html" rel="external"><strong>立即充值</strong></a>
+      </p>
+      <p data-role="content" class="bid-details-profit">
+        <span>预期收益:</span><b>800元</b>
+      </p>
+    </div>
+     <div data-role="content" class="bid-details-coupon" style=" border-top:1px solid #e5e5e5;">
+        <span style=" font-size:14px;color: #898989;">现金券:</span>
+        <fieldset data-role="fieldcontain" class="fr">
+            <select name="bank" id="bank">
+             <option value="ICBC">中国工cccccccccc商银行</option>
+             <option value="ABC">中国农业银行</option>
+             <option value="CMB">招商银行</option>
+             <option value="CCB">中国建设银行</option>
+             <option value="BCM">交通银行</option>
+             <option value="CIB">兴业银行</option>
+             <option value="CMBC">中国民生银行</option>
+             <option value="HXB">华夏银行</option>
+             <option value="CEB">中国光大银行</option>
+             <option value="GDB">广发银行</option>
+             <option value="CITIC">中信银行</option>
+             <option value="BOC">中国银行</option>
+             <option value="SPDB">浦发银行</option>
+             <option value="PSBC">中国邮政储蓄银行</option>
+            </select>
+          </fieldset>
+     </div>
+    <div class="bid-details-main4 clearfix">
+      <div class="bide-main4-list">
+        <p data-role="content" class="bid-details-product">
+         <span>产品详情</span><a href="#"><em class="icon"></em></a>
+        </p>
+        <div data-role="content" class="details-product-main bide-main4-hidden">
+          <ol class="clearfix">
+            <li>
+              <img src="images/product_details/details1.png" /><br />国际知名企业<br />LFS风控技术
+            </li>
+            <li>
+              <img src="images/product_details/details2.png" /><br />投资期限<br />1~12个月
+            </li>
+            <li>
+              <img src="images/product_details/details3.png" /><br />最多<br />年化收益13%
+            </li>
+          </ol>
+          <ol class="clearfix">
+            <li>
+              <img src="images/product_details/details4.png" /><br />投资产品<br />可随时转让
+            </li>
+            <li>
+              <img src="images/product_details/details11.png" /><br />借款通过率<br />低于3%
+            </li>
+            <li>
+              <img src="images/product_details/details6.png" /><br />适合人群: 个体户<br />小企业主
+            </li>
+          </ol>
+          <p>盼信标是针对可给予信贷者（通过率低于3%）的借贷产品（三农金融），这些信贷者已通过了盼贷严格而彻底的动态风险管理、大数据分析、背景检查、现场访问、信用局检查、集资管理以及信用评分。</p>
+        </div>
+      </div>
+      <div class="bide-main4-list">
+        <p data-role="content" class="bid-details-issuer">
+         <span>发行方简介</span><a href="#"><em class="icon"></em></a>
+        </p>
+        <div data-role="content" class="details-issuer-main bide-main4-hidden">
+          <p style="text-align:center;"><img src="images/product_details/issuer1.jpg" style=" width:60%; max-height:54px; max-width:381px;" /></p>
+          <p>LFS公司成立于1997年，股东皆来自国际知名企业IFC、KFW、European Investment Bank 等。</p>
+          <p style="text-align:center;"><img src="images/product_details/issuer2.jpg" style=" width:100%; max-height:422px; max-width:687px;" /></p>
+          <p>LFS净资产收益率ROE 超过 20%，总部设立在英国。是一家从事金融服务行业且合法获得多个国家经营许可资质的跨国企业集团。LFS拥有20年全球超过20个国家100多个项目农业金融经验，超100亿元管理农业贷款，是最现代农贷款业风控模式与丰富经验。并拥有银行管理14亿欧元的银行，LFS的IFC风控技术在小额信贷与农业贷款行业最成功的投资，核心业务为中小微型金融、农业金融、住宅金融等业务。</p>
+        </div>
+      </div>
+      <div class="bide-main4-list">
+        <p data-role="content" class="bid-details-controlmode">
+          <span>风控模式</span><a href="#"><em class="icon"></em></a>
+        </p>
+        <div data-role="content" class="details-controlmode-main bide-main4-hidden">
+          <p>
+           1. 实地考察 <br />2. 超IPC的LFS专业风险评估<br />3. 夫妻联合担保<br />4. 第三方担保人 <br />5. 部分借款人有土地或房产抵押 
+          </p>
+        </div>
+      </div>
+      <div class="bide-main4-list">
+        <p data-role="content" class="bid-details-flow">
+         <span>资金流动</span><a href="#"><em class="icon"></em></a>
+        </p>
+        <div data-role="content" class="details-issuer-main bide-main4-hidden">
+          <p style="text-align:center;"><img src="images/product_details/beacon2.jpg" style=" width:100%; max-width:684px; max-height:492px;" /></p>
+          <p style=" font-size:12px; text-align:center;">每笔投资坚持实地考察，规范化审核</p>
+          <p style="text-align:center;"><img src="images/product_details/beacon3.jpg" style=" width:100%; max-width:687px; max-height:202px;" /></p>
+        </div>
+      </div>
+      <div class="bide-main4-list">
+        <p data-role="content" class="bid-details-repayment">
+          <span>还款列表</span><a href="#"><em class="icon"></em></a>
+        </p>
+        <div class="details-repayment-list record-list bide-main4-hidden">
+        <ol class="record-list-title clearfix">
+          <li>到期时间</li>
+          <li style=" width:15%">期数</li>
+          <li style=" width:35%">共需还款</li>
+          <li>还款状态</li>
+        </ol>
+        <ul class="record-list-main clearfix">
+          <li>2016-09-20 </li>
+          <li style=" width:15%">1</li>
+          <li style=" width:35%">725.00元</li>
+          <li>未还款</li>
+        </ul>
+        <ul class="record-list-main clearfix">
+          <li>2016-09-20 </li>
+          <li style=" width:15%">1</li>
+          <li style=" width:35%">725.00元</li>
+          <li>未还款</li>
+        </ul>
+        <ul class="record-list-main clearfix">
+          <li>2016-09-20 </li>
+          <li style=" width:15%">1</li>
+          <li style=" width:35%">725.00元</li>
+          <li>未还款</li>
+        </ul>
+        <ul class="record-list-main clearfix">
+          <li>2016-09-20 </li>
+          <li style=" width:15%">1</li>
+          <li style=" width:35%">725.00元</li>
+          <li>未还款</li>
+        </ul>
+        <ul class="record-list-main clearfix">
+          <li>2016-09-20 </li>
+          <li style=" width:15%">1</li>
+          <li style=" width:35%">725.00元</li>
+          <li>未还款</li>
+        </ul>
+      </div>
+      </div>
+      <div class="bide-main4-list">
+        <p data-role="content" class="bid-details-bidrecord">
+         <span>投标记录</span><a href="#"><em class="icon"></em></a>
+        </p>
+        <div class="details-bidrecord-list record-list bide-main4-hidden">
+            <ol class="record-list-title clearfix">
+              <li>投资人</li>
+              <li>购买笔数</li>
+              <li>投标时间</li>
+            </ol>
+            <ul class="record-list-main clearfix">
+              <li>138****2223 </li>
+              <li>12</li>
+              <li>2016-09-20</li>
+            </ul>
+            <ul class="record-list-main clearfix">
+              <li>138****2223 </li>
+              <li>12</li>
+              <li>2016-09-20</li>
+            </ul>
+            <ul class="record-list-main clearfix">
+              <li>138****2223 </li>
+              <li>12</li>
+              <li>2016-09-20</li>
+            </ul>
+            <ul class="record-list-main clearfix">
+              <li>138****2223 </li>
+              <li>12</li>
+              <li>2016-09-20</li>
+            </ul>
+            <ul class="record-list-main clearfix">
+              <li>138****2223 </li>
+              <li>12</li>
+              <li>2016-09-20</li>
+            </ul>
+          </div>
+      </div>
+      
+    </div>
+    <div class="bid-details-btn">
+      <a href="#" class="btn-a">立即认购</a>
+   </div>
+  </div>
+  <div data-role="footer" class="footer">
+      <ul>
+        <li class="fl footer-index"><a href="index.html" rel="external"><b></b><br />首页</a></li>
+        <li class="fl footer-invest hover"><a href="invest_scattered.html" rel="external"><b></b><br />理财</a></li>
+        <li class="fl footer-account"><a href="account.html" rel="external"><b></b><br />账户</a></li>
+        <li class="fl footer-more"><a href="about_us.html" rel="external"><b></b><br />更多</a></li>
+      </ul>
+  </div>
+</div>
+<div class="transparent-back" style="display:block;"></div>
+<div class="prompt-popup">
+  <h1>提示</h1>
+  <p class="prompt-popup-main">
+   你尚未开通托管账户，是否立即开通？
+  </p>
+  <p class="prompt-popup-btn">
+    <a href="#" class="cancel">取消</a><a href="#" class="open">开通账户</a>
+  </p>
+</div>
+</body>
+</html>

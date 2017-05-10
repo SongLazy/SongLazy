@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>第三方托管</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/jq.js" type="text/javascript"></script>
+</head>
+<style>
+  .escrow-banner{ background:url(images/escrow/banner.jpg) no-repeat center; height:380px;}
+  .escrow-safe{ background:#fff; height:103px; line-height:103px; margin-bottom:2px;}
+  .escrow-safe p{ font-size:20px; color:#3a3a3a; margin-left:135px;}
+  .escrow-safe p img{ margin-right:10px;}
+  .escrow-main > div{ padding:72px 0;}
+  .escrow-main h1{ font-size:30px; color:#61605f;}
+  .escrow-advantage h1{ margin-bottom:116px;}
+  .escrow-advantage, .escrow-authority, .escrow-difference{ background:#fff;}
+  .escrow-process h1{ margin-bottom:100px;}
+  .escrow-process .escrow-process-btn a{ display:block; height:55px; line-height:55px; width:275px; background:#f69503; border-radius:5px; font-size:20px;text-align:center; color:#fff; margin:67px auto 34px;}
+  .escrow-process .escrow-process-btn b{ font-size:16px;}
+  .escrow-profile h1{ margin-bottom:60px;}
+  .escrow-profile .escrow-profile-words{ font-size:16px; text-indent:2em; line-height:37px; color:#4c4c4c;}
+  .escrow-authority h1{ margin-bottom:65px;}
+  .escrow-authority ol li{ width:200px; margin-left:20px; text-align:center;}
+  .escrow-authority ol li p{ margin-top:35px; line-height:20px; font-size:14px;}
+  .escrow-difference h1{ margin-bottom:70px;}
+  .escrow-difference1 > div, .escrow-difference3 > div{ background:#fdf4e7; width:442px; height:200px; font-size:18px; position:relative;}
+  .escrow-difference1 > div h2{ width:132px; font-size:22px; height:40px; line-height:40px; position:absolute; top:-20px; left:160px;}
+  .escrow-difference1 > div .escrow-difference1-img{ margin:58px auto 30px;}
+  .escrow-difference1, .escrow-difference3{ position:relative;}
+  .escrow-difference1 .escrow-difference1-center{ position:absolute; top:42px; left:435px; z-index:100}
+  .escrow-difference2{ margin:40px auto; position:relative;}
+  .escrow-difference2 .escrow-difference2-center{ position:absolute; top:77px; left:397px;}
+  .escrow-difference2 > div{ width:375px; color:#fff; line-height:30px; font-size:16px;}
+  .escrow-difference2 .escrow-difference2-left > div{ background:#ef9414; position:relative}
+  .escrow-difference2 .escrow-difference2-left .escrow-difference2-main1 .escrow-difference2-yuan{ position:absolute; top:34px; right:-30px;}
+  .escrow-difference2 .escrow-difference2-left .escrow-difference2-main2 .escrow-difference2-yuan{ position:absolute; top:75px; right:-30px;}
+  .escrow-difference2 .escrow-difference2-right > div{ background:#86c432;position:relative}
+  .escrow-difference2 .escrow-difference2-right .escrow-difference2-main1 .escrow-difference2-yuan{ position:absolute; top:34px; left:-30px;}
+  .escrow-difference2 .escrow-difference2-right .escrow-difference2-main2 .escrow-difference2-yuan{ position:absolute; top:75px; left:-30px;}
+  .escrow-difference2 .escrow-difference2-main1{ height:138px; padding:30px 72px;}
+  .escrow-difference2 .escrow-difference2-main2{ height:210px; padding:30px 72px; margin-top:40px;}
+  .escrow-difference2 .escrow-difference2-yuan{ width:60px; height:60px; border-radius:50%;line-height:20px; padding-top:10px;}
+  .escrow-difference2 .escrow-difference2-left .escrow-difference2-yuan{background:#ef9414; }
+  .escrow-difference2 .escrow-difference2-right .escrow-difference2-yuan{background:#86c432; }
+  .escrow-difference3 > div{ height:150px; padding:50px 0; line-height:30px; width:368px;}
+  .escrow-difference3 .escrow-difference3-left{ color:#f69503;}
+  .escrow-difference3 .escrow-difference3-right{ color:#86c432;}
+  .escrow-difference3 .escrow-difference3-center{ position:absolute; top:-20px; left:362px; z-index:100}
+  .escrow-difference4{ font-size:20px; color:#61605f; margin-top:40px;}
+</style>
+<body>
+<div class="header">
+  <div class="header-main1 clearfix">
+    <div class="main clearfix">
+      <ol class="header-main1-left list-unstyled pull-left">
+        <li><a href="#"><span class="icon-app icon"></span>盼贷APP</a></li>
+        <li><a href="#"><span class="icon-follow icon"></span>关注盼贷</a></li>
+       <li><a href="#"><span class="icon-telephone icon"></span>服务热线：400-016-1131</a></li>
+      </ol>
+      <ol class="header-main1-right list-unstyled pull-right">
+        <li><a href="#">新手入门</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">现金券</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#"><span class="icon-account icon"></span>我的账户<b class="icon icon-arrow"></b></a></li>
+        <li><span class="line"></span></li>
+        <li class="return-old"><a href="#">返回旧版网站</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="header-main2">
+    <div class="main clearfix">
+      <p class="header-main2-logo pull-left"><img src="images/common/logo.png" /></p>
+      <ol class="header-main2-nav list-unstyled pull-right">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="invest_fixed.html">理财</a></li>
+        <li><a href="safe.html">安全保障</a></li>
+        <li><a href="#">活动专区</a></li>
+        <li><a href="about_introduction.html">关于我们</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div class="escrow">
+  <p class="escrow-banner"></p>
+  <div class="escrow-safe">
+    <div class="main">
+      <p class="pull-left" style=" margin-left:0;"><img src="images/escrow/icon1.png" /><b>权威</b></p>
+      <p class="pull-left"><img src="images/escrow/icon2.png" /><b>合规</b></p>
+      <p class="pull-left"><img src="images/escrow/icon3.png" /><b>专业</b></p>
+      <p class="pull-left"><img src="images/escrow/icon4.png" /><b>安全</b></p>
+      <p class="pull-left"><img src="images/escrow/icon5.png" /><b>快捷</b></p>
+    </div>
+  </div>
+  <div class="escrow-main">
+    <div class="escrow-advantage">
+      <div class="main">
+       <h1 class="text-center">盼贷托管独一无二的优势</h1>
+      <p class=" text-center"><img src="images/escrow/advantage.png" /></p>
+      </div>
+    </div>
+    <div class="escrow-process">
+      <div class="main">
+        <h1 class="text-center">盼贷资金托管流程图</h1>
+        <p class=" text-center"><img src="images/escrow/process.png" /></p>
+        <p class="escrow-process-btn text-center"><a href="#">马上开启</a><b>只需登录账户签订托管账户协议即可</b></p>
+      </div>
+    </div>
+    <div class="escrow-difference">
+      <div class="main">
+        <h1 class=" text-center">了解新旧网站有何不同</h1>
+        <div class="escrow-difference1 clearfix">
+          <div class="text-center pull-left border-radius">
+            <h2 class="btn-color btn-color2 border-radius">新版网站</h2> 
+            <p class="escrow-difference1-img"><img src="images/escrow/difference1.jpg" /></p>
+            <p style=" color:#f69503;">联动优势托管系统 资金更安全 平台更合规</p>
+          </div>
+          <p class="escrow-difference1-center"><img src="images/escrow/difference3.png" /></p>
+          <div class="text-center pull-right border-radius">
+            <h2 class="btn-color btn-color2 border-radius">旧版网站</h2> 
+            <p class="escrow-difference1-img"><img src="images/escrow/difference2.jpg" /></p>
+            <p style=" color:#86c432;">连连支付系统</p>
+          </div>
+        </div>
+        <div class="escrow-difference2 clearfix">
+          <div class="escrow-difference2-left pull-left">
+             <div class="escrow-difference2-main1 border-radius text-left">
+               <p>用户名：手机号码/用户名</p>
+               <p>密&nbsp;&nbsp&nbsp;码：需要重置</p>
+               <p>绑&nbsp;&nbsp&nbsp;卡：需要重新绑卡</p>
+               <p class="escrow-difference2-yuan text-center">网站<br />账户</p>
+             </div>
+             <div class="escrow-difference2-main2 border-radius text-left">
+               <p>新手标（已上线）</p>
+               <p>固定标（敬请期待）</p>
+               <p>交易所标（已上线）</p>
+               <p>盼信标（已上线）</p>
+               <p>转让标（敬请期待）</p>
+               <p class="escrow-difference2-yuan text-center">网站<br />产品</p>
+             </div>
+          </div>
+          <p class="escrow-difference2-center"><img src="images/escrow/difference4.png" /></p>
+          <div class="escrow-difference2-right pull-right">
+             <div class="escrow-difference2-main1 border-radius text-left">
+               <p>用户名：手机号码/用户名</p>
+               <p>密&nbsp;&nbsp&nbsp;码：不变</p>
+               <p>绑&nbsp;&nbsp&nbsp;卡：不变</p>
+               <p class="escrow-difference2-yuan text-center">网站<br />账户</p>
+             </div>
+             <div class="escrow-difference2-main2 border-radius text-left">
+               <p>新手标（登录新版网站认购）</p>
+               <p>固定标（可继续认购）</p>
+               <p>交易所标（登录新版网站认购）</p>
+               <p>盼信标（可继续认购）</p>
+               <p>转让标（可继续认购）</p>
+               <p class="escrow-difference2-yuan text-center">网站<br />产品</p>
+             </div>
+          </div>
+        </div>
+        <div class="escrow-difference3 clearfix">
+          <div class="escrow-difference3-left text-center pull-left border-radius">
+            <p>借款前需登录联动优势账号</p>
+            <p>与银行账号绑定的手机号必须一致</p>
+          </div>
+          <p class="escrow-difference3-center"><img src="images/escrow/difference5.png" /></p>
+          <div class="escrow-difference3-right text-center pull-right border-radius">
+            <p>还款方式：不变</p>
+            <p>提前还款：优惠</p>
+          </div>
+        </div>
+        <div class="escrow-difference4 clearfix">
+          <p class="pull-right">*新旧网站并存期间，账户余额需分别提现</p>
+        </div>
+      </div>
+    </div>
+    <div class="escrow-profile main">
+      <h1 class="text-center">联动优势简介</h1>
+      <p class="escrow-profile-words">联动优势科技有限公司（简称联动优势）由中国移动与中国银联于2003年8月联合发起成立，拥有人民银行颁发的《非金融机构支付服务许可证》，
+2013年获评发改委、工信部、财政部、商务部和国家税务总局五部委国家规划布局内重点软件企业，是北京网贷行业协会、技术专业委员会成员和上海
+金融信息行业协会理事单位，已获得中国证监会基金销售支付结算业务资格，以及国家外汇管理局北京外汇管理部跨境外汇支付试点和跨境人民币支付
+试点资质，是国内领先的移动信息服务、移动运营商计费结算服务、第三方支付和供应链金融服务提供商。</p>
+      <p class="escrow-profile-words">联动优势目前拥有1000多名员工，支付服务处理基金每年在1000亿元以上，已为70万家中小企业和4.5亿个人用户提供联动支付、联动金科、联动
+信息、联动惠商+和联动国际服务。企业秉承“诚信、专业、激情、创新、共赢”的企业精神，专门致力于为企业和消费者提供创新、绿色、安全、高效
+的金融及电子商务产品和服务。</p>
+      <p class=" text-center" style=" margin-top:30px;"><img src="images/escrow/profile.png" /></p>
+    </div>
+    <div class="escrow-authority">
+      <div class="main">
+        <h1 class="text-center">联动优势权威</h1>
+        <ol class=" list-unstyled clearfix">
+          <li class="pull-left" style=" margin-left:0;">
+            <img src="images/escrow/authority1.jpg" />
+            <p>拥有央行颁发的《非金融<br />机构支付服务许可证》</p>
+          </li>
+          <li class="pull-left">
+            <img src="images/escrow/authority2.jpg" />
+            <p>中国互联网金融<br />协会理事单位</p>
+          </li>
+          <li class="pull-left">
+            <img src="images/escrow/authority3.jpg" />
+            <p>北京网贷行业协会、<br />技术专业委员会成员</p>
+          </li>
+          <li class="pull-left">
+            <img src="images/escrow/authority4.jpg" />
+            <p>上海金融信息行<br />业协会理事单位</p>
+          </li>
+          <li class="pull-left">
+            <img src="images/escrow/authority5.jpg" />
+            <p>国内较早提供第三<br />方支付的服务商之一</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer" style=" margin-top:0;">
+  <div class="footer-main1">
+    <div class="main clearfix">
+      <div class="footer-main1-left pull-left">
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作伙伴</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ol>
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">招贤纳士</a></li>
+        </ol>
+      </div>
+      <div class="pull-left"><span class="line"></span></div>
+        <div class="footer-main1-middle pull-left">
+          <dl class=" list-unstyled">
+            <dt class=" pull-left" style=" font-size:18px;">服务热线：</dt>
+            <dd class=" pull-left">
+              <p style=" font-size:38px; font-weight:600; margin-top:-10px;">400-016-1131</p>
+              <p>工作时间：周一至周五9:00-18:00</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="pull-left"><span class="line"></span></div>
+          <div class="footer-main1-right pull-right">
+            <p class=" text-center pull-left">
+              盼贷微信服务号<br /><img src="images/common/footer1.jpg" />
+            </p>
+            <p class=" text-center pull-left" style=" margin-right:0;">
+              盼贷APP下载<br /><img src="images/common/footer2.jpg" />
+            </p>
+          </div>
+        </div>
+  </div>
+  <div class="footer-main2">
+    <div class="main text-center">
+      <p><img src="images/common/footer3.jpg" /><img src="images/common/footer4.jpg" /><img src="images/common/footer5.jpg" /><img src="images/common/footer6.jpg" /><img src="images/common/footer7.jpg" /></p>
+      <p>© 2012-2017 北京盼大世纪信息技术有限公司 All rights reserved | 京ICP备15042613号 | 免责条款</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

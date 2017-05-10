@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+ <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+ <meta name="renderer" content="webkit|ie-comp|ie-stand">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>个人财务信息</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" /> 
+<link href="css/common.css" rel="stylesheet" type="text/css" /> 
+<link href="css/fill_info.css" rel="stylesheet" type="text/css" /> 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>   
+<script src="js/jq.js"></script>
+<script src="js/jquery.validate.js"></script>
+ <!-- 
+
+		如果是IE9以下版本，添加Response.js 支持 HTML5元素和media查询
+
+	 -->
+    <!--[if lt IE 9]>
+
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+
+<body>
+<div class="header">
+  <div class="header-main1 clearfix">
+    <div class="main clearfix">
+      <ol class="header-main1-left list-unstyled pull-left">
+        <li><a href="#"><span class="icon-app icon"></span>盼贷APP</a></li>
+        <li><a href="#"><span class="icon-follow icon"></span>关注盼贷</a></li>
+       <li><a href="#"><span class="icon-telephone icon"></span>服务热线：400-016-1131</a></li>
+      </ol>
+      <ol class="header-main1-right list-unstyled pull-right">
+        <li><a href="#">新手入门</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">现金券</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="borrower_tender.html"><span class="icon-account icon hover"></span>我的账户<b class="icon icon-arrow"></b></a></li>
+        <li><span class="line"></span></li>
+        <li class="return-old"><a href="#">返回旧版网站</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="header-main2">
+    <div class="main clearfix">
+      <p class="header-main2-logo pull-left"><img src="images/common/logo.png" /></p>
+      <ol class="header-main2-nav list-unstyled pull-right">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="invest_fixed.html">理财</a></li>
+        <li><a href="safe.html">安全保障</a></li>
+        <li><a href="#">活动专区</a></li>
+        <li><a href="about_introduction.html">关于我们</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="fill-info">
+  <div class="fill-info-title">
+    <ol class="list-unstyled clearfix">
+      <li><p class="fill-info-number">1</p><p class="fill-info-word">填写基本信息</p><p class="fill-info-arrow"></p></li>
+      <li class="hover"><p class="fill-info-number">2</p><p class="fill-info-word">填写详细信息</p><p class="fill-info-arrow"></p></li>
+      <li><p class="fill-info-number">3</p><p class="fill-info-word">确认贷款</p><p class="fill-info-arrow"></p></li>
+      <li><p class="fill-info-number">4</p><p class="fill-info-word">上传资料证明</p></li>
+    </ol>
+  </div>
+  <div class="fill-info-main">
+    <form id="fill-finance-form">
+      <h1><span>个人财务信息</span></h1>
+      <div class="fill-info-form clearfix">
+         <div class="fill-info-formleft pull-left">
+            <p class="fill-finance-formtype">我是<b>小企业主</b><a href="#">修改</a></p>
+            <p class="clearfix"><span><strong>*</strong>收入（元/月）</span><input type="text" class="form-control" id="financeincome" name="financeincome" /></p>
+            <p class="clearfix"><span>&nbsp;</span>请填写真实收入，并提供收入证明</p>
+            <p class="clearfix"><span><strong>*</strong>生活开销（元/月）</span><input type="text" class="form-control" id="financeexpenses" name="financeexpenses" /></p>
+            <p class="clearfix"><span><strong>&nbsp;</strong>是否有车</span><input type="checkbox" class="form-control" id="financecar" name="financecar" /></p>
+            <p class="clearfix"><span><strong>&nbsp;</strong>其他贷款（元/月）</span><input type="checkbox" class="form-control" id="financedeposit" name="financedeposit" /></p>
+         </div>
+         <div class="fill-info-formright pull-right">
+          <p class="fill-finance-formtype">&nbsp;</p>
+           <p class="clearfix"><span><strong>&nbsp;</strong>信用卡（张）</span><select class="form-control"><option></option></select></p>
+           <p class="clearfix"><span><strong>&nbsp;</strong>可透支额度总计（元）</span><select class="form-control"><option></option></select></p>
+           <p class="clearfix"><span><strong>*</strong>住房支出</span></p>
+           <p class="clearfix fill-finance-housing"><label><input type="radio" id="financelhousing1" name="financelhousing" checked="">自购房屋，无房贷</label><label><input type="radio" id="financelhousing2" name="financelhousing">租房</label><br /><label><input type="radio" id="financelhousing3" name="financelhousing" checked="">贷款购置房屋</label><label><input type="radio" id="financelhousing4" name="financelhousing">自建，小产权或宅基地</label></p>
+         </div>
+      </div>
+      <p class="fill-form-btn clearfix"><a href="fill_basis.html" class="btn-color btn-color4 border-radius">上一步</a><a href="fill_detailed.html"><input type="button" class="form-control btn-color btn-color2 border-radius" id="financesubmit" name="financesubmit" value="保存并下一步" /></a></p>
+    </form>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-main1">
+    <div class="main clearfix">
+      <div class="footer-main1-left pull-left">
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作伙伴</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ol>
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">招贤纳士</a></li>
+        </ol>
+      </div>
+      <div class="pull-left"><span class="line"></span></div>
+        <div class="footer-main1-middle pull-left">
+          <dl class=" list-unstyled">
+            <dt class=" pull-left" style=" font-size:18px;">服务热线：</dt>
+            <dd class=" pull-left">
+              <p style=" font-size:38px; font-weight:600; margin-top:-10px;">400-016-1131</p>
+              <p>工作时间：周一至周五9:00-18:00</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="pull-left"><span class="line"></span></div>
+          <div class="footer-main1-right pull-right">
+            <p class=" text-center pull-left">
+              盼贷微信服务号<br /><img src="images/common/footer1.jpg" />
+            </p>
+            <p class=" text-center pull-left" style=" margin-right:0;">
+              盼贷APP下载<br /><img src="images/common/footer2.jpg" />
+            </p>
+          </div>
+        </div>
+  </div>
+  <div class="footer-main2">
+    <div class="main text-center">
+      <p><img src="images/common/footer3.jpg" /><img src="images/common/footer4.jpg" /><img src="images/common/footer5.jpg" /><img src="images/common/footer6.jpg" /><img src="images/common/footer7.jpg" /></p>
+      <p>© 2012-2017 北京盼大世纪信息技术有限公司 All rights reserved | 京ICP备15042613号 | 免责条款</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function() {
+  $("#fill-finance-form").validate({
+        rules: {
+            financeincome: "required",
+			financeexpenses:{
+			  required: true,
+			}
+        },
+        messages: {
+            financeincome: "请输入您的真实月收入", 
+			financeexpenses:{
+			  required: "请输入您每月的生活开销",
+			}
+        }
+    });
+	 
+	
+})
+</script>
+</body>
+</html>

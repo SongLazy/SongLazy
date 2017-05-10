@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+*{ padding:0; margin:0;}
+.advertised-page-banner{ border-bottom:1px solid #ccc;}
+.advertised-page-banner img{ width:100%; max-height:350px;}
+.advertised-page-main{ background:#fff; padding:15px 10px 25px;}
+.advertised-page-form .advertised-form-common{ position:relative; width:100%; margin-bottom:10px; height:36px;}
+.advertised-page-form .advertised-form-common label img{ max-height:26px; max-width:22px;position:absolute; left:8px; top:5px;}
+.advertised-page-form .advertised-form-common input{ border:1px solid #ccc; height:34px; width:100%; text-indent:3em; display:block; padding-left:0; }
+.advertised-page-form .advertised-form-common #advertisedformcode{ width:55%; float:left;}
+.advertised-page-form .advertised-form-code a{ color:#ffa72c; width:40%; border:1px solid #ffa72c; font-size:14px; height:34px; text-align:center; line-height:36px; float:right; border-radius:5px;}
+.advertised-page-form .advertised-form-code a.ui-link:visited, .advertised-page-form .advertised-form-code a.ui-link:hover, .advertised-page-form .advertised-form-code a.ui-link:active{color:#ffa72c;}
+.advertised-page-form .advertised-form-checkbox input{ width:15px; height:15px; margin-right:5px;}
+.advertised-page-form .advertised-form-submit input{background: #f4950a;color: #fff;font-size: 18px; width:100%; margin-top:10px;}
+.advertised-page-form .advertised-form-password a{ position:absolute; top:8px; right:8px;}
+.advertised-page-form .advertised-form-password a img{max-height:14px;max-width: 20px;}
+.advertised-page-introduce{ margin:24px 0 14px; }
+.advertised-page-news img{ width:100%; max-height:89px;}
+.advertised-page-title{ font-size:12px; color:#fff; font-weight:bold; text-align:center; margin:17px auto 15px;height:50px; line-height:50px;}
+.advertised-page-safe .advertised-page-title{ background:url(../images/advertised_page/title1.png) no-repeat; background-size:100% 100%; }
+.advertised-page-safe p img{ width:100%;}
+.advertised-page-history .advertised-page-title{ background:url(../images/advertised_page/title2.png) no-repeat; background-size:100% 100%; }
+.advertised-page-history .adpa-history-img{ text-align:center; margin-bottom:2px;}
+.advertised-page-history .adpa-history-img img{ max-width:126px; max-height:126px; width:20%;}
+.advertised-page-history .adpa-history-line{ background:#ff8a80; width:5px; height:8px; margin:0 auto;}
+.advertised-page-history .adpa-history-word{background:#ff8a80; padding:0 4%; text-align:center; color:#fff; border-radius:24px; height:48px; line-height:48px;}
+.advertised-page-history .adpa-history-word1{ line-height:20px;}
+.advertised-page-history .adpa-history-word1 p{ padding-top:5px;}
+.advertised-page-prompt{ color:#cccccc; margin:16px 0 25px;}
+.advertised-page-prompt span{width:25%; border-top:2px solid #cdcdcd; margin-top:7px;}
+.advertised-page-qrcode{ margin:0 5% 20px;}
+.advertised-page-qrcode p{ width:45%; text-align:center; color:#000;}
+.advertised-page-qrcode p img{max-width: 260px;max-height: 260px;width: 100%;margin-bottom: 10px;}
+.advertised-page-btn a{display:block; font-size:18px; background:#ffa72c; height:36px; line-height:36px; text-align:center; width:100%; border-radius:5px; margin-bottom:8px;}
+.advertised-page-btn a.ui-link, .advertised-page-btn a.ui-link:visited, .advertised-page-btn a.ui-link:hover, .advertised-page-btn a.ui-link:active{ color:#fff;}
+.advertised-page-btn a img{ margin-right:6px; width:16px; height:22px; vertical-align:sub;}
+/*注册送现金券*/
+.coupon-register-banner img{ width:100%; max-height:625px;}
+.coupon-register-bg{ background:#ff5252; margin-top:-1px;}
+.coupon-register-form .advertised-form-common #advertisedformimgcode{ width:55%; float:left;}
+.coupon-register-form .advertised-form-imgcode img{ width:40%; height:36px;float:right; border-radius:5px;}
+.coupon-register-form .advertised-form-common input{ border:none; height:36px;}   
+.coupon-register-form .advertised-form-code a{ color:#ef5350; border:none; background:#fff; height:36px; line-height:36px;}
+.coupon-register-form .advertised-form-code a.ui-link:visited, .coupon-register-form .advertised-form-code a.ui-link:hover, .coupon-register-form .advertised-form-code a.ui-link:active{color:#ef5350;}
+.coupon-register-form .advertised-form-checkbox{ color:#fff;}
+.coupon-register-form .advertised-form-checkbox a.ui-link, .coupon-register-form .advertised-form-checkbox a.ui-link:visited, .coupon-register-form .advertised-form-checkbox a.ui-link:hover, .coupon-register-form .advertised-form-checkbox a.ui-link:active{color:#fff;}
+.coupon-register-form .advertised-form-submit input{ letter-spacing:0;}
+.coupon-register-form label.error{ color:#fff;}
+.coupon-register-main2, .coupon-register-main3{ background:#fff; margin:20px auto; padding:18px 10px;}
+.coupon-register-main2 h1{ color:#fff; font-size:23px; font-weight:bold; text-align:center; height:58px; line-height:42px; margin-bottom:15px;}
+.coupon-register-new h1{ background:url(../images/coupon_register/title1.png) no-repeat; background-size:100% 100%;}
+.coupon-register-main2 .coupon-register-rule{ margin-bottom:17px;}
+.coupon-register-main2 .coupon-register-rule p{ margin-bottom:4px;}
+.coupon-register-main2 .coupon-register-rule .coupon-register-rule1{ font-size:14px; color:#333333;}
+.coupon-register-main2 .coupon-register-rule .coupon-register-rule2{ color:#333333;}
+.coupon-register-new .coupon-register-coupon li{ margin-bottom:10px;}
+.coupon-register-new .coupon-register-coupon li p{ width:48%;}
+.coupon-register-new .coupon-register-coupon li p img{ width:100%;}
+.coupon-register-main2 .coupon-register-explain{ color:#ff8a80; border:2px solid #ff8a80; padding:10px 3%; margin-top:16px; border-radius:5px;}
+.coupon-register-again{ margin-top:23px;}
+.coupon-register-again h1{ background:url(../images/coupon_register/title2.png) no-repeat; background-size:100% 100%;}
+.coupon-register-again .coupon-register-table p{ color:#323232; margin:23px 0 11px;}
+.coupon-register-again .coupon-register-table{ color:#fff;}
+.coupon-register-again .coupon-register-table th{ height:32px; line-height:32px; text-align:center; border-left:1px solid #fff;}
+.coupon-register-again .coupon-register-table th:first-child{ border-left:none;}
+.coupon-register-again .coupon-register-table td{ height:29px; line-height:29px; text-align:center; border-left:1px solid #fff;border-bottom:1px solid #fff;}
+.coupon-register-again .coupon-register-table td:first-child{ border-left:none;}
+.coupon-register-again .coupon-register-table .table-beacon th{background:#ff9800;}
+.coupon-register-again .coupon-register-table .table-beacon td{background:#ffcb7f;}
+.coupon-register-again .coupon-register-table .table-trade th{background:#ff5252;}
+.coupon-register-again .coupon-register-table .table-trade td{background:#feb2b2;}
+.coupon-register-main3{ padding:10px 10px;}
+.coupon-register-main3 .coupon-register-introduce1 img{ width:100%;}
+.coupon-register-main3 h2{ font-weight:bold; font-size:16px; color:#333; text-align:center; margin:18px 0 9px;}
+.coupon-register-main3 .coupon-register-introduce2{ text-indent:2em;}
+.coupon-register-prompt{ color:#ff8787;}
+.coupon-register-prompt span{border-color:#ff8787;}
+/*安全运营*/
+.safe-register-header{ background:#fff; padding:0 15px; height:45px; line-height:45px;}
+.safe-register-header p.safe-register-header1{ width:80%;}
+.safe-register-header p.safe-register-header1 img{ width:100%;vertical-align:bottom; max-height: 34px; }
+.safe-register-header p.safe-register-header2 a{border-bottom:1px solid #323232;}
+.safe-register-header p.safe-register-header2 a.ui-link, .safe-register-header p.safe-register-header2 a.ui-link:visited, .safe-register-header p.safe-register-header2 a.ui-link:hover, .safe-register-header p.safe-register-header2 a.ui-link:active{ color:#323232;}
+.safe-register-banner img{ width:100%; max-height:454px;}
+.safe-register-bg{ background:#3286ef; margin-top:-1px;}
+.safe-register-form .advertised-form-code a.ui-link, .safe-register-form .advertised-form-code a.ui-link:visited, .safe-register-form .advertised-form-code a.ui-link:hover, .safe-register-form .advertised-form-code a.ui-link:active{ color:#039be5;}
+.safe-register-form .advertised-form-submit input { background: #ffc02a;}
+.safe-register-main2{ margin-top:40px; background:#fff; border-radius:10px; padding:24px 5%;}
+.safe-register-main2 h1{ font-size:16px; font-weight:bold; color:#3286ef; text-align:center; background:#fff; width:80%; margin-left:10%; height:45px; line-height:45px; border-radius:50px; margin-top:-45px;}
+.safe-register-main2 h1 span{ display:block; height:45px; border-bottom:2px solid #3286ef;width: 90%;margin: 0 auto;}
+.safe-register-main2 ol{ margin-top:25px;}
+.safe-register-main2 ol li > div{ width:50%; text-align:center; color:#333333; margin-bottom:15px;}
+.safe-register-main2 ol li > div img{ margin-bottom:13px; width:92px; height:92px;}
+.safe-register-btn a{ background:#ffc02a; font-size:18px; height:36px; line-height:36px; display:block; border-radius:5px; text-align:center; margin:29px auto 23px;}
+.safe-register-btn a.ui-link, .safe-register-btn a.ui-link:visited, .safe-register-btn a.ui-link:hover, .safe-register-btn a.ui-link:active{ color:#fff;}
+.safe-register-contact p{ margin-bottom:18px; text-align:center; color:#fff;}
+.safe-register-contact .safe-register-contact1 img{ width:116px; height:24px;}
+.safe-register-contact .safe-register-contact2{ font-size:21px;}
+.safe-register-prompt b{ display:block; width:80%; text-align:center; float:left;color:#90caf9;}
+.safe-register-prompt span{ display:block; width:10%; border-bottom:1px solid #90caf9; float:left; margin-top:8px;}
+.safe-register-bg .advertised-page-btn a{ background:#ffc02a;}
+/*简洁版注册*/
+.concise-register-bg{ background:#ff864a; margin-top:-1px; padding-top:0;}
+.concise-register-form .advertised-form-submit input { background:#ffb12a;}
+.concise-register-introduce p{ color:#ffedce; margin-top:15px;}
+.concise-register-introduce .advertised-page-btn a{ background:#f4950a;}
+.concise-register-prompt{ text-align:center; color:#ffb089; border-top:1px solid #ffedce; margin-top:9px; padding-top:17px;}
+@media screen and (min-width:534px){
+ .advertised-page-history .adpa-history-word{ line-height:48px;}
+ .advertised-page-history .adpa-history-word p{ padding-top:0;}
+}
+@media screen and (max-width:320px){
+ .advertised-page-history .adpa-history-word{ line-height:20px;}
+ .advertised-page-history .adpa-history-word p{ padding-top:5px;}
+ .advertised-page-prompt span{width:13%;}
+ .coupon-register-main2 h1{ font-size:20px;}
+ .safe-register-header p.safe-register-header1 img{vertical-align: -webkit-baseline-middle;}
+}
+
+
+
+
+
+
+
+
+
+

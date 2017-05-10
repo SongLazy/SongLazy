@@ -1,0 +1,337 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*{ padding:0; margin:0; }
+
+/*leftcommon*/
+.borrower-left-main2 dd b.loan-one{ background-position:-480px 0;}
+.borrower-left-main2 dd b.loan-two{ background-position:-480px -44px;}
+.borrower-left-main2 dd b.loan-three{ background-position:-480px -87px;}
+.borrower-left-main2 dd b.credit-one{ background-position:-480px -182px;}
+.borrower-left-main2 dd b.credit-two{ background-position:-480px -232px;}
+.borrower-left-main2 dd b.accounts-one{ background-position:-480px -319px;}
+.borrower-left-main2 dd b.accounts-two{ background-position:-480px -364px;}
+.borrower-left-main2 dd b.accounts-three{ background-position:-480px -414px;}
+.borrower-left-main2 dd b.accounts-four{ background-position:-480px -455px;}
+.borrower-left-main2 dd b.accounts-five{ background-position:-1px -565px;}
+
+.borrower-left-main2 dd.hover b.loan-one{ background-position:-513px 0;}
+.borrower-left-main2 dd.hover b.loan-two{ background-position:-513px -44px;}
+.borrower-left-main2 dd.hover b.loan-three{ background-position:-513px -87px;}
+.borrower-left-main2 dd.hover b.credit-one{ background-position:-513px -182px;}
+.borrower-left-main2 dd.hover b.credit-two{ background-position:-513px -232px;}
+.borrower-left-main2 dd.hover b.accounts-one{ background-position:-513px -319px;}
+.borrower-left-main2 dd.hover b.accounts-two{ background-position:-513px -364px;}
+.borrower-left-main2 dd.hover b.accounts-three{ background-position:-513px -414px;}
+.borrower-left-main2 dd.hover b.accounts-four{ background-position:-513px -455px;}
+.borrower-left-main2 dd.hover b.accounts-five{ background-position:-43px -565px;}
+
+.borrower-border{ background:#fff; padding:28px 0; border:1px solid #d1d1d1; font-size:12px; margin-bottom:8px;}
+/*zhaobiaozhong*/
+.borrower-home-state dt{ width:160px; height:160px; margin-left:140px; margin-top:43px;}
+.borrower-home-state dd{ margin-left:70px;}
+.borrower-home-state dd h1{ font-size:24px; color:#666565; margin-bottom:30px; }
+.borrower-home-state dd h1 b{ color:#f69503;}
+.borrower-home-state dl dd h1 strong{ font-size:12px; color:#999; padding-left:5px;}
+.borrower-home-state .home-state-cen1 ol { width:217px; border-right:1px solid #e6e6e6;}
+.borrower-home-state .home-state-cen1 ol li { line-height:34px;}
+.borrower-home-state .home-state-cen1 ol li b{ color:#333;}
+.borrower-home-state .home-state-cen1 ol li b strong{ font-weight:bold; font-size:18px;}
+.borrower-right h2{ font-size:24px; color:#333; margin-left:39px; margin-bottom:32px;}
+.borrower-right h3{ font-size:18px; color:#333;}
+.borrower-border-cen{ width:790px; margin:0px auto;}
+.borrower-tender-main1 .tender-main1-progress, .borrower-payments-main1 .payments-main1-progress{ margin-top:20px;}
+.borrower-tender-main1 .tender-main1-progress .progress, .borrower-payments-main1 .payments-main1-progress .progress{ width:316px; margin-top:5px; margin-left:0;}
+.borrower-tender-main1 .tender-main1-progress b, .borrower-payments-main1 .payments-main1-progress b { color:#f69503;}
+.borrower-tender-main1 .tender-main1-progress .progress .progress-bar-success, .borrower-payments-main1 .payments-main1-progress .progress .progress-bar-success{background:#f69503;}
+.borrower-tender-main1 .tender-main1-time{ background:#f2f2f2; width:410px; height:60px; margin-top:8px;}
+.borrower-tender-main1 .tender-main1-time p{ background:#f69503; width:80px; height:30px; line-height:30px; text-align:center; color:#fff; float:left; margin-left:12px;margin-right:10px; font-size:14px; margin-top:15px;}
+.borrower-tender-main2, .borrower-repayment-main2{ margin-top:8px;}
+.borrower-tender-main2 .tender-main2-cen1{ border-bottom:1px solid #e9e9e9; border-top:1px solid #e9e9e9;}
+.borrower-tender-main2 .tender-main2-cen1 .tender-main2-careful, .borrower-tender-main2 .tender-main2-cen1 .tender-main2-information{ background:#f2f2f2; margin-top:20px;margin-bottom:20px; padding-top:20px;padding-bottom:20px;}
+.borrower-tender-main2 .tender-main2-cen1 .tender-main2-careful dt{ color:#ef5848; font-weight:normal; font-size:14px; margin-left:20px;}
+.borrower-tender-main2 .tender-main2-cen1 .tender-main2-careful dd{ margin-left:40px; margin-top:18px;}
+.borrower-tender-main2 .tender-main2-cen1 .tender-main2-careful dd b{color:#333;}
+.borrower-tender-main2 .tender-main2-cen1 .tender-main2-information li{ margin-bottom:10px; height:24px; line-height:24px;}
+.borrower-tender-main2 .tender-main2-cen1 .tender-main2-information li:last-child{ margin-bottom:0;}
+.borrower-tender-main2 .tender-main2-cen1 .tender-main2-information li span{ display:block; float:left; text-align:right; width:125px;}
+.borrower-tender-main2 .tender-main2-cen1 .tender-main2-information li b{ display:block; float:left; width:145px; margin-left:57px;color:#333;}
+.tender-main2-moneylist{ margin-top:20px;}
+.borrower-home-comlist ol, .borrower-home-comlist ul{ height:40px;}
+.borrower-home-comlist li{ float:left; height:40px; line-height:40px; text-align:center; margin-left:1px;}
+.borrower-home-comlist ol li{ background:#f69503; color:#fff; font-size:14px;}
+.borrower-home-comlist ul{ background:#fafafa; color:#333; font-size:12px; margin-top:9px;}
+.borrower-home-comlist ul:hover{ background:#f2f2f2;}
+.borrower-home-carousel{ margin-top:20px; width:790px; height:200px; position:relative;}
+.borrower-home-carousel .boho-carousel-main{ width:722px;height:200px; overflow:hidden; position:relative; margin-left:33px;}
+.borrower-home-carousel .boho-carousel-main ul{position:relative;}
+.borrower-home-carousel .boho-carousel-main ul li div{ float:left; margin-left:10px;}
+.borrower-home-carousel .boho-carousel-main ul li div:first-child{ margin-left:0;}
+.borrower-home-carousel .boho-carousel-main ul li div p{ width:234px; height:60px; background:#f2f2f2; margin-top:10px;}
+.borrower-home-carousel .boho-carousel-main ul li div p a{ display:block;width:234px; height:60px;}
+.borrower-home-carousel .boho-carousel-main ul li div p:first-child{ margin-top:0;}
+.borrower-home-carousel .boho-carousel-main ul li div p img{ width:60px; height:60px; float:left}
+.borrower-home-carousel .boho-carousel-main ul li div p span{float:left; line-height:20px; margin-top:12px; margin-left:10px;}
+.borrower-home-carousel .boho-carousel-btn{ background:url(../images/borrower/btn.png) no-repeat; width:20px; height:44px;}
+.borrower-home-carousel .left-btn{ background-position:0 0; position:absolute; top:78px; left:0;}
+.borrower-home-carousel .right-btn{ background-position:0 -49px;position:absolute; top:78px; right:0;}
+
+/*buchongziliao*/
+.borrower-updates-main1 dt, .borrower-refuseloan-main1 dt, .borrower-audit-main1 dt{ margin-top:0;}
+.borrower-updates-main2, .borrower-refuseloan-main2, .borrower-audit-main2{ width:920px; border-top:1px solid #cccccc; margin:30px auto;}
+.borrower-updates-main2 h3, .borrower-refuseloan-main2 h3{ margin:30px 0 20px 20px; }
+.borrower-updates-main2 .updates-main2-data, .borrower-refuseloan-main2 .refuseloan-main2-data{ background:#f2f2f2; width:840px; margin:0 auto; height:58px; line-height:58px;}
+.borrower-updates-main2 .updates-main2-data .updates-main2-dataword, .borrower-refuseloan-main2 .refuseloan-main2-data .refuseloan-main2-dataword{ margin-left:44px;}
+.borrower-updates-main2 .updates-main2-data .updates-main2-datatop{ width:93px; position:relative; margin-left:89px; margin-top:14px;}
+.borrower-updates-main2 .updates-main2-data .updates-main2-datatop input{ width:93px; height:30px; background:#ccc; opacity:0; position:absolute; top:0; left:0;}
+.borrower-updates-main2 .updates-main2-submit{ width:160px; margin:30px auto;}
+
+/*huankuanwancheng*/
+.borrower-repayment-main1 .repayment-main1-grade{ font-size:14px; color:#333333; margin-bottom:10px;}
+.borrower-repayment-main1 .repayment-main1-grade span{ color:#ef5848; font-size:18px; padding-left:5px;}
+.borrower-repayment-main2 .repayment-main2-moneylist li{ margin-left:2px;}
+
+/*jujue*/
+.borrower-refuseloan-main2 .refuseloan-main2-prompt{ color:#ef5848; margin-left:83px; margin-top:12px;}
+.borrower-refuseloan-main2 .refuseloan-main2-prompt b{ font-size:24px; vertical-align:middle;}
+
+/*shenhezhong*/
+.borrower-audit-main2 .audit-main2-prompt{background:#f2f2f2; width:880px; margin:30px auto; height:100px;}
+.borrower-audit-main2 .audit-main2-prompt .audit-main2-icon{ background:url(../image/after-login/icon.png) no-repeat; width:40px; height:40px; background-position:-138px -134px; margin-left:32px; margin-top:30px;}
+.borrower-audit-main2 .audit-main2-prompt .audit-main2-word{ margin-left:17px; margin-top:20px;}
+.borrower-audit-main2 .audit-main2-prompt .audit-main2-word p{ line-height:30px;}
+
+/*jibenxinxi*/
+.borrower-info-main1, .borrower-info-main2, .borrower-agreement-main1{ background:#f2f2f2; width:862px; margin:0 auto 28px; padding:10px 0 30px;}
+.borrower-info-main ol{ width:431px; }
+.borrower-info-main li{ margin-top:20px; width:451px;}
+.borrower-info-main li span{ display:block; width:100px; float:left;margin-left:45px;}
+.borrower-info-main li b{ display:block;float:left;width:255px; margin-left:30px;}
+
+/*yiqianxieyi*/
+.borrower-agreement-main1{ padding:0;}
+.borrower-agreement-main1 .agreement-main1-cen{ width:773px; margin:0 auto;}
+.borrower-agreement-main1 .agreement-main1-cen dl dt{ font-weight:normal; font-size:14px; padding-top:15px; padding-bottom:20px;}
+.borrower-agreement-main1 .agreement-main1-cen dl dd p{ width:195px; margin-left:62px; float:left;}
+.borrower-agreement-main1 .agreement-main1-cen dl dd p span, .borrower-agreement-main1 .agreement-main1-cen dl dd p b{ margin-bottom:20px;display:block;}
+.borrower-agreement-main1 .agreement-main1-cen dl dd p b a{ color:#f69503;}
+
+/*xinyongzhuangkuang*/
+.borrower-creditstatus-main1 .creditstatus-main1-cen1{ width:293px; border-right:1px solid #cfcfcf; height:108px; text-align:center;}
+.borrower-creditstatus-main1 .creditstatus-main1-cen1 .creditstatus-main1-user{ margin-top:20px; color:#666;}
+.borrower-creditstatus-main1 .creditstatus-main1-cen2 .creditstatus-main1-grade{ font-size:14PX; color:#333; margin-left:74px;}
+.borrower-creditstatus-main1 .creditstatus-main1-cen2 .creditstatus-main1-grade strong{ font-size:18px; color:#ef5848;}
+.borrower-creditstatus-main1 .creditstatus-main1-cen2 .creditstatus-main1-info b, .borrower-creditstatus-main2 b{ color:#333;}
+.borrower-creditstatus-main1 .creditstatus-main1-cen2 .creditstatus-main1-info li{ margin-top:18px; margin-left:74px;}
+.borrower-creditstatus-main2{ margin-top:9px;}
+.borrower-creditstatus-main2 .creditstatus-main2-border{ width:859px; border-bottom:1px solid #ccc; margin:30px auto;}
+.borrower-creditstatus-main2 .creditstatus-main2-cen{ padding:30px 0 10px; background:#f2f2f2; width:762px; margin:0 auto;}
+.borrower-creditstatus-main2 .creditstatus-main2-cen ol li{ margin-bottom:20px; width:337px;}
+.borrower-creditstatus-main2 .creditstatus-main2-cen ol li span{ display:block; float:left; width:133px; margin-right:43px; text-align:right;}
+.borrower-creditstatus-main2 .creditstatus-main2-cen ol li b{display:block; float:left; width:155px;}
+
+/*xiugai*/
+.borrower-revise h2{width:859px; border-bottom:1px solid #ccc; margin:0 auto; padding-bottom:30px; }
+.borrower-revise-main1{ width:760px; background:#f2f2f2; margin:30px auto; padding:29px 0;}
+.borrower-revise-main1 ol{ margin-left:28px;}
+.borrower-revise-main1 ol li{ margin-left:20px;width:270px; height:132px; float:left; margin-top:10px; position:relative;}
+.borrower-revise-main1 ol li.revise-bankadd{ background:#fff; text-align:center; line-height:132px; font-size:19px; color:#999999; position:relative; cursor:pointer;}
+.borrower-revise-main1 ol li.revise-bankadd b{ display:block; width:43px; height:42px; background-position:-80px -438px; position:absolute; bottom:12px; right:15px;}
+.borrower-revise-main1 ol li.revise-bankname p{ color:#fff; margin-top:14px; font-size:14px; margin-left:27px;}
+.borrower-revise-main2{ width:277px; margin:20px auto;}
+.borrower-revise-main2 p label.error{ padding-left:0;margin-top:5px; }
+.borrower-revise-main2 p {margin-bottom:20px;}
+.borrower-revise-main2 p span{  width:77px; text-align:left; display:block; float:left; line-height:30px;}
+.borrower-revise-main2 p span strong{ color:#ef5848; font-size:18px; margin-right:8px;vertical-align: middle;}
+.borrower-revise-main1 ol li.revise-bankname-withhold p span{ margin-left:38px; font-size:18px; cursor:pointer;}
+.borrower-revise-main1 ol li.revise-bankname-withhold .reba-withhold-btn{background: rgba(0,0,0,0.6);line-height:30px; height:30px; width:270px; position:absolute; bottom:0; left:-27px; border-bottom-left-radius:4px;border-bottom-right-radius:4px;}
+.borrower-revise-main1 ol li.revise-bankname-withhold p a{ display:inline-block; width:135px; color:#fff; font-size:15px; text-align:center}
+
+
+.borrower-revise-popup, .borrower-contract-popup{background:#fff; position:fixed; left:50%; top:50%; border-radius:10px; z-index:999;}
+.borrower-revise-popup h1, .borrower-contract-popup h1{ background:#f69503; font-size:24px; color:#fff; text-align:center; line-height:80px; height:80px; border-top-left-radius:10px; border-top-right-radius:10px; position:relative;}
+.borrower-revise-popup h1 b, .borrower-contract-popup h1 b{ display:block; width:14px; height:14px; position:absolute; top:34px; right:45px; background-position:-163px -97px;}
+.borrower-revise-popup1{ width:900px; height:850px; margin-left:-450px; margin-top:-425px; overflow-y:scroll;}
+.borrower-revise-popup1 .revise-popup1-cen{ width:843px; margin:18px auto; font-size:14px;}
+.borrower-revise-popup1 .revise-popup1-cen1, .borrower-revise-popup1 .revise-popup1-cen2{ line-height:24px;}
+.borrower-revise-popup1 .revise-popup1-cen1left{ width:365px;}
+.borrower-revise-popup1 .revise-popup1-cen1left p b{ color:#333;}
+.borrower-revise-popup1 .revise-popup1-cen1right{ width:437px; height:263px; border:1px solid #ccc; background:#f2f2f2; text-align:center; line-height:263px; font-size:14px; color:#ccc;}
+.borrower-revise-popup1 .revise-popup1-cen2{ margin-top:20px; border-bottom:1px solid #ccc; padding-bottom:40px;}
+.borrower-revise-popup1 .revise-popup1-cen2 p b{ color:#ef5848; font-size:18px;}
+.borrower-revise-popup1 .revise-popup1-cen3, .borrower-revise-popup1 .revise-popup1-cen4{border-bottom:1px solid #ccc; padding:20px 0;}
+.borrower-revise-popup1 .revise-popup1-cen3 p span{ margin-bottom:30px; height:30px; line-height:20px; display:block;}
+.borrower-revise-popup1 .revise-popup1-cen4 p input{ margin-bottom:6px;}
+.borrower-revise-popup1 .revise-popup1-cen4 .repo1-cen4-upload{ width:619px; border:1px solid #ccc; padding:20px 0 0; background:#f2f2f2; margin:20px auto 0; padding-left:30px;}
+.borrower-revise-popup1 .revise-popup1-cen4 .repo1-cen4-upload p{ margin-bottom:20px;}
+.borrower-revise-popup1 .revise-popup1-cen4 .repo1-cen4-upload p.repo1-cen4-uploadbtn{ line-height:26px; width:180px; position:relative;}
+.borrower-revise-popup1 .revise-popup1-cen4 .repo1-cen4-upload p.repo1-cen4-uploadbtn input{width:180px; height:30px; background:#ccc; position:absolute; top:0; left:0; z-index:2; opacity:0;}
+.borrower-revise-popup1 .revise-popup1-cen5{ width:200px; margin:20px auto;}
+.borrower-revise-popup2{width:600px; height:374px; margin-left:-300px; margin-top:-187px;}
+.borrower-revise-popup2 .revise-popup2-form, .borrower-revise-popup3 .revise-popup3-form{ margin-top:20px;}
+.borrower-revise-popup2 p, .borrower-revise-popup3 p{ height:50px;}
+.borrower-revise-popup2 span, .borrower-revise-popup3 span{ font-size:14px; display:inline-block; width:193px; text-align:right; margin-right:30px; }
+.borrower-revise-popup2 input, .borrower-revise-popup3 input{ width:240px;}
+.borrower-revise-popup2 select, .borrower-revise-popup3 select{ width:240px;}
+.borrower-revise-popup2 p label.error, .borrower-revise-popup3 p label.error{ display:block; margin-left:213px; margin-top:5px;}
+.borrower-revise-popup2 p #addbanksubmit, .borrower-revise-popup3 p #bankinfosubmit{ width:140px; margin-left:230px;}
+.borrower-revise-popup3{width:600px; height:424px; margin-left:-300px; margin-top:-212px;}
+.borrower-revise-popup3 p b{ font-size:14px;}
+
+
+/*huankuanzhong*/
+.borrower-payments-main1 dt, .borrower-pass-main1 dt{ margin-left:83px;}
+.borrower-payments-main1 dd .home-state-cen1 ol, .borrower-pass-main1 dd .home-state-cen1 ol{ width:180px; margin-left:35px;}
+.borrower-payments-main1 .payments-main1-progress a{ width:120px; margin-left:10px;}
+.borrower-payments-main1 .payments-main1-progress{ line-height:30px;}
+.borrower-payments-main1 .payments-main1-progress .progress{ margin-top:12px;}
+.borrower-payments .borrower-payments-main5{ padding-top:0;}
+.payments-main3-money{ line-height:30px; margin-top:24px; color:#ef5848; margin-left:23px;}
+.payments-main3-money span{ font-size:18px;}
+.payments-main3-money a{ margin-left:30px; width:160px; float:left; font-size:14px;}
+.afpa-right-main2 .afpari-main2-bankimg p.payments-main3-radio{ clear:both;height:70px;}
+.afpa-right-main2 .afpari-main2-bankimg .payments-main3-radio b{width:260px; height:70px;}
+.borrower-payments .borrower-payments-main2{ margin-top:8px;}
+.borrower-payments .borrower-payments-main2 .aflo-right-main{ height:159px;}
+.borrower-payments .borrower-payments-main2 .aflo-right-main > div{ width:940px;}
+.borrower-payments .borrower-payments-main2 .aflo-right-main > div ul{ height:96px;}
+.borrower-payments .borrower-payments-main2 .payments-main2-cen1 ul{ width:313px; float:left; border-right:1px solid #ccc;}
+.borrower-payments .borrower-payments-main2 .payments-main2-cen1 ul:list-child, .borrower-payments .borrower-payments-main2 .payments-main2-cen2 ul:list-child{ border-right:none;}
+.borrower-payments .borrower-payments-main2 .aflo-right-main ul li{ margin-bottom:30px;}
+.borrower-payments .borrower-payments-main2 .aflo-right-main ul li span{display:inline-block; text-align:right;}
+.borrower-payments .borrower-payments-main2 .aflo-right-main ul li b{ margin-left:48px; display:inline-block; color:#333;}
+.borrower-payments .borrower-payments-main2 .payments-main2-cen1 ul li span{ width:114px;}
+.borrower-payments .borrower-payments-main2 .payments-main2-cen1 ul li b{ width:149px;}
+.borrower-payments .borrower-payments-main2 .payments-main2-cen2 ul{ width:470px; float:left; border-right:1px solid #ccc;}
+.borrower-payments .borrower-payments-main2 .payments-main2-cen2 ul li span{ width:180px;}
+.borrower-payments .borrower-payments-main2 .payments-main2-cen2 ul li b{ width:237px;}
+.borrower-payments .borrower-payments-main6 .bopa-main6-btn a{ width:114px; margin-top:20px;}
+
+.borrower-popup{ width:600px; height:400px; background:#fff; position:fixed; left:50%; top:50%; margin-left:-300px; margin-top:-200px; border-radius:10px; display:none; z-index:999;}
+.borrower-popup h1{ background:#f69503; height:80px; line-height:80px; text-align:center; color:#fff; font-size:24px; border-top-left-radius:10px; border-top-right-radius:10px; position:relative;}
+.borrower-popup h1 b{ display:inline-block; width:12px; height:12px; background-position:-163px -97px; position:absolute; top:34px; right:21px;}
+.borrower-popup-main1{ width:408px; margin:18px auto 0;}
+.borrower-popup-main1 p{ margin-bottom:18px;}
+.borrower-popup-main2{ border-top:1px solid #ccc;}
+.borrower-popup-main2 a.btn-color{ width:160px; margin:30px auto 6px;}
+
+/*zhanghumingxi*/
+.detailed-main1-info{ background:#f2f2f2; width:848px; margin:0 auto; height:200px; overflow:hidden;}
+.detailed-main1-info .detailed-main1-info1{ font-size:14px; margin-left:30px; margin-top:30px;}
+.detailed-main1-info .detailed-main1-info1 b, .detailed-main1-info .detailed-main1-info3{ color:#ef5848;}
+.detailed-main1-info .detailed-main1-info3{ text-align:center;font-size:14px; margin-top:15px;}
+.detailed-main1-info ol li{ width:170px; margin-left:35px; margin-top:40px; line-height:30px; float:left;}
+.detailed-main1-info ol li p.detailed-main1-money, .detailed-main3-info ol li p.detailed-main1-money{ color:#333;}
+.detailed-main3-info{ width:740px; margin:0 auto;}
+.detailed-main3-info ol{background:#f2f2f2; padding:30px 0;}
+.detailed-main3-info ol li{width:107px;line-height:30px; margin-left:16px; float:left;}
+.detailed-main3-info .detailed-main3-info2{ width:160px; margin:30px auto 0;}
+
+/*xinyongziliao*/
+.borrower-data .borrower-data-main1, .borrower-data .borrower-data-main2{ width:760px; margin:0 auto 30px; border-top:1px solid #CCC; padding-top:28px;}
+.borrower-data .borrower-data-main1 ul li, .borrower-data .borrower-data-main2 ul li{ margin-bottom:19px;}
+.borrower-data .borrower-data-main1 ul li b, .borrower-data .borrower-data-main2 ul li b{ vertical-align:middle; margin-bottom:4px; display:inline-block; margin-right:10px; width:15px; height:15px;}
+.borrower-data .borrower-data-main1 ul li b{ background-position:-136px -301px;}
+.borrower-data .borrower-data-main2 ul li b{ background-position:-155px -301px;}
+.borrower-data-file p{ width:160px; position:relative;}
+.borrower-data-file p input{ opacity:0; width:160px; height:30px; position:absolute; top:0; left:0; background:#333;}
+.borrower-data-file span{ color:#999;margin-top: 18px;margin-left: 10px;}
+.borrower-data-filed li{ line-height:25px;}
+.borrower-data-filed li a{ margin-left:60px; color:#f69503;}
+
+
+/*xiangxiziliao*/
+.borrower-inform-title li{ float:left; width:162px; height:60px; line-height:60px; font-size:18px; text-align:center; border:1px solid #ccc; border-bottom:none; cursor:pointer; color:#333;}
+.borrower-inform-title li:first-child{ border-right:none;}
+.borrower-inform-title li:last-child{ border-left:none;}
+.borrower-inform-title h2{ line-height:60px; margin-bottom:0;}
+.borrower-inform-title li.hover{ background:#fff; border-top:2px solid #f69503; height:61px; margin-bottom:-1px;}
+.borrower-inform-main{ color:#333;}
+.borrower-inform-main p{ height:50px; }
+.borrower-inform-main p span strong{ color:#f00; margin-right:5px;}
+.borrower-inform-main p span, .borrower-inform-main p input, .borrower-inform-main p b{ float:left; height:30px; line-height:30px;}
+.borrower-inform-main p input[type=checkbox]{ width:12px; height:12px; margin-top:8px;}
+.borrower-inform-main p input[type=radio]{ width:12px; height:12px; margin-top:8px; margin-right:4px;}
+.borrower-inform-main1 .information-main1-left{ width:329px; margin-left:80px;}
+.borrower-inform-main1 .information-main1-right{ width:289px; margin-right:80px;}
+.borrower-inform-main1 p span{width:129px;}
+.borrower-inform-main1 p label.error{ margin-left:119px; margin-top:5px;}
+.borrower-inform-main1 p.information-main1-type b{ line-height:30px; height:30px; background:#f2f2f2; width:100px; text-align:center; border-radius:5px;}
+.borrower-inform-main1 .information-main1-left input{ width:200px;}
+.borrower-inform-main1 .financial-housing label{ margin-right:23px; line-height:30px;}
+
+.borrower-inform-main2 .information-main2-left{ width:425px; margin-left:80px;}
+.borrower-inform-main2 .information-main2-right{ width:275px; margin-right:80px;}
+.borrower-inform-main2 .information-main2-left p span{width:127px;}
+.borrower-inform-main2 .information-main2-right p span{width:95px;}
+.borrower-inform-main2 .information-main2-left p label.error{ margin-left:117px; margin-top:5px;}
+.borrower-inform-main2 .information-main2-right p label.error{ margin-left:85px; margin-top:5px;}
+.borrower-inform-main2 .information-main2-left input{ width:298px;}
+.borrower-inform-main2 .information-main2-right input{ width:180px;}
+.borrower-inform-main2 .information-main2-left select{ width:95px; margin-right:6px;}
+.borrower-inform-main2 .information-main2-left select:last-child{ margin-right:0;}
+.borrower-inform-main2 .information-main2-right p em{ line-height:30px; margin:0 3px;}
+
+.borrower-inform-main3 input{ width:249px;}
+.borrower-inform-main3 span{ width:83px;}
+.borrower-inform-main3 .information-main3-left{ width:333px; margin-left:80px;}
+.borrower-inform-main3 .information-main3-right{ width:333px; margin-right:80px;}
+.borrower-inform-main3 h1{ margin-left:40px; margin-bottom:28px;}
+
+/*shenhetongghuo*/
+.borrower-pass-main1 dl dt{ margin-top:16px;}
+.borrower-pass-main1 .pass-main1-date b{ font-size:18px; color:#ef5848;}
+.borrower-pass-main1 .pass-main1-list{ width:555px; margin-top:19px;}
+.borrower-pass-main1 .pass-main1-list{ text-align:center;}
+.borrower-pass-cen{ width:760px; margin:0 auto;}
+.borrower-pass-main2{ padding-top:0;}
+.borrower-pass-main2 .fill-info-title ol li {margin-left: 0px; margin-right:50px;}
+.borrower-pass-main2 .fill-info-title ol li p.fill-info-arrow { margin-left:52px;}
+.borrower-pass-main2 .contract-main2-step h2{ font-size:24px; color:#666; margin:20px 0;}
+.borrower-pass-main2 .contract-main2-step h2 span{ vertical-align:middle;}
+.borrower-pass-main2 .contract-main2-step h2 span{display:inline-block; height:48px; width:48px; margin-right:20px;}
+.borrower-pass-main2 .contract-main2-step h2 span.contract-step-name{ background-position:-232px -840px;}
+.borrower-pass-main2 .contract-main2-step h2 span.contract-step-bank{ background-position:-232px -890px;}
+.borrower-pass-main2 .contract-main2-step h2 span.contract-step-loan{ background-position:-232px -941px;}
+.borrower-pass-main2 .contract-main2-step h2 b{ color:#ef5848; padding-left:20px;}
+.contract-open-account .contract-opac-title{ background:#f2f2f2; padding:24px 20px; margin-bottom:28px;}
+.contract-open-account .contract-opac-title .contract-opac-title1{ background-position:-152px -360px; width:26px; height:26px; margin-right:7px;margin-top:7px;}
+.contract-open-account .contract-opac-form1{ width:295px;}
+.contract-open-account .contract-opac-form1 p{ margin-bottom:20px;}
+.contract-open-account .contract-opac-form1 p span{ width:82px; display:block; float:left; line-height:30px;}
+.contract-open-account .contract-opac-form1 p b{ color:#ef5848; font-size:24px; vertical-align:middle;}
+.contract-open-account .contract-opac-form1 p input{ width:200px;float:right;}
+.contract-open-account .contract-opac-form2{ width:456px; height:183px; border:1px solid #ccc; padding:13px;}
+.contract-bind-bank .contract-biba-main, .contract-free-loan .contract-frlo-main{ border-top:1px solid #ccc; padding-top:20px;}
+.contract-bind-bank .contract-biba-main > p{ margin-bottom:20px; font-size:14px;}
+.contract-bind-bank .contract-biba-main > p b{ color:#f69503;}
+.contract-bind-bank .afpa-right-main2 .afpari-main2-bankimg p { margin-left:0;margin-right: 23px;}
+.contract-frlo-bank{ background:none; border:none; padding:inherit; height:132px; width:270px; margin:20px 0; }
+.contract-frlo-bank ol{margin-left:inherit;}
+.contract-frlo-bank ol li{ margin-left:inherit; margin-top:inherit;}
+.contract-frlo-bank ol li p{ font-size:14px; margin-left:20px;}
+.borrower-contract-popup{ width:500px; height:294px;margin-left:-250px; margin-top:-147px;font-size:14px; display:none}
+.borrower-contract-popup h1{ height:60px; line-height:60px;}
+.borrower-contract-popup1 dl{ padding:50px 0; border-bottom:1px solid #ccc; }
+.borrower-contract-popup1 dl dt{ margin:0 30px 0 49px; background-position:-138px -134px; width:40px; height:40px;}
+.borrower-contract-popup h1 b{ top:25px;}
+.borrower-contract-popup .contract-popup-word{text-align:center;  margin-top:24px}
+.borrower-contract-popup .contract-popup-cen{ width:298px; margin:0 auto;}
+.borrower-contract-popup .contract-popup-cen li{ padding:30px 0; border-bottom:1px solid #ccc;}
+.borrower-contract-popup .contract-popup-cen li a{ width:120px;}
+.borrower-contract-popup .contract-popup-cen li b{ display:inline-block; width:26px; height:26px; margin-right:12px; vertical-align:middle;}
+
+.borrower-withdraw-main1 .bowi-main1-cen2 form p b{ color:#ef5848; font-size:14px;}
+.borrower-withdraw-main1 .bowi-main1-cen3{ background:#f2f2f2; padding:15px;}
+.borrower-withdraw-main1 .bowi-main1-cen3 b{ font-size:14px;color:#ef5848;}
+.borrower-withdraw-main1 .bowi-main1-cen3 span{ line-height:25px; display:block; margin-top:10px; margin-left:25px;}
+
+.borrower-bidstatus-main .borrower-home-comlist ul li a.btn-color{ margin-top:4px; width:100px;}
+.borrower-bidstatus-main .borrower-home-comlist ul li.bidstatus-repayment-schedule span{ width:50%;}
+.borrower-bidstatus-main .borrower-home-comlist ul li.bidstatus-repayment-schedule .bidstatus-view-details a{ color:#f69503;}
+.borrower-bidstatus-main .borrower-home-comlist ul li.bidstatus-repayment-schedule{ position:relative;}
+.borrower-bidstatus-main .borrower-home-comlist ul li.bidstatus-repayment-schedule .bidstatus-viewdetails-main{box-shadow: 2px 2px 6px #ccc; border:1px solid #ccc;position:absolute; top:47px; right:-35px; background:#fff; width:700px; z-index:1; display:none;}
+.borrower-bidstatus-main .borrower-home-comlist ul li.bidstatus-repayment-schedule .bidstatus-viewdetails-main .bidstatus-viewdetails-arrow{ width:78px; height:20px; position:absolute; top:-16px; right:74px; background:url(../images/borrower/bidstatus1.png) no-repeat;}
+.borrower-bidstatus-main .borrower-home-comlist ul li.bidstatus-repayment-schedule .bidstatus-viewdetails-main a.btn-color2{ color:#fff;}
+.borrower-bidstatus-main .borrower-home-comlist ul li.bidstatus-repayment-schedule .bidstatus-viewdetails-main a.btn-color3{ color:#9fa0a0;}

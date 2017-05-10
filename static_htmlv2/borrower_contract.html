@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+ <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+ <meta name="renderer" content="webkit|ie-comp|ie-stand">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>等待签合同</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" /> 
+<link href="css/common.css" rel="stylesheet" type="text/css" /> 
+<link href="css/after_login.css" rel="stylesheet" type="text/css" /> 
+<link href="css/fill_info.css" rel="stylesheet" type="text/css" /> 
+<link href="css/borrower.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>   
+<script src="js/jq.js"></script>
+<script src="js/after_jq.js"></script>
+<script src="js/borrower_jq.js"></script>
+
+ <!-- 
+
+		如果是IE9以下版本，添加Response.js 支持 HTML5元素和media查询
+
+	 -->
+    <!--[if lt IE 9]>
+
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+<!--<script type="text/javascript">
+function showPath1(){//openfileDialog 和获取路径
+    document.getElementById("path1").innerText=document.getElementById("selFile1").value;
+};
+function showPath2(){//openfileDialog 和获取路径
+    document.getElementById("path2").innerText=document.getElementById("selFile2").value;
+}
+    </script>-->
+<body>
+<div class="header">
+  <div class="header-main1 clearfix">
+    <div class="main clearfix">
+      <ol class="header-main1-left list-unstyled pull-left">
+        <li><a href="#"><span class="icon-app icon"></span>盼贷APP</a></li>
+        <li><a href="#"><span class="icon-follow icon"></span>关注盼贷</a></li>
+       <li><a href="#"><span class="icon-telephone icon"></span>服务热线：400-016-1131</a></li>
+      </ol>
+      <ol class="header-main1-right list-unstyled pull-right">
+        <li><a href="#">新手入门</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">现金券</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="borrower_tender.html"><span class="icon-account icon hover"></span>我的账户<b class="icon icon-arrow"></b></a></li>
+        <li><span class="line"></span></li>
+        <li class="return-old"><a href="#">返回旧版网站</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="header-main2">
+    <div class="main clearfix">
+      <p class="header-main2-logo pull-left"><img src="images/common/logo.png" /></p>
+      <ol class="header-main2-nav list-unstyled pull-right">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="invest_fixed.html">理财</a></li>
+        <li><a href="safe.html">安全保障</a></li>
+        <li><a href="#">活动专区</a></li>
+        <li><a href="about_introduction.html">关于我们</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div class="after-login borrower clearfix">
+   <div class="after-login-left borrower-left pull-left">
+      <div class="aflo-left-main1 borrower-left-main1">
+          <p class="left-mian1-face"><img src="images/after-login/after-left1.png" /></p>
+          <p class="left-mian1-phone">1300****299，下午好!</p>
+      </div>
+      <div class="aflo-left-main2 borrower-left-main2">
+        <dl>
+          <dt>我的借款</dt>
+          <dd class="hover"><a href="borrower_pass.html"><b class="loan-one"></b>账户首页</a></dd>
+          <dd><a href="borrower_agreement.html"><b class="loan-two"></b>已签协议</a></dd>
+          <dd><a href="borrower_detailed.html"><b class="loan-three"></b>账户明细</a></dd>
+          <dt>信用状况</dt>
+          <dd><a href="borrower_creditstatus.html"><b class="credit-one"></b>信用简介</a></dd>
+          <dd><a href="#"><b class="credit-two"></b>提高信用<strong style=" font-size:12px;">（即将上线）</strong></a></dd>
+          <dt>账户中心</dt>
+          <dd><a href="borrower_info.html"><b class="accounts-one"></b>基本信息</a></dd>
+          <dd><a href="borrower_information.html"><b class="accounts-two"></b>详细资料</a></dd>
+          <dd><a href="borrower_data.html"><b class="accounts-three"></b>信用资料</a></dd>
+          <dd><a href="borrower_revise.html"><b class="accounts-four"></b>账户修改</a></dd>
+          <dd><a href="borrower_withdraw.html"><b class="accounts-five"></b>提现</a></dd>
+        </dl> 
+      </div>
+   </div>
+   <div class="borrower-rightbk pull-right">
+      <div class="borrower-right  borrower-contract">
+         <div class="borrower-border borrower-home-state borrower-pass-main1">
+             <dl class="list-unstyled clearfix">
+               <dt class="pull-left"><img src="images/borrower/repayment1.png" /></dt>
+               <dd class="pull-left">
+                 <h1>借款状态：<b>等待签合同</b></h1>
+                 <div class="home-state-cen1 clearfix">
+                   <ol class="list-unstyled pull-left" style=" margin-left:0;">
+                     <li><span>本息总额：</span><b>30.000.00元</b></li>
+                     <li><span>贷款金额：</span><b>30.000.00元</b></li>
+                     <li><span>实际到账：</span><b>30.000.00元</b></li>
+                   </ol>
+                   <ol class="list-unstyled pull-left">
+                     <li><span>贷款期限：</span><b>3个月</b></li>
+                     <li><span>估计月还款：</span><b>222.99元</b></li>
+                     <li><span>最后月还：</span><b>23232.99元</b></li>
+                   </ol>
+                   <ol class="list-unstyled pull-left" style=" border-right:none;">
+                     <li><span>借款类型：</span><b>先付利息</b></li>
+                     <li><span>逾期费（每期）：</span><b>22.99</b></li>
+                     <li><span>还款日期：</span><b>每月10日</b></li>
+                   </ol>
+                 </div>
+                 <p class="pass-main1-date clearfix">
+                    还款期限：<b>2015年12月25日至2016年02月25日</b> 
+                 </p>
+               </dd>
+             </dl> 
+         </div>
+         <div class="borrower-border borrower-pass-main2">
+              <div class="fill-info-title pass-main2-flow">
+                <ol class="list-unstyled clearfix borrower-pass-cen">
+                  <li class="hover"><p class="fill-info-number">1</p><p class="fill-info-word">开通资金托管账户</p><p class="fill-info-arrow"></p></li>
+                  <li><p class="fill-info-number">2</p><p class="fill-info-word">绑定银行卡</p><p class="fill-info-arrow"></p></li>
+                  <li><p class="fill-info-number">3</p><p class="fill-info-word">开通免密还款</p></li>
+                </ol>
+              </div>
+              <div class="borrower-pass-cen contract-main2-step contract-open-account" style=" display:none;">
+                 <h2><span class="contract-step-name bg-icon"></span>实名认证<b>（未开通）</b></h2>
+                  <div class="contract-opac-title clearfix">
+                    <p class="contract-opac-title1 pull-left bg-icon"></p>
+                    <p class="pull-left" style=" width:684px; line-height:20px;">为保障资金安全，开通托管账户后，您在盼贷网的所有资金变动都会通过短信发送至您的手机号您必须开通免密快捷支付和免密还款才能在盼贷网贷款！</p>
+                  </div>
+                  <div class="contract-opac-form">
+                    <form id="contract-opac-form">
+                      <div class="clearfix">
+                        <div class="contract-opac-form1 pull-left">
+                        <p class="clearfix"><span><b>*</b>真实姓名</span><input type="text" class="form-control" id="contractopacname" /></p>
+                        <p class="clearfix"><span><b>*</b>身份证号</span><input type="text" class="form-control" id="contractopacnumber" /></p>
+                        <p class="clearfix"><span><b>*</b>手机号码</span><input type="text" class="form-control" id="contractopacmobilephone" /></p>
+                        <p class="clearfix"><span><b>*</b>短信验证码</span><input type="text" class="form-control" id="contractopaccode" /></p>
+                      </div>
+                      <div class="contract-opac-form2 pull-right">
+                        <p style=" line-height:20px;">盼贷网所有资金交易由联动优势科技有限公司（中国银联与移动联合成立）提供第三方资金托管服务；您的资金只存在于联动优势账户中，用户资金与平台进行有效隔离。</p>
+                        <p style=" margin-top:42px;"><img src="images/borrower/pass2.jpg" /></p>
+                      </div>
+                      </div>
+                      <p class="contract-opac-form3" style=" margin-left:97px; font-size:14px;"><label><input type="checkbox" checked style=" margin-right:10px;" />我已阅读并同意<a href="#" style=" color:#f69503;">《资金托管协议》</a></label></p>
+                      <p class="contract-opac-form4"><input type="submit" class="submit btn-color btn-color2 border-radius"id="contractopacsubmit" value="继续" style=" width:157px; font-size:14px; margin:30px auto;" /></p>
+                      <p style=" color:#ef5848;">开通后，您的注册手机将会收到托管账户开通成功及支付短信密码，在绑定及免密还款业务办理过程中将会使用该支付密码</p>
+                    </form>
+                  </div>
+              </div>
+              <div class="borrower-pass-cen contract-main2-step contract-bind-bank" style=" display:none;">
+                <h2><span class="contract-step-bank bg-icon"></span>绑定银行卡<b>（未开通）</b></h2>
+                <div class="contract-biba-main">
+                  <p>持卡人：<b>陶**</b></p>
+                  <p>手机号：<b>152****0000</b></p>
+                  <div class="afpa-right-main2">
+                   <form id="e-bank">
+                    <div class="afpari-main2-cen1">
+                       <div class="afpari-main2-bankimg clearfix" style=" margin-top:0;">
+                          <p><input type="radio" id="bank-name12" name="bank-name"><label for="bank-name12"><b style="background-position:-186px -352px;"></b></label></p>
+                          <p><input type="radio" id="bank-name1" name="bank-name" checked=""><label for="bank-name1"><b class="hover" style="background-position:-186px 0;"></b></label></p>
+                          <p><input type="radio" id="bank-name2" name="bank-name"><label for="bank-name2"><b style="background-position:-186px -32px;"></b></label></p>
+                          <p><input type="radio" id="bank-name4" name="bank-name"><label for="bank-name4"><b style="background-position:-186px -96px;"></b></label></p>
+                          <p><input type="radio" id="bank-name9" name="bank-name"><label for="bank-name9"><b style="background-position:-186px -256px;"></b></label></p>
+                          <p><input type="radio" id="bank-name6" name="bank-name"><label for="bank-name6"><b style="background-position:-186px -160px;"></b></label></p>
+                          <p><input type="radio" id="bank-name7" name="bank-name"><label for="bank-name7"><b style="background-position:-186px -192px;"></b></label></p>
+                          <p><input type="radio" id="bank-name14" name="bank-name"><label for="bank-name14"><b style="background-position:-186px -416px;"></b></label></p>
+                          <p><input type="radio" id="bank-name5" name="bank-name"><label for="bank-name5"><b style="background-position:-186px -128px;"></b></label></p>
+                          <p><input type="radio" id="bank-name10" name="bank-name"><label for="bank-name10"><b style="background-position:-186px -288px;"></b></label></p>
+                          <p><input type="radio" id="bank-name11" name="bank-name"><label for="bank-name11"><b style="background-position:-186px -320px;"></b></label></p>
+                          <p><input type="radio" id="bank-name3" name="bank-name"><label for="bank-name3"><b style="background-position:-186px -64px;"></b></label></p>
+                          <p><input type="radio" id="bank-name8" name="bank-name"><label for="bank-name8"><b style="background-position:-288px -823px;"></b></label></p>
+                          <p><input type="radio" id="bank-name13" name="bank-name"><label for="bank-name13"><b style="background-position:-186px -384px;"></b></label></p>
+                       </div>
+                    </div>
+                    <div class="afpari-main1-cen2">
+                     <p><span style="width:inherit">银行卡号</span><input type="text" class="form-control" style=" width:198px" id="contractbindbank" name="contractbindbank"></p>
+                     <p><input type="submit" class="form-control btn-color btn-color2 border-radius submit" id="" name="" value="开通绑定" style=" width:160px; border-radius:4px; padding:0; margin:0 auto;"></p>
+                    </div>
+                 </form>
+               </div>
+                </div>
+              </div>
+              <div class="borrower-pass-cen contract-main2-step contract-free-loan" style=" display:;">
+                <h2><span class="contract-step-loan bg-icon"></span>免密还款<b>（未开通）</b></h2>
+                <div class="contract-frlo-main">
+                  <div style=" width:270px; margin:0 auto;">
+                   <p style="font-size:18px;">已绑定的银行卡</p>
+                   <div class="contract-frlo-bank borrower-revise-main1">
+                     <ol class="list-unstyled">
+                      <li class="revise-bankname bg-bank-small bank-small-ICBC">
+                       <p style=" margin-top:24px;">中国银行</p>
+                       <p style=" margin-top:33px;">6217 5801 0000 4447 264</p>
+                      </li>
+                     </ol>
+                   </div>
+                   <p class="contract-frlo-btn"><a href="#" class="submit btn-color btn-color2 border-radius" style=" width:270px; font-size:14px;">开通</a></p>
+                  </div> 
+                </div>
+              </div>
+         </div>
+         
+      </div>
+   </div>
+</div>
+<div class="footer">
+  <div class="footer-main1">
+    <div class="main clearfix">
+      <div class="footer-main1-left pull-left">
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作伙伴</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ol>
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">招贤纳士</a></li>
+        </ol>
+      </div>
+      <div class="pull-left"><span class="line"></span></div>
+        <div class="footer-main1-middle pull-left">
+          <dl class=" list-unstyled">
+            <dt class=" pull-left" style=" font-size:18px;">服务热线：</dt>
+            <dd class=" pull-left">
+              <p style=" font-size:38px; font-weight:600; margin-top:-10px;">400-016-1131</p>
+              <p>工作时间：周一至周五9:00-18:00</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="pull-left"><span class="line"></span></div>
+          <div class="footer-main1-right pull-right">
+            <p class=" text-center pull-left">
+              盼贷微信服务号<br /><img src="images/common/footer1.jpg" />
+            </p>
+            <p class=" text-center pull-left" style=" margin-right:0;">
+              盼贷APP下载<br /><img src="images/common/footer2.jpg" />
+            </p>
+          </div>
+        </div>
+  </div>
+  <div class="footer-main2">
+    <div class="main text-center">
+      <p><img src="images/common/footer3.jpg" /><img src="images/common/footer4.jpg" /><img src="images/common/footer5.jpg" /><img src="images/common/footer6.jpg" /><img src="images/common/footer7.jpg" /></p>
+      <p>© 2012-2017 北京盼大世纪信息技术有限公司 All rights reserved | 京ICP备15042613号 | 免责条款</p>
+    </div>
+  </div>
+</div>
+
+<div class="transparent-back"></div>
+<div class="borrower-contract-popup borrower-contract-popup1">
+    <h1>警告</h1>
+    <dl class="list-unstyled clearfix">
+      <dt class="pull-left bg-icon"></dt>
+      <dd class="pull-left">
+        <p>开启第三方资金托管失败！</p>
+        <p>原因:您输入的证件号码或用户姓名有误，请重新输入！</p>
+      </dd>
+    </dl>
+    <p style=" width:160px; margin:28px auto;"><a href="#" class="btn-color btn-color2 border-radius">确认</a></p>
+</div>
+<div class="borrower-contract-popup borrower-contract-popup2">
+    <h1>绑卡结果<b class="bg-icon"></b></h1>
+    <p class="contract-popup-word">完成绑卡后请选择</p>
+    <ol class="contract-popup-cen list-unstyled">
+       <li class="clearfix">
+         <p class="pull-left"><b class="bg-icon" style=" background-position:-152px -330px;"></b>绑卡成功</p>
+         <p class="pull-right"><a href="#" class="btn-color btn-color2 border-radius">返回</a></p>
+       </li>
+       <li style="border:none;">
+        <p class="pull-left"><b class="bg-icon" style=" background-position:-152px -416px;"></b>绑卡失败</p>
+         <p class="pull-right"><a href="#" class="btn-color btn-color2 border-radius">重新绑卡</a></p>
+       </li>
+    </ol>
+</div>
+<div class="borrower-contract-popup borrower-contract-popup3">
+    <h1>免密还款结果<b class="bg-icon"></b></h1>
+    <p class="contract-popup-word">完成免密还款后请选择</p>
+    <ol class="contract-popup-cen list-unstyled">
+       <li class="clearfix">
+         <p class="pull-left"><b class="bg-icon" style=" background-position:-152px -330px;"></b>授权成功</p>
+         <p class="pull-right"><a href="#" class="btn-color btn-color2 border-radius">返回</a></p>
+       </li>
+       <li style="border:none;">
+        <p class="pull-left"><b class="bg-icon" style=" background-position:-152px -416px;"></b>授权失败</p>
+         <p class="pull-right"><a href="#" class="btn-color btn-color2 border-radius">重新授权</a></p>
+       </li>
+    </ol>
+</div>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+ <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+ <meta name="renderer" content="webkit|ie-comp|ie-stand">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>登录</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" /> 
+<link href="css/common.css" rel="stylesheet" type="text/css" /> 
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>   
+<script src="js/jq.js"></script>
+<script src="js/jquery.validate.js"></script>
+ <!-- 
+
+		如果是IE9以下版本，添加Response.js 支持 HTML5元素和media查询
+
+	 -->
+    <!--[if lt IE 9]>
+
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+
+<body>
+<div class="header">
+  <div class="header-main1 clearfix">
+    <div class="main clearfix">
+      <ol class="header-main1-left list-unstyled pull-left">
+        <li><a href="#"><span class="icon-app icon"></span>盼贷APP</a></li>
+        <li><a href="#"><span class="icon-follow icon"></span>关注盼贷</a></li>
+       <li><a href="#"><span class="icon-telephone icon"></span>服务热线：400-016-1131</a></li>
+      </ol>
+      <ol class="header-main1-right list-unstyled pull-right">
+        <li><a href="#">新手入门</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">现金券</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="after_account.html"><span class="icon-account icon"></span>我的账户<b class="icon icon-arrow"></b></a></li>
+        <li><span class="line"></span></li>
+        <li class="return-old"><a href="#">返回旧版网站</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="header-main2">
+    <div class="main clearfix">
+      <p class="header-main2-logo pull-left"><img src="images/common/logo.png" /></p>
+      <ol class="header-main2-nav list-unstyled pull-right">
+        <li class="hover"><a href="index.html">首页</a></li>
+        <li><a href="invest_fixed.html">理财</a></li>
+        <li><a href="safe.html">安全保障</a></li>
+        <li><a href="#">活动专区</a></li>
+        <li><a href="about_introduction.html">关于我们</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div class="login">
+  <div class="login-main clearfix main">
+    <div class="login-main-right pull-right">
+       <div class="login-main-form">
+          <h1>立即登录</h1>
+          <form role="form" id="login-form">
+               <div class="form-group">
+                  <label for="username">用户名</label>
+                  <input type="text" class="form-control" id="username" name="username">
+               </div>
+               <div class="form-group">
+                  <label for="password">密码</label>
+                  <input type="password" class="form-control" id="password" name="password">
+               </div>
+               <div class="form-group">
+                 <a href="after_account.html" style=" display:block; width:250px; height:30px; margin:30px auto 0"><input type="submit" class="login-submit submit btn-color btn-color2 border-radius" value="登录"></a>
+               </div>
+          </form>
+          <p class="forget-password"><a href="#">忘记密码？</a></p>
+           <p class="no-register"><a href="#">还没注册？ 立即注册</a></p>
+       </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer" style=" margin-top:0;">
+  <div class="footer-main1">
+    <div class="main clearfix">
+      <div class="footer-main1-left pull-left">
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作伙伴</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ol>
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">招贤纳士</a></li>
+        </ol>
+      </div>
+      <div class="pull-left"><span class="line"></span></div>
+        <div class="footer-main1-middle pull-left">
+          <dl class=" list-unstyled">
+            <dt class=" pull-left" style=" font-size:18px;">服务热线：</dt>
+            <dd class=" pull-left">
+              <p style=" font-size:38px; font-weight:600; margin-top:-10px;">400-016-1131</p>
+              <p>工作时间：周一至周五9:00-18:00</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="pull-left"><span class="line"></span></div>
+          <div class="footer-main1-right pull-right">
+            <p class=" text-center pull-left">
+              盼贷微信服务号<br /><img src="images/common/footer1.jpg" />
+            </p>
+            <p class=" text-center pull-left" style=" margin-right:0;">
+              盼贷APP下载<br /><img src="images/common/footer2.jpg" />
+            </p>
+          </div>
+        </div>
+  </div>
+  <div class="footer-main2">
+    <div class="main text-center">
+      <p><img src="images/common/footer3.jpg" /><img src="images/common/footer4.jpg" /><img src="images/common/footer5.jpg" /><img src="images/common/footer6.jpg" /><img src="images/common/footer7.jpg" /></p>
+      <p>© 2012-2017 北京盼大世纪信息技术有限公司 All rights reserved | 京ICP备15042613号 | 免责条款</p>
+    </div>
+  </div>
+</div>
+
+<div class="transparent-back"></div>
+<div class="login-popup login-popup1" style=" display:none;">
+ <h1>找回密码</h1>
+ <div class="login-popup1-table">
+   <ol class="list-unstyled clearfix">
+     <li class="hover">使用绑定邮箱找回密码</li>
+     <li>使用绑定手机号找回密码</li>
+   </ol>
+   <div class="login-popup1-tablecen">
+     <div class="login-popup1-tablecen1">
+       <form id="login-popup1-email">
+         <p><span><strong>*</strong>邮箱地址：</span><b><input type="text" class="form-control" id="emailadress" name="emailadress" style=" width:229px;" /></b></p>
+         <p><span><strong>*</strong>验证码：</span><b><a href="#" class="validate-img"><img src="images/after-login/after-transfer1.jpg" /></a><input type="text" class="form-control" id="emailvalidate" name="emailvalidate" style=" width:100px;" /></b></p>
+         <p><input type="button" class="form-control submit btn-color btn-color2 border-radius"  value="提交" id="emailsubmit" name="emailsubmit" style=" width:100px; margin:10px auto" /></p>
+       </form>
+     </div>
+     <div class="login-popup1-tablecen2" style="display:none;">
+       <form id="login-popup1-phone">
+         <p><span><strong>*</strong>手机号：</span><b><input type="text" class="form-control" id="phonenumber" name="phonenumber" style=" width:229px;" /></b></p>
+         <p><span><strong>*</strong>验证码：</span><b><a href="#" class="validate-img"><img src="images/after-login/after-transfer1.jpg" /></a><input type="text" class="form-control" id="phonevalidate" name="phonevalidate" style=" width:100px;" /></b></p>
+         <p><input type="button" class="form-control submit btn-color btn-color2 border-radius" value="提交" id="phonesubmit" name="phonesubmit" style=" width:100px; margin:10px auto" /></p>
+       </form>
+     </div>
+   </div>
+ </div> 
+ <p class="login-popup1-prompt">若无法使用以上方法找回，请联系客服400-016-1131</p>
+</div>
+<div class="login-popup login-popup2" style=" display:none;">
+ <h1>找回密码</h1>
+ <p class="login-popup2-cen1">盼贷网密码找回邮件已发送到您的<a href="#">76****43434@qq.com</a>邮箱请注意查收，并且点击邮箱中的链接进行找回密码操作！</p>
+ <p class="login-popup2-cen2"><a href="index.html" class="btn-color btn-color2 border-radius">返回首页</a></p>
+</div>
+<div class="login-popup login-popup3" style=" display:none;">
+  <h1>找回密码</h1>
+   <div class="login-popup3-cen">
+    <p class="login-popup3-cen1">盼贷网手机验证已发送至您的手机186***33233</p>
+    <div class="login-popup1-tablecen">
+     <div class="login-popup1-tablecen1">
+       <form id="login-popup1-phone2">
+         <p><span><strong>*</strong>验证码：</span><b><a href="#" class="validate-img"><img src="images/after-login/after-transfer1.jpg" /></a><input type="text" class="form-control" id="phonevalidate2" name="phonevalidate2" style=" width:100px;" /></b></p>
+         <p><span><strong>*</strong>设置新密码：</span><b><input type="password" class="form-control" id="phonepassword" name="phonepassword" style=" width:229px;" /></b></p>
+         <p><span><strong>*</strong>确认新密码：</span><b><input type="password" class="form-control" id="phonepassword2" name="phonepassword2" style=" width:229px;" /></b></p>
+         <p><input type="submit" class="form-control submit btn-color btn-color2 border-radius" id="phonesubmit2" name="phonesubmit2" style=" width:100px; margin:10px auto" /></p>
+       </form>
+     </div>
+   </div>
+ </div> 
+  <p class="login-popup1-prompt">若无法使用以上方法找回，请联系客服400-016-1131</p>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+   /* $("#login-form").validate({
+        rules: {
+            username: "required",
+			password: {
+                required: true,
+                minlength: 5
+            }
+          
+        },
+        messages: {
+            username: "用户名不能为空", 
+			password: {
+                required: "密码不能为空",
+                minlength: jQuery.format("密码不能小于{0}个字符")
+            }
+        }
+    });
+	*/
+	 $("#login-popup1-email").validate({
+        rules: {
+            emailadress: {
+			   required: true,
+			   email: true
+			},
+			emailvalidate: {
+                required: true
+            }
+        },
+        messages: {
+            emailadress: {
+			   required: "请输入您的邮箱地址",
+			   email: "请输入正确格式的电子邮件"
+			},
+			emailvalidate: {
+                required: "请输入验证码"
+            }
+        },
+		 
+    });
+	
+   $("#login-popup1-phone").validate({
+        rules: {
+            phonenumber: {
+			   required: true,
+			   digits:true	
+			},
+			phonevalidate: {
+                required: true
+            }
+        },
+        messages: {
+            phonenumber: {
+			   required: "请输入您的手机号码",
+			   digits: "必须输入整数"
+			},
+			phonevalidate: {
+                required: "请输入验证码"
+            }
+        }
+    });
+	$("#login-popup1-phone2").validate({
+        rules: {
+            phonevalidate2: {
+			   required: true
+			},
+			phonepassword: {
+                required: true
+            },
+			phonepassword2: {
+                required: true,
+				equalTo:"#phonepassword"
+            }
+        },
+        messages: {
+            phonevalidate2: {
+			   required: "请输入验证码"
+			},
+			phonepassword: {
+                required: "请填写新密码"
+            },
+			phonepassword2: {
+                required: "请填写新密码",
+				equalTo: "两次密码填写不一致"
+            }
+        }
+    });
+	
+	
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>固定标</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/invest.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/cycle.js"></script>
+<script src="js/raphael.js"></script>
+<script src="js/jq.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="header">
+  <div class="header-main1 clearfix">
+    <div class="main clearfix">
+      <ol class="header-main1-left list-unstyled pull-left">
+        <li><a href="#"><span class="icon-app icon"></span>盼贷APP</a></li>
+        <li><a href="#"><span class="icon-follow icon"></span>关注盼贷</a></li>
+       <li><a href="#"><span class="icon-telephone icon"></span>服务热线：400-016-1131</a></li>
+      </ol>
+      <ol class="header-main1-right list-unstyled pull-right">
+        <li><a href="#">新手入门</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">现金券</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="after_account.html"><span class="icon-account icon"></span>我的账户<b class="icon icon-arrow"></b></a></li>
+        <li><span class="line"></span></li>
+        <li class="return-old"><a href="#">返回旧版网站</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="header-main2">
+    <div class="main clearfix">
+      <p class="header-main2-logo pull-left"><img src="images/common/logo.png" /></p>
+      <ol class="header-main2-nav list-unstyled pull-right">
+        <li><a href="index.html">首页</a></li>
+        <li class="hover"><a href="invest_fixed.html">理财</a></li>
+        <li><a href="safe.html">安全保障</a></li>
+        <li><a href="#">活动专区</a></li>
+        <li><a href="about_introduction.html">关于我们</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div class="invest-list invest-list-fixed main">
+  <div class="invest-list-title">
+    <ol class="list-unstyled clearfix">
+      <li class="pull-left hover"><a href="invest_fixed.html">固定标类</a></li>
+      <li class="pull-left"><a href="invest_scattered.html">散标类</a></li>
+    </ol>
+  </div>
+  <div class="invest-list-bidding invest-fixed-bidding">
+    <div class="new-product-bidding border-radius clearfix">
+      <a href="#" class="product-bidding-href"></a>
+      <p class="newpro-bidding-img"></p>
+      <div class="pull-left newpro-bidding-profit">
+        <ol class=" list-unstyled">
+          <li class="pull-left">
+            <p style=" color:#f4950a; font-size:26px;"><b>15.00</b>%</p>
+            <p class=" font-color">预期年化收益率</p>
+          </li>
+          <li class="pull-left">
+            <p style=" color:#727171; font-size:26px;"><b>15</b>天</p>
+            <p class=" font-color">投资期限</p>
+          </li>
+        </ol> 
+      </div>
+      <div class="pull-left newpro-bidding-progress text-center">
+        <div id="processingbar" class="processingbar"><font>70%</font><p class="processfont">投资进度</p></div> 
+      </div>
+      <div class="pull-left newpro-bidding-btn text-center" style=" border-right:none;">
+        <p><a href="#" class="btn-color btn-color1 border-radius">立即认购</a></p>
+        <p class="font-color product-bidding-explain">限投：10,000元</p>
+      </div>
+    </div>
+    <div class="plan-product-tool border-radius">
+      <h1><b class="icon"></b>计划宝—分散投资工具</h1>
+      <div class="plan-tool-main clearfix">
+        <form id="plantoolform">
+          <div class="plan-tool-main1 pull-left">
+            <div class=" clearfix plantoolform-time plantoolform-bg">
+              <label class="plan-tool-label pull-left">投资期限</label>
+              <label class=" pull-left plan-tool-checkbox hover"><input type="radio" class="time" name="time" />6个月</label>
+              <label class=" pull-left plan-tool-checkbox"><input type="radio" class="time" name="time" />9个月</label>
+              <label class=" pull-left plan-tool-checkbox"><input type="radio" class="time" name="time" />12个月</label>
+            </div>
+            <div style="margin-bottom:12px;" class=" plantoolform-money">
+              <label class="plan-tool-label">投资金额</label>
+              <input type="text" class="form-control num" value="" placeholder="1000起，并以1000元整倍递增" style=" width:252px; padding-right:20px;" />
+              <a href="###" class="jia icon"></a><a href="###" class="jian icon"></a>
+              <div class="plantoolform-money-popup">
+                <p class="icon left-arrow"></p>
+                <p class="clearfix">
+                 <b class="pull-left icon prompt-icon"></b>
+                 <span class="pull-right">投资金额需≥1000.00元<br />投资金额需为1000的倍数</span>
+                </p>
+              </div>
+            </div>
+            <div class="plantoolform-recharge">
+              <span>账户余额：<b>9000.00</b></span><a href="#">充值>></a>
+            </div>
+            <div class=" clearfix plantoolform-product">
+              <p class="plan-tool-label pull-left">投资标的</p>
+              <p class=" pull-left plan-tool-checkbox">
+                <a href="#" class="hover beacon hover"><b class="icon"></b>盼信标</a>
+                <a href="#" class="trade hover"><b class="icon"></b>交易所标</a>
+              </p>
+            </div>
+            <div class=" clearfix plantoolform-coupon plantoolform-bg">
+              <label class="plan-tool-label pull-left">匹配现金券</label>
+              <label class=" pull-left plan-tool-checkbox hover"><input type="radio" class="coupon" name="coupon" />是</label>
+              <label class=" pull-left plan-tool-checkbox"><input type="radio" class="coupon" name="coupon" />否</label>
+            </div>
+          </div>
+          <div class="plan-tool-main2 pull-left">
+            <p class="text-center plantool-main2-rate1">系统预估年化回报率</p>
+            <div class="plantool-main2-rate2">
+              <p class=" text-center plantool-main2-number">8.5%+<b class="icon"></b></p>
+              <div class="plantool-main2-popup border-radius">
+                <b class="icon"></b>
+                预估收益不等于实际收益，最终受益以客户收到的还款数额为准。
+              </div>
+            </div>
+            <p class="plantool-main2-btn"><a href="#" class="btn-color btn-color2 border-radius">智能匹配</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="invest-list-table border-radius plan-list-table">
+      <p class="inli-table-title"><a href="###" class="hover">产品介绍</a><a href="###">标的组成</a><a href="###">常见问题</a></p>
+      <div class="inli-table-main">
+        <div class="inli-table-main1">
+          <p class="inli-table-introduce">计划宝是盼贷精心设计的分散投资工具，它简化了投资者选择不同贷款类型和不同贷款期限的过程。计划宝标的是由盼贷专业的审核团队严格审核通过组成的。资金被投资在平台上不同的标的中，这些标的已通过了盼贷严格的风险控制管理，并受到盼贷与不同机构合作伙伴的保护。标的到期后自动回款到投资人账户。投资人省去了挑选标的的过程，投资标的在借贷到期时以先息后本模式还款。</p>
+          <p class="text-center" style=" margin-top:30px;"><img src="images/invest/plan1.jpg" style=" width:966px" /></p>
+        </div>
+        <div class="inli-table-main2" style=" display:none;">
+          <table class="rec-table" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td><div class="rec-1">产品</div></td>
+                <td>
+                  <p class="rec-table-triangle bg-icon rec-table-triangle1"></p>
+                  <div class="rec-2">计划宝是盼贷精心设计的分散投资工具，它简化了投资者选择不同贷款类型和不同贷款期限的过程。计划宝标的是由盼贷专业的审核团队严格审核通过组成的。资金被投资在平台上不同的标的中，这些标的已通过了盼贷严格的风险控制管理，并受到盼贷与不同机构合作伙伴的保护。标的到期后自动回款到投资人账户。投资人省去了挑选标的的过程，投资标的在借贷到期时以先息后本模式还款。</div>
+                </td>
+              </tr>
+              <tr class="odd">
+                <td><div class="rec-1">还款方式</div></td>
+                <td>
+                  <p class="rec-table-triangle bg-icon rec-table-triangle2"></p>
+                  <div class="rec-2">先付息后付本</div>
+                </td>
+              </tr>
+              <tr>
+                <td><div class="rec-1">起投金额</div></td>
+                <td>
+                  <p class="rec-table-triangle bg-icon rec-table-triangle1"></p>
+                  <div class="rec-2">1000元以上 （投资更多能分散投资到更多标的降低风险）</div>
+                </td>
+              </tr>
+              <tr class="odd">
+                <td><div class="rec-1">回报/ 期限</div></td>
+                <td>
+                  <p class="rec-table-triangle bg-icon rec-table-triangle2"></p>
+                  <div class="rec-2">按照投资人选择包含产品与期限之内预估能得到下面的回报率<br />6个月：~8%-11% <br />9个月：~9%-12%<br />12个月：~10%-13%</div>
+                </td>
+              </tr>
+              <tr>
+                <td><div class="rec-1">投资项目</div></td>
+                <td>
+                  <p class="rec-table-triangle bg-icon rec-table-triangle1"></p>
+                  <div class="rec-2">盼信标. (9-13%年华回报率）<br />交易所标 （8-12%年华回报率)<br />投资人可以定制选择只投资盼信标或者交易所标</div>
+                </td>
+              </tr>
+              <tr class="odd">
+                <td><div class="rec-1">流动性</div></td>
+                <td>
+                  <p class="rec-table-triangle bg-icon rec-table-triangle2"></p>
+                  <div class="rec-2">按照每个投资项目期限回款, 不会复投出去<br />投资人选择期限内的投资项目<br />投资内的项目不允许债权转让</div>
+                </td>
+              </tr>
+              <tr>
+                <td><div class="rec-1">风控措施</div></td>
+                <td>
+                  <p class="rec-table-triangle bg-icon rec-table-triangle1"></p>
+                  <div class="rec-2">海量分散: 帮助投资人将资金持续、实时地分散到海量贷款标的，有效减少互联网金融产品风险<br />按照监管要求鼓励投资者分散投资，且每一笔贷款项目有法律保障<br />风险保护金30天逾期以后覆盖：利息+本金<br />盼贷网按照每个项目：贷前审查、贷中监管、贷后管理机制以及应急机制、法律程序，专款专用机制<br />资金托管账户：资金不通过平台，直接到借款人的账户当中。</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="inli-table-main3" style=" display:none;">
+          <p><span>1、为什么会有投资失败的情况出现？</span><br /><b>在分散投资同时一定几率会出现多个投资人同时操作，一定几率会出现多个投资人同时选择同一个标的，会出现某些已经显示匹配标的投资失败。</b></p>
+          <p class="odd"><span>2、预期收益是如何计算的？</span><br /><b>使用分散投资工具投资标的，因是系统自动匹配标的，部分匹配可能会出现比预期收益低。90%以上是匹配比预期收益高。
+</b></p>
+          <p><span>3、分散投资比单独投标有啥优势</span><br /><b>优势一：分散投资降低逾期风险<br />优势二：平台自动匹配提高收益</b></p>
+          <p class="odd"><span>4、我的钱投给了谁？我怎么知道还款情况如何？</span><br /><b>盼贷网坚持向投资人披露每一笔资金的去向，和每一笔借款的还款情况。投资完成后，请登录盼贷网账户，在“投资状况”中查看投资详情。</b></p>
+          <p><span>5、什么是多重保障？</span><br /><b>第一重保障：分散投资模式，协助投资人将资金持续、实时地分散到平台标的，有效减少某标的逾期及坏账风险。<br />第二重保障：投资人分散投资模式，符合监管要求，并每一产品标的均有法律保障。<br />第三重保障：30天逾期后风险金覆盖：利息+本金<br />第四重保障：盼贷针对每一个借款人实行，贷前审查、贷中监管、贷后管理机制以及应急机制、法律程序，专款专用机制。<br />第五重保障：投资人资金由第三方托管，资金直接到借款人的账户，平台无法触碰投资人资金</b></p>
+          <p class="odd"><span>6、什么叫分散投资？</span><br /><b>在分散投资同时一定几率会出现多个投资人同时分散投资也称为组合投资，是指同时投资在不同的资产类型上。分散投资引入了对风险和收益对等原则的一个重要的改变，分散投资一个重要的好处就是，分散投资可以在不降低收益的同时降低风险。这也意味着通过分散投资我们可以改善风险-收益比率。在实际操作上可以根据不同情况采取多种方法，但唯一的目的和作用就是降低投资风险。操作，一定几率会出现多个投资人同时选择同一个标的，会出现某些已经显示匹配标的投资失败。</b></p>
+          <p><span>7、分散投资的概念？</span><br /><b>分散投资的概念是以减小投资风险为目的，建造一个包含多种投资的投资组合，让我们举个简单例子:如果张先生把所有资金全部投资在A产品上，一旦A产品的借款人没有及时还款，张先生的投资将面临逾期;但如果张先生将资金分别投资在A、B两个产品上，就算A产品的借款人没有及时还款，，只要B产品的借款人按时还款，其整体投资组合的回报都会较完全投资于A产品的组合为佳,其投资风险已大大减小。</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer-main1">
+    <div class="main clearfix">
+      <div class="footer-main1-left pull-left">
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作伙伴</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ol>
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">招贤纳士</a></li>
+        </ol>
+      </div>
+      <div class="pull-left"><span class="line"></span></div>
+        <div class="footer-main1-middle pull-left">
+          <dl class=" list-unstyled">
+            <dt class=" pull-left" style=" font-size:18px;">服务热线：</dt>
+            <dd class=" pull-left">
+              <p style=" font-size:38px; font-weight:600; margin-top:-10px;">400-016-1131</p>
+              <p>工作时间：周一至周五9:00-18:00</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="pull-left"><span class="line"></span></div>
+          <div class="footer-main1-right pull-right">
+            <p class=" text-center pull-left">
+              盼贷微信服务号<br /><img src="images/common/footer1.jpg" />
+            </p>
+            <p class=" text-center pull-left" style=" margin-right:0;">
+              盼贷APP下载<br /><img src="images/common/footer2.jpg" />
+            </p>
+          </div>
+        </div>
+  </div>
+  <div class="footer-main2">
+    <div class="main text-center">
+      <p><img src="images/common/footer3.jpg" /><img src="images/common/footer4.jpg" /><img src="images/common/footer5.jpg" /><img src="images/common/footer6.jpg" /><img src="images/common/footer7.jpg" /></p>
+      <p>© 2012-2017 北京盼大世纪信息技术有限公司 All rights reserved | 京ICP备15042613号 | 免责条款</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+ $(document).ready(function(){  
+  var add,reduce
+   add=$(".jia");
+   reduce=$(".jian"); 
+   add.click(function(){  
+     var valAdd = $(".num").val()
+     console.log(valAdd)
+     $(".num").val(Number(valAdd)+1000)
+    });  
+   reduce.click(function(){  
+     var valRed = $(".num").val();  
+     if(valRed >= 2000){
+      $(".num").val(Number(valRed)-1000)
+     }
+  })  
+ });
+</script>  
+</body>
+</html>

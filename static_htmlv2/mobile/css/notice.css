@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+*{ padding:0; margin:0;}
+.ui-mobile [data-role=page], .ui-page{ background: -webkit-linear-gradient(#d5213a, #f4213a); background: -o-linear-gradient(#d5213a, #f4213a); background: -moz-linear-gradient(#d5213a, #f4213a);background: linear-gradient(#d5213a, #f4213a); width:100%; font-size:14px; line-height:2em; color:#fff; position:relative;}
+.revision-notice .revision-notice-img1 img{ max-height:293px; max-width:234px; width:35%; position:absolute; right:0; top:0;}
+.revision-notice .revision-notice-img2 img{ max-height:206px; width:100%; position:absolute; left:0; bottom:0;}
+.revision-notice-main{ border:2px solid #fff; border-radius:10px; padding:0 3%;}
+.revision-notice-main > div{ margin-top:35px;}
+.revision-notice-main > div p{ margin-top:20px;}
+.revision-notice-main h1{ font-size:20px; font-weight:bold; margin-top:30px;}
+.revision-notice-main b{ font-weight:bold;}
+.revision-notice-main2 h2{ font-size:15px;font-weight:bold; margin-left:-11px;}
+.revision-notice-main2 p{ border-bottom:2px solid #fff; padding-bottom:15px;}
+.revision-notice-main2 p:last-child{ border-bottom:none;}
+.revision-notice-main2 p span.left{ width:10%; float:left; text-align:center; margin-top:7px;}
+.revision-notice-main2 p span.left strong{ width:15px; height:15px; line-height:15px; display:block;color:#f90338; background:#fff; border-radius:50%; font-size:15px;}
+.revision-notice-main2 p span.right{ width:88%; margin-left:2%; float:right;}
+.revision-notice-main2 p a.ui-link, .revision-notice-main2 p a.ui-link:visited{ color:#f9e70b;}
+.revision-notice-main4 h3{font-size:15px;font-weight:bold;}
+.revision-notice-main4{ padding-bottom:20%;}
+@media screen and (min-width:414px){
+  .revision-notice .revision-notice-img1 img{ width:17%;}
+}
+

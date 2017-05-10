@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+ <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+ <meta name="renderer" content="webkit|ie-comp|ie-stand">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>基本信息</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" /> 
+<link href="css/common.css" rel="stylesheet" type="text/css" /> 
+<link href="css/fill_info.css" rel="stylesheet" type="text/css" /> 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>   
+<script src="js/jq.js"></script>
+<script src="js/jquery.validate.js"></script>
+ <!-- 
+
+		如果是IE9以下版本，添加Response.js 支持 HTML5元素和media查询
+
+	 -->
+    <!--[if lt IE 9]>
+
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+
+<body>
+<div class="header">
+  <div class="header-main1 clearfix">
+    <div class="main clearfix">
+      <ol class="header-main1-left list-unstyled pull-left">
+        <li><a href="#"><span class="icon-app icon"></span>盼贷APP</a></li>
+        <li><a href="#"><span class="icon-follow icon"></span>关注盼贷</a></li>
+       <li><a href="#"><span class="icon-telephone icon"></span>服务热线：400-016-1131</a></li>
+      </ol>
+      <ol class="header-main1-right list-unstyled pull-right">
+        <li><a href="#">新手入门</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">现金券</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="borrower_tender.html"><span class="icon-account icon hover"></span>我的账户<b class="icon icon-arrow"></b></a></li>
+        <li><span class="line"></span></li>
+        <li class="return-old"><a href="#">返回旧版网站</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="header-main2">
+    <div class="main clearfix">
+      <p class="header-main2-logo pull-left"><img src="images/common/logo.png" /></p>
+      <ol class="header-main2-nav list-unstyled pull-right">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="invest_fixed.html">理财</a></li>
+        <li><a href="safe.html">安全保障</a></li>
+        <li><a href="#">活动专区</a></li>
+        <li><a href="about_introduction.html">关于我们</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="fill-info">
+  <div class="fill-info-title">
+    <ol class="list-unstyled clearfix">
+      <li class="hover"><p class="fill-info-number">1</p><p class="fill-info-word">填写基本信息</p><p class="fill-info-arrow"></p></li>
+      <li><p class="fill-info-number">2</p><p class="fill-info-word">填写详细信息</p><p class="fill-info-arrow"></p></li>
+      <li><p class="fill-info-number">3</p><p class="fill-info-word">确认贷款</p><p class="fill-info-arrow"></p></li>
+      <li><p class="fill-info-number">4</p><p class="fill-info-word">上传资料证明</p></li>
+    </ol>
+  </div>
+  <div class="fill-info-main">
+    <form id="fill-basis-form">
+      <h1><span>基本信息</span></h1>
+      <div class="fill-info-form clearfix">
+         <div class="fill-info-formleft pull-left">
+            <p class="clearfix"><span><strong>*</strong>姓名</span><input type="text" class="form-control" id="basisname" name="basisname" /></p>
+            <p class="clearfix"><span><strong>*</strong>身份证号码</span><input type="text" class="form-control" id="basisid" name="basisid" /></p>
+            <p class="clearfix"><span><strong>*</strong>户籍所在地</span><select class="form-control" id="basisplace"><option></option></select><select class="form-control"><option></option></select><select class="form-control"><option></option></select></p>
+            <p class="clearfix"><span><strong>*</strong>户籍街道地址</span><input type="text" class="form-control" id="basisstreet" name="basisstreet" /></p>
+            <p class="clearfix"><span><strong>*</strong>居住城市</span><select class="form-control" id="basiscity"><option></option></select><select class="form-control"><option></option></select><select class="form-control"><option></option></select></p>
+            <p class="clearfix"><span><strong>*</strong>居住地址</span><input type="text" class="form-control" id="basisadress" name="basisadress" /></p>
+            <p class="clearfix"><span>&nbsp;</span>请具体到门牌号，     举例：朝外大街乙6号Soho  B座 5020室</p>
+            <p class="clearfix"><span><strong>&nbsp;</strong>邮编</span><input type="text" class="form-control" id="basiszipcode" name="basiszipcode" /></p>
+         </div>
+         <div class="fill-info-formright pull-right">
+           <p class="clearfix"><span><strong>*</strong>性别</span><select class="form-control" id="basissex"><option>男</option><option>女</option></select></p>
+           <p class="clearfix"><span><strong>*</strong>出生日期</span><select class="form-control" id="basisbirthdate"><option></option></select><select class="form-control"><option></option></select><select class="form-control"><option></option></select></p>
+           <p class="clearfix"><span>&nbsp;</span> 18（不含18）岁不可以在盼贷平台上交易</p>
+           <p class="clearfix"><span><strong>*</strong>学历</span><select class="form-control" id="basiseducation"><option></option><option></option></select></p>
+           <p class="clearfix"><span><strong>*</strong>婚姻状况</span><select class="form-control" id="basismarriage"><option></option><option></option></select></p>
+           <p class="clearfix"><span><strong>*</strong>子女状况</span><select class="form-control" id="basischild"><option></option><option></option></select></p>
+         </div>
+      </div>
+      <h1><span>联系方式</span></h1>
+      <div class="fill-info-form clearfix" style="border-bottom:none;">
+         <div class="fill-info-formleft pull-left">
+            <p class="clearfix"><span><strong>&nbsp;</strong>方便的联络时间</span><select class="form-control" style=" width:195px;"><option></option></select></p>
+            <p class="clearfix"><span><strong>&nbsp;</strong>常用聊天工具</span><select class="form-control" style=" width:195px; margin-right:5px"><option></option></select><input type="text" class="form-control" style=" width:140px;" /></p>
+         </div>
+         <div class="fill-info-formright pull-right">
+           <p class="clearfix"><span><strong>*</strong>手机</span><input type="text" class="form-control" id="basismobilephone" name="basismobilephone" /></p>
+           <p class="clearfix"><span><strong>*</strong>电话</span><input type="text" class="form-control" id="basistelephone" name="basistelephone" /></p>
+         </div>
+      </div>
+      <p class="fill-form-btn2 clearfix"><a href="fill_finance.html"><input type="button" class="form-control btn-color btn-color2 border-radius" id="basissubmit" name="basissubmit" value="保存并下一步" /></a></p>
+    </form>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-main1">
+    <div class="main clearfix">
+      <div class="footer-main1-left pull-left">
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作伙伴</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ol>
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">招贤纳士</a></li>
+        </ol>
+      </div>
+      <div class="pull-left"><span class="line"></span></div>
+        <div class="footer-main1-middle pull-left">
+          <dl class=" list-unstyled">
+            <dt class=" pull-left" style=" font-size:18px;">服务热线：</dt>
+            <dd class=" pull-left">
+              <p style=" font-size:38px; font-weight:600; margin-top:-10px;">400-016-1131</p>
+              <p>工作时间：周一至周五9:00-18:00</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="pull-left"><span class="line"></span></div>
+          <div class="footer-main1-right pull-right">
+            <p class=" text-center pull-left">
+              盼贷微信服务号<br /><img src="images/common/footer1.jpg" />
+            </p>
+            <p class=" text-center pull-left" style=" margin-right:0;">
+              盼贷APP下载<br /><img src="images/common/footer2.jpg" />
+            </p>
+          </div>
+        </div>
+  </div>
+  <div class="footer-main2">
+    <div class="main text-center">
+      <p><img src="images/common/footer3.jpg" /><img src="images/common/footer4.jpg" /><img src="images/common/footer5.jpg" /><img src="images/common/footer6.jpg" /><img src="images/common/footer7.jpg" /></p>
+      <p>© 2012-2017 北京盼大世纪信息技术有限公司 All rights reserved | 京ICP备15042613号 | 免责条款</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function() {
+  $("#fill-basis-form").validate({
+        rules: {
+            basisname: "required",
+			basisid:{
+			  required: true,
+			  digits:true
+			},
+			basisplace:{
+			  required: true,
+			},
+			basisstreet:{
+			  required: true,
+			},
+			basiscity:{
+			  required: true,
+			},
+			basisadress:{
+			  required: true,
+			},
+			basissex:{
+			  required: true,
+			},
+			basisbirthdate:{
+			  required: true,
+			},
+           basiseducation:{
+			  required: true,
+			},
+			basismarriage:{
+			  required: true,
+			},
+			basischild:{
+			  required: true,
+			   digits:true
+			},
+			basismobilephone:{
+			  required: true,
+			   digits:true
+			},
+			basistelephone:{
+			  required: true,
+			   digits:true
+			}
+        },
+        messages: {
+            basisname: "请输入您的真实姓名", 
+			basisid:{
+			  required: "请输入您的身份证号码",
+			  digits:"必须为整数"
+			},
+			basisplace:{
+			  required: "请输入您的户籍所在地",
+			},
+			basisstreet:{
+			  required: "请输入您的户籍街道地址",
+			},
+			basiscity:{
+			  required: "请输入您的居住城市",
+			},
+			basisadress:{
+			  required: "请输入您的详细地址",
+			},
+			basissex:{
+			  required: "请输入您的性别",
+			},
+			basisbirthdate:{
+			  required: "请输入您的出生日期",
+			},
+           basiseducation:{
+			  required: "请输入您的学历",
+			},
+			basismarriage:{
+			  required: "请输入您的婚姻状况",
+			},
+			basischild:{
+			  required: "请输入您的子女状况",
+			},
+			basismobilephone:{
+			  required: "请输入你的手机号码",
+			   digits: "必须为整数"
+			},
+			basistelephone:{
+			  required: "请输入你的电话号码",
+			   digits: "必须为整数"
+			}
+        }
+    });
+	 
+	
+})
+</script>
+</body>
+</html>

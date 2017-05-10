@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+ <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+ <meta name="renderer" content="webkit|ie-comp|ie-stand">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>账户修改</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" /> 
+<link href="css/common.css" rel="stylesheet" type="text/css" /> 
+<link href="css/after_login.css" rel="stylesheet" type="text/css" /> 
+<link href="css/borrower.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>   
+<script src="js/jq.js"></script>
+<script src="js/borrower_jq.js"></script>
+<script src="js/jquery.validate.js"></script>
+ <!-- 
+
+		如果是IE9以下版本，添加Response.js 支持 HTML5元素和media查询
+
+	 -->
+    <!--[if lt IE 9]>
+
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+    <script type="text/javascript">
+function showPath(){//openfileDialog 和获取路径
+    document.getElementById("path").innerText=document.getElementById("selFile").value;
+}
+    </script>
+<body>
+<div class="header">
+  <div class="header-main1 clearfix">
+    <div class="main clearfix">
+      <ol class="header-main1-left list-unstyled pull-left">
+        <li><a href="#"><span class="icon-app icon"></span>盼贷APP</a></li>
+        <li><a href="#"><span class="icon-follow icon"></span>关注盼贷</a></li>
+       <li><a href="#"><span class="icon-telephone icon"></span>服务热线：400-016-1131</a></li>
+      </ol>
+      <ol class="header-main1-right list-unstyled pull-right">
+        <li><a href="#">新手入门</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">现金券</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><span class="line"></span></li>
+        <li><a href="borrower_tender.html"><span class="icon-account icon hover"></span>我的账户<b class="icon icon-arrow"></b></a></li>
+        <li><span class="line"></span></li>
+        <li class="return-old"><a href="#">返回旧版网站</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="header-main2">
+    <div class="main clearfix">
+      <p class="header-main2-logo pull-left"><img src="images/common/logo.png" /></p>
+      <ol class="header-main2-nav list-unstyled pull-right">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="invest_fixed.html">理财</a></li>
+        <li><a href="safe.html">安全保障</a></li>
+        <li><a href="#">活动专区</a></li>
+        <li><a href="about_introduction.html">关于我们</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div class="after-login borrower clearfix">
+   <div class="after-login-left borrower-left pull-left">
+      <div class="aflo-left-main1 borrower-left-main1">
+          <p class="left-mian1-face"><img src="images/after-login/after-left1.png" /></p>
+          <p class="left-mian1-phone">1300****299，下午好!</p>
+      </div>
+      <div class="aflo-left-main2 borrower-left-main2">
+        <dl>
+          <dt>我的借款</dt>
+          <dd><a href="borrower_tender.html"><b class="loan-one"></b>账户首页</a></dd>
+          <dd><a href="borrower_agreement.html"><b class="loan-two"></b>已签协议</a></dd>
+          <dd><a href="borrower_detailed.html"><b class="loan-three"></b>账户明细</a></dd>
+          <dt>信用状况</dt>
+          <dd><a href="borrower_creditstatus.html"><b class="credit-one"></b>信用简介</a></dd>
+          <dd><a href="#"><b class="credit-two"></b>提高信用<strong style=" font-size:12px;">（即将上线）</strong></a></dd>
+          <dt>账户中心</dt>
+          <dd><a href="borrower_info.html"><b class="accounts-one"></b>基本信息</a></dd>
+          <dd><a href="borrower_information.html"><b class="accounts-two"></b>详细资料</a></dd>
+          <dd><a href="borrower_data.html"><b class="accounts-three"></b>信用资料</a></dd>
+          <dd class="hover"><a href="borrower_revise.html"><b class="accounts-four"></b>账户修改</a></dd>
+           <dd><a href="borrower_withdraw.html"><b class="accounts-five"></b>提现</a></dd>
+        </dl> 
+      </div>
+   </div>
+   <div class="borrower-rightbk pull-right">
+      <div class="borrower-right borrower-revise">
+         <div class="borrower-border">
+           <h2>银行账户信息</h2>
+           <div class="borrower-revise-main1 clearfix">
+               <ol class="list-unstyled">
+                 <li class="revise-bankname bg-bank-small bank-small-ICBC">
+                   <p>中国银行</p>
+                   <p>6217 5801 xxxx 4447 264</p>
+                   <p>银行代扣：<b>审核通过</b></p>
+                   <p>当前帐户</p>
+                 </li>
+                 <li class="revise-bankname revise-bankname-withhold bg-bank-small bank-small-ICBC">
+                   <p>中国银行</p>
+                   <p>6217 5801 xxxx 4447 264</p>
+                   <p>银行代扣：<b>未通过</b><span>点此申请</span></p>
+                   <p class="reba-withhold-btn"><a href="#" class="reba-withhold-btnamend">修改</a><a href="#" class="reba-withhold-btndelete">删除</a></p>
+                 </li>
+                 <li class="revise-bankadd">新增银行卡<b></b></li>
+               </ol>
+           </div>
+           <h2>修改密码</h2>
+           <div class="borrower-revise-main2 clearfix">
+              <form id="borrower-revise-password">
+                <p><span><strong>*</strong>原密码</span><input type="password" class="form-control" id="reviseoldpassword" name="reviseoldpassword" style=" width:200px;" /></p>
+                <p><span><strong>*</strong>密码</span><input type="password" class="form-control" id="revisenewpassword" name="revisenewpassword" style=" width:200px;" /></p>
+                <p><span><strong>*</strong>密码确认</span><input type="password" class="form-control" id="revisenewpassword2" name="revisenewpassword2" style=" width:200px;" /></p>
+                <p><input type="submit" class="form-control btn-color btn-color2 border-radius" value="保存" id="revisesubmit" name="revisesubmit" style=" width:120px; margin-left:77px;" /></p>
+              </form>
+           </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="footer">
+  <div class="footer-main1">
+    <div class="main clearfix">
+      <div class="footer-main1-left pull-left">
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作伙伴</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ol>
+        <ol class="list-unstyled pull-left">
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">招贤纳士</a></li>
+        </ol>
+      </div>
+      <div class="pull-left"><span class="line"></span></div>
+        <div class="footer-main1-middle pull-left">
+          <dl class=" list-unstyled">
+            <dt class=" pull-left" style=" font-size:18px;">服务热线：</dt>
+            <dd class=" pull-left">
+              <p style=" font-size:38px; font-weight:600; margin-top:-10px;">400-016-1131</p>
+              <p>工作时间：周一至周五9:00-18:00</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="pull-left"><span class="line"></span></div>
+          <div class="footer-main1-right pull-right">
+            <p class=" text-center pull-left">
+              盼贷微信服务号<br /><img src="images/common/footer1.jpg" />
+            </p>
+            <p class=" text-center pull-left" style=" margin-right:0;">
+              盼贷APP下载<br /><img src="images/common/footer2.jpg" />
+            </p>
+          </div>
+        </div>
+  </div>
+  <div class="footer-main2">
+    <div class="main text-center">
+      <p><img src="images/common/footer3.jpg" /><img src="images/common/footer4.jpg" /><img src="images/common/footer5.jpg" /><img src="images/common/footer6.jpg" /><img src="images/common/footer7.jpg" /></p>
+      <p>© 2012-2017 北京盼大世纪信息技术有限公司 All rights reserved | 京ICP备15042613号 | 免责条款</p>
+    </div>
+  </div>
+</div>
+<div class="transparent-back"></div>
+<div class="borrower-revise-popup borrower-revise-popup1" style="display:none">
+  <h1>借款和代收协议<b></b></h1>
+  <div class="revise-popup1-cen">
+     <div class="revise-popup1-cen1 clearfix">
+        <div class="pull-left revise-popup1-cen1left">
+           <p>甲方（借款方姓名)：<b>于纯富</b></p>
+           <p>身份证号：<b>15232219630203131X</b></p>
+           <p>乙方(平台服务提供商)：<b>北京盼大世纪信息技术有限公司</b></p>
+           <p style=" margin-top:28px;">我指定下述银行账户作为收款、扣划还款等本协议项下资金往来的专用账户。该账户为我名下合法有效的银行账户。</p>
+           <p style=" margin-top:20px;">开户银行：建设银行</p>
+           <p>所属支行：北京市建设银行建国门北路支行</p>
+           <p>开户姓名：于纯富</p>
+           <p>账户号码：2232  3222  2222  xxxx  3232</p>
+        </div>
+        <div class="pull-right revise-popup1-cen1right">
+        请把身份证放于此处拍照
+        </div>
+     </div>
+     <div class="revise-popup1-cen2">
+       <p>我已经确认和签订电子版《借贷协议》（还款起止日期为2015年09月25日至2015年11月25日 , 协议号码：  54224-1  , 共十六条款), 并在乙方服务平台《www.pandai.cn》使用  yuchunfu8643  作为我的用户名。</p>
+       <p>我在此同意平台通过其合作机构从我的上述指定账户中准确划扣下列款项：</p>
+       <p>1. 对于在本《借贷协议》还款起止日期(2015年09月25日至2015年11月25日) 内 ,任何按照协议规定应划扣的款项 例如：每月的25日划扣1250.0元和最后还款日2015年11月25日划扣151250.0元，包括但不限于，因履行本协议而产生的本息、服务费用 、罚息、违约金、不当得利、其他应收款等；</p>
+       <p>2. 因我的违约行为等，出借人或平台认为需收回或提前收回贷款本息、服务费用、罚息、违约金情形、其他应收款等。
+注：每次划扣产生3元的代扣手续费用，由借款人自行承担，会随同每月还款额一同扣除。</p>
+       <p>请把后面这句话抄到下面一行中: <b>我已认真阅读此项协议并同意协议中的代扣业务</b></p>
+     </div>
+     <div class="revise-popup1-cen3 clearfix">
+         <p class="pull-left" style=" margin-left:115px;"><span>甲方 : _______________</span><b>日期 : _____年_____月_____日</b></p>
+         <p class="pull-right" style=" margin-right:115px;"><span>乙方 : 北京盼大世纪信息技术有限公司<br />(公章)</span><b>日期 : _____年_____月_____日</b></p>
+     </div>
+     <div class="revise-popup1-cen4">
+         <p><input type="checkbox" /> 同意从您的银行账户自动划扣  银行：建设银行     北京市建设银行建国门北路支行        帐号：2232  3222  2222  xxxx  3232</p>
+         <div class="repo1-cen4-upload">
+            <p>请打印《自动划扣协议》，签名拍照后分别上传。</p>
+            <p>自动代扣协议：尚未上传<b style=" color:#ef5848; margin-left:33px;">立即上传</b></p>
+            <p class="repo1-cen4-uploadbtn btn-color"><label for="selFile" class=" btn-color btn-color2 border-radius">选择要上传的文件</label><input id="selFile" type="file" onchange="showPath()"/></p>
+            <p id="path"></p>
+         </div>
+     </div>
+     <p class="revise-popup1-cen5 btn-color btn-color2 border-radius">提交自动划扣申请</p>
+  </div>
+</div>
+<div class="borrower-revise-popup borrower-revise-popup2" style="display:none">
+  <h1>新增银行卡<b></b></h1>
+  <div class="revise-popup2-form">
+    <form id="revise-popup2-form">
+        <p><span>开户银行</span><select class="form-control"><option>工商银行</option><option>中国邮政储蓄银行</option><option>建设银行</option><option>招商银行</option><option>光大银行</option><option>兴业银行</option></select></p>
+        <p><span>开户支行</span><input type="text" class="form-control" id="cardhouseholds" name="cardhouseholds" /></p>
+        <p><span>银行账号</span><input type="text" class="form-control" id="bankaccount" name="bankaccount" /></p>
+        <p><span>查询密码</span><input type="password" class="form-control" id="querypassword" name="querypassword" /></p>
+        <p><input type="submit" class="form-control btn-color btn-color2 border-radius" id="addbanksubmit" name="addbanksubmit" value="保存" /></p>
+    </form>
+  </div>
+</div>
+<div class="borrower-revise-popup borrower-revise-popup3" style="display:none">
+  <h1>银行账户信息<b></b></h1>
+  <div class="revise-popup3-form">
+    <form id="revise-popup3-form">
+        <p><span>户名</span><b>尚强</b></p>
+        <p><span>开户银行</span><select class="form-control"><option>工商银行</option><option>中国邮政储蓄银行</option><option>建设银行</option><option>招商银行</option><option>光大银行</option><option>兴业银行</option></select></p>
+        <p><span>开户支行</span><input type="text" class="form-control" id="revisecardhouseholds" name="revisecardhouseholds" /></p>
+        <p><span>银行账号</span><input type="text" class="form-control" id="revisebankaccount" name="revisebankaccount" /></p>
+        <p><span>查询密码</span><input type="password" class="form-control" id="revisequerypassword" name="revisequerypassword" /></p>
+        <p><input type="submit" class="form-control btn-color btn-color2 border-radius" id="bankinfosubmit" name="bankinfosubmit" value="保存" /></p>
+    </form>
+  </div>
+</div>
+<script type="text/javascript">
+$("#borrower-revise-password").validate({
+  rules: {
+   reviseoldpassword: {
+	   required: true,
+   },
+   revisenewpassword: {
+    required: true,
+    rangelength:[5,10]
+   },
+   revisenewpassword2: {
+    required: true,
+    rangelength:[5,10],
+    equalTo: "#revisenewpassword2"
+   }
+  },
+ messages: {
+  reviseoldpassword: {
+	   required: "请输入原密码"
+   },
+   revisenewpassword: {
+    required: "请输入新密码",
+    rangelength: "输入长度必须介于6和12之间的字符串"
+   },
+   revisenewpassword2: {
+    required: "请输入新密码",
+    rangelength:"输入长度必须介于6和12之间的字符串",
+    equalTo: "两次密码不一致"
+   }
+  }
+});
+$("#revise-popup2-form").validate({
+  rules: {
+   cardhouseholds: {
+	   required: true
+   },
+   bankaccount: {
+    required: true
+   },
+   querypassword: {
+    required: true
+   }
+  },
+ messages: {
+  cardhouseholds: {
+	   required: "请输入开户支行"
+   },
+   bankaccount: {
+    required: "请输入银行卡账号"
+   },
+   querypassword: {
+    required: "请输入查询密码"
+   }
+  }
+});
+$("#revise-popup3-form").validate({
+  rules: {
+   revisecardhouseholds: {
+	   required: true
+   },
+   revisebankaccount: {
+    required: true
+   },
+   revisequerypassword: {
+    required: true
+   }
+  },
+ messages: {
+   revisecardhouseholds: {
+	   required: "请输入开户支行"
+   },
+   revisebankaccount: {
+    required: "请输入银行卡账号"
+   },
+   revisequerypassword: {
+    required: "请输入查询密码"
+   }
+  }
+});
+</script>
+</body>
+</html>
