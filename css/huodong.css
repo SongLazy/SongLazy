@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ padding:0; margin:0; }
+
+/*五周年*/
+
+/*赏花季*/
+.flowers-activity-banner{background: url("../images/activity/flowers/banner.jpg") no-repeat center;width:100%; height:618px;}
+.flowers-activity-bg{ background:#faf1ea; padding-bottom:70px;}
+.flowers-activity-title{ font-size:30px; color:#d23340; line-height:94px; background:url(../images/activity/flowers/title.png) no-repeat; width:525px; height:94px; margin:0 auto 35px;}
+.flowers-activity-bg .main div{margin-bottom: 70px;}
+.flowers-activity-explain{ font-size:18px; color:#7c3a4b; line-height:30px;}
+.flowers-activity-table{ margin-top:32px;}
+.flowers-activity-table dt > div{ background:#ed849f; height:130px; font-size:24px; font-weight:bold; color:#fff;}
+.flowers-activity-table dt .table-type, .flowers-activity-table dt .table-red{ line-height:130px;}
+.flowers-activity-table dt .table-invest p{ height:64px; line-height:64px;}
+.flowers-activity-table dt .table-invest p b{ display:block; float:left; width:177px; font-weight:bold; border-top:1px solid #fff; border-left:1px solid #fff;}
+
+.flowers-activity-table dd { margin-top:1px;}
+.flowers-activity-table dd .table-type{ color:#7c3a4b; font-size:24px; font-weight:bold; background:#f7dbdb; height:809px; line-height:810px;}
+.flowers-activity-table dd .table-common{ height:80px; background:#f6d0d3; margin-bottom:1px;}
+.flowers-activity-table dd p.odd{ background:#f3bac4;}
+.flowers-activity-table dd .table-invest p{line-height:80px; font-size:18px; color:#7c3a4b;}
+.flowers-activity-table dd .table-invest p b{ border-left:1px solid #fff; display:block; float:left; width:177px; text-align:center;}
+.flowers-activity-table dd .table-invest p b:first-child{ border-left:none;}
+.flowers-activity-table dd .table-red p{ overflow:hidden;}
+.flowers-activity-table dd .table-red b{ display:block; background:url(../images/activity/flowers/red.png) no-repeat; width:169px; height:66px; line-height:66px; color:#fff; font-size:24px; margin:7px auto; padding-left:55px;}
+.flowers-activity-btn a{ display:block; height:68px; line-height:68px; background:#ed849f; font-size:30px; color:#fff; width:808px; margin:68px auto 74px;}
+.flowers-activity-prompt{ font-size:14px; color:#8c5460; width:900px; margin:0 auto;}
+.flowers-activity-prompt b{ display:block; float:left; width:118px; border-top:1px solid #8c5460; margin-top:7px;}
+.flowers-activity-prompt span{ float:left; width:664px;}
